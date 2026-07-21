@@ -1,140 +1,105 @@
-# ZCU216 Rack-Mount Enclosure
+# RIFTS Hardware Repository
 
-![ZCU216 Enclosure](../../images/hero/front_with_board_v1.jpg)
+![ZCU216 Enclosure](images/hero/front_with_board_v1.jpg)
 
 ## Overview
 
-The ZCU216 enclosure was the original hardware platform developed for the RIFTS project at the University of New Hampshire.
+This repository contains the mechanical design archive and documentation for the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
-This enclosure was designed as a **2U rack-mounted system** for laboratory integration of the AMD Xilinx ZCU216 RFSoC development platform and associated RF hardware.
+The archive includes the mechanical hardware designs, CAD models, manufacturing files, and documentation developed for RF sensing platforms used in lightning research.
 
-The design provides mechanical protection, electromagnetic shielding, thermal management, and integration space for supporting RF electronics.
+The primary goal of this repository is to preserve the engineering work completed during the development of RIFTS hardware and provide a clear reference for future project development.
 
 ---
 
-## Design Features
+## Hardware Platforms
 
-- 2U rack-mounted form factor
-- Aluminum enclosure construction
-- Electromagnetic shielding considerations
+### RFSoC 4x2 Portable Enclosure
+
+A compact, field-deployable enclosure designed for the AMD Xilinx RFSoC 4x2 platform.
+
+Features:
+- Portable field deployment design
+- Integrated carrying handles
+- Rubber feet for benchtop operation
+- Aluminum construction for mechanical protection and electromagnetic shielding
 - Active cooling provisions
-- Internal mounting for:
-  - AMD Xilinx ZCU216 RFSoC development board
-  - MIT Haystack RF Interface Board
-  - Associated RF hardware
+
+[View RFSoC 4x2 Documentation →](hardware/rfsoc-4x2/README.md)
 
 ---
 
-## Gallery
+### ZCU216 Rack-Mount Enclosure
 
-### Complete Enclosure
+A 2U rack-mounted enclosure designed for the AMD Xilinx ZCU216 RFSoC platform and associated RF hardware.
 
-![ZCU216 Isometric View](../../images/zcu216/cover_on_isometric_v1.jpg)
+Features:
+- 2U rack integration
+- Aluminum construction
+- Electromagnetic shielding
+- Active cooling provisions
+- Integration with the MIT Haystack RF Interface Board
 
-![ZCU216 Front View](../../images/zcu216/front_v2.jpg)
-
-### Internal Assembly
-
-![ZCU216 Internal Assembly](../../images/zcu216/internal_assembly_v2.jpg)
-
-### Rear Panel
-
-![ZCU216 Rear View](../../images/zcu216/rear_v2.jpg)
+[View ZCU216 Documentation →](hardware/zcu216/README.md)
 
 ---
 
-## Directory Contents
+## Additional Hardware
 
-### Board CAD
+### OmniLOG Antenna Mounts
 
-Contains reference CAD models used during enclosure development.
+Weather-resistant antenna mounting hardware designed for field deployment of OmniLOG antennas.
 
-Included models:
+Features:
+- FDM-manufactured components
+- Weather-resistant materials
+- Integrated sealing features
+- Designed for rapid field deployment
 
-- `AMD_Xilinx_ZCU216_Board.SLDPRT`
-  - Manufacturer CAD model of the AMD Xilinx ZCU216 development board.
-
-- `MIT_Haystack_RF_Interface_Board.SLDPRT`
-  - CAD model of the RF Interface Board developed by Frank Lind at MIT Haystack Observatory.
-
-- `MIT_Haystack_RF_Interface_Board_Simplified.SLDPRT`
-  - Simplified CAD model created to improve SolidWorks performance while preserving mechanically relevant geometry.
+[View Antenna Mount Documentation →](antenna-mounts/README.md)
 
 ---
 
-### Enclosure CAD
+## Repository Structure
 
-Contains the final enclosure CAD model.
+```
+hardware/
+├── rfsoc-4x2/
+├── zcu216/
+└── accessories/
 
-Format:
-- STEP
+antenna-mounts/
 
----
+docs/
 
-### Manufacturing Files
+images/
 
-Contains fabrication files used for enclosure production.
-
-Format:
-- Protocase PDA
-
----
-
-## CAD Model Notes
-
-Some reference models are provided in both original and simplified forms.
-
-Simplified models remove unnecessary internal or cosmetic geometry to improve CAD performance while preserving:
-
-- mounting locations
-- connector locations
-- external dimensions
-- mechanical interfaces
-
-The simplified models are recommended for routine enclosure development.
+downloads/
+```
 
 ---
 
-## Design Revisions
+## Documentation
 
-### Revision A — Initial Enclosure (August 2025)
+Additional documentation, design notes, manufacturing files, and archived releases are available throughout the repository.
 
-The first ZCU216 enclosure iteration was manufactured and delivered in August 2025.
-
-This revision established the initial mechanical integration approach for the ZCU216 RFSoC platform, including enclosure dimensions, board mounting, RF shielding provisions, and thermal management considerations.
+Large CAD archives and manufacturing packages are maintained separately through the project file archive.
 
 ---
 
-### Revision B — Updated Enclosure (December 2025)
+## Acknowledgements
 
-The second ZCU216 enclosure iteration was manufactured and delivered in December 2025.
+This hardware was developed as part of the RIFTS project at the University of New Hampshire.
 
-This revision incorporated updates made following evaluation of the initial enclosure and represents the second production iteration of the ZCU216 enclosure design.
-
----
-
-## Historical Context
-
-The ZCU216 enclosure represents the first major RIFTS hardware enclosure design.
-
-This platform established the mechanical design approach used for later portable hardware iterations, including the RFSoC 4x2 field enclosure.
+Additional hardware contributions and reference designs include:
+- MIT Haystack Observatory RF Interface Board developed by Frank Lind
+- AMD Xilinx RFSoC development platforms
 
 ---
 
-## Revision History
-
-| Revision | Date | Description |
-|----------|------|-------------|
-| Rev A | August 2025 | Initial enclosure design fabricated and delivered by manufacturer. |
-| Rev B | December 2025 | Updated enclosure design fabricated and delivered by manufacturer. |
-
----
-
-## Credits
+## Maintainer
 
 Mechanical design and documentation:
 - Joshua D'Addario
 
-Additional hardware:
-- Frank Lind, MIT Haystack Observatory
-- AMD Xilinx ZCU216 RFSoC platform
+```

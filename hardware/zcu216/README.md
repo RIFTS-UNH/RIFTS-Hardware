@@ -25,6 +25,24 @@ The design provides mechanical protection, electromagnetic shielding, thermal ma
 
 ---
 
+## Gallery
+
+### Complete Enclosure
+
+![ZCU216 Isometric View](../../images/zcu216/cover_on_isometric_v1.jpg)
+
+![ZCU216 Front View](../../images/zcu216/front_v2.jpg)
+
+### Internal Assembly
+
+![ZCU216 Internal Assembly](../../images/zcu216/internal_assembly_v2.jpg)
+
+### Rear Panel
+
+![ZCU216 Rear View](../../images/zcu216/rear_v2.jpg)
+
+---
+
 ## Directory Contents
 
 ### Board CAD
@@ -34,7 +52,7 @@ Contains reference CAD models used during enclosure development.
 Included models:
 
 - `AMD_Xilinx_ZCU216_Board.SLDPRT`
-  - Manufacturer CAD model of the ZCU216 development board.
+  - Manufacturer CAD model of the AMD Xilinx ZCU216 development board.
 
 - `MIT_Haystack_RF_Interface_Board.SLDPRT`
   - CAD model of the RF Interface Board developed by Frank Lind at MIT Haystack Observatory.
@@ -77,6 +95,24 @@ The simplified models are recommended for routine enclosure development.
 
 ---
 
+## Design Revisions
+
+### Revision A — Initial Enclosure (August 2025)
+
+The first ZCU216 enclosure iteration was manufactured and delivered in August 2025.
+
+This revision established the initial mechanical integration approach for the ZCU216 RFSoC platform, including enclosure dimensions, board mounting, RF shielding provisions, and thermal management considerations.
+
+---
+
+### Revision B — Updated Enclosure (December 2025)
+
+The second ZCU216 enclosure iteration was manufactured and delivered in December 2025.
+
+This revision incorporated updates made following evaluation of the initial enclosure and represents the second production iteration of the ZCU216 enclosure design.
+
+---
+
 ## Historical Context
 
 The ZCU216 enclosure represents the first major RIFTS hardware enclosure design.
@@ -89,7 +125,8 @@ This platform established the mechanical design approach used for later portable
 
 | Revision | Date | Description |
 |----------|------|-------------|
-| 1.0 | July 2026 | Initial documentation release |
+| Rev A | August 2025 | Initial enclosure design fabricated and delivered by manufacturer. |
+| Rev B | December 2025 | Updated enclosure design fabricated and delivered by manufacturer. |
 
 ---
 
