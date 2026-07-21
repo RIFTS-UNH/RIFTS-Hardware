@@ -126,9 +126,9 @@ The following files are available for download.
 
 Editable SolidWorks part files:
 
-- [Cooling Air Duct Type A (.SLDPRT)](CAD/RIFTS_Cooling_Air_Duct_Type_A.SLDPRT)
+- [Download Cooling Air Duct Type A (.SLDPRT)](CAD/RIFTS_Cooling_Air_Duct_Type_A.SLDPRT)
 
-- [Cooling Air Duct Type B (.SLDPRT)](CAD/RIFTS_Cooling_Air_Duct_Type_B.SLDPRT)
+- [Download Cooling Air Duct Type B (.SLDPRT)](CAD/RIFTS_Cooling_Air_Duct_Type_B.SLDPRT)
 
 ---
 
@@ -136,9 +136,9 @@ Editable SolidWorks part files:
 
 Universal CAD exchange files:
 
-- [Cooling Air Duct Type A (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_A.STEP)
+- [Download Cooling Air Duct Type A (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_A.STEP)
 
-- [Cooling Air Duct Type B (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_B.STEP)
+- [Download Cooling Air Duct Type B (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_B.STEP)
 
 ---
 
@@ -146,17 +146,17 @@ Universal CAD exchange files:
 
 STL files intended for FDM manufacturing:
 
-- [Cooling Air Duct Type A (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_A.STL)
+- [Download Cooling Air Duct Type A (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_A.STL)
 
-- [Cooling Air Duct Type B (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_B.STL)
+- [Download Cooling Air Duct Type B (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_B.STL)
 
 ---
 
 ## Recommended Usage
 
 - Use SolidWorks (`.SLDPRT`) files for future design modifications.
-- Use STEP files for integration into larger CAD assemblies.
-- Use STL files for direct fabrication.
+- Use STEP files for other CAD softwares.
+- Use STL files for direct FDM 3D printing fabrication.
 
 ---
 
