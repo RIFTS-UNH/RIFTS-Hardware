@@ -4,95 +4,50 @@
 
 This section contains supporting mechanical components developed for the RIFTS hardware platforms.
 
-These components were designed to improve thermal performance, mechanical robustness, field usability, and system integration.
+These accessories were designed to improve thermal performance, mechanical robustness, field usability, and system integration across the ZCU216 and RFSoC 4x2 enclosure platforms.
 
-Included designs contain CAD models, manufacturing files, and additive manufacturing models where applicable.
-
----
-
-# RFSoC 4x2 Accessories
-
-The RFSoC 4x2 portable enclosure required several custom components to support field deployment and system integration.
+Some components are shared across multiple hardware platforms, while others were developed specifically for individual systems.
 
 ---
 
 # Cooling Air Ducts
 
-![Air Duct CAD - Bottom Fan](../../images/accessories/bottom_fan_duct_CAD.jpg)
+Shared thermal management components developed for use with RIFTS enclosure platforms.
 
-![Air Duct CAD - Side Fan](../../images/accessories/side_fan_duct_CAD.jpg)
+The air duct assemblies improve airflow management by directing fan-generated airflow toward intended cooling regions within the enclosure.
 
-Custom FDM-printed airflow components were developed to improve thermal management within the RFSoC 4x2 enclosure.
+Applicable platforms:
 
-The air ducts direct airflow from the enclosure fans toward intended cooling regions, improving airflow management around heat-generating components.
+- ZCU216 enclosure
+- RFSoC 4x2 portable enclosure
 
-![Installed Air Ducts](../../images/accessories/air_ducts_installed.jpg)
-
-## Manufacturing
-
-- Manufacturing method:
-  - FDM 3D printing
-
-- Material:
-  - PLA
-
-- File formats:
-  - STEP
-  - STL
+[View Cooling Air Duct Documentation →](cooling-air-ducts/README.md)
 
 ---
 
-# TPU Corner Pads
+# RFSoC 4x2 TPU Corner Pads
 
-![TPU Corner Pad CAD](../../images/accessories/corner_pad_CAD.jpg)
+Protective corner pads developed specifically for the RFSoC 4x2 portable enclosure.
 
-Custom TPU corner pads were designed to improve mechanical protection and field usability of the RFSoC 4x2 portable enclosure.
-
-The pads provide:
+The pads improve field usability by providing:
 
 - Impact protection
 - Improved stability on uneven surfaces
-- Protection for enclosure corners during transport
+- Protection of enclosure corners during transportation
 
-![Installed TPU Corner Pad](../../images/accessories/corner_pad_installed.jpg)
-
-## Manufacturing
-
-- Manufacturing method:
-  - FDM 3D printing
-
-- Material:
-  - TPU
-
-- File formats:
-  - STEP
-  - STL
+[View TPU Corner Pad Documentation →](rfsoc-4x2-corner-pads/README.md)
 
 ---
 
-# RF Pathway CAD Model
+# RFSoC 4x2 RF Pathway CAD Model
 
-![RF Pathway Assembly](../../images/accessories/rf_pathway.jpg)
+Mechanical CAD representation of the RF pathway assembly integrated into the RFSoC 4x2 platform.
 
-![RF Pathway CAD Model](../../images/accessories/rf_pathway_cad.jpg)
+The RF pathway consists of analog RF components integrated directly with the RFSoC hardware system.
 
-The RFSoC 4x2 platform utilizes an integrated collection of analog RF components referred to as the RF pathway.
+Because complete manufacturer CAD was unavailable, the assembly was reconstructed manually from available references to support mechanical integration and documentation.
 
-Unlike the ZCU216 platform, which utilized a dedicated RF interface board developed by MIT Haystack Observatory, the RFSoC 4x2 system integrated these RF components directly into the enclosure architecture.
-
-A mechanical CAD representation of the RF pathway was created to support enclosure integration and documentation.
-
-Because complete manufacturer CAD was unavailable, the assembly was reconstructed manually from available references.
-
-The resulting model represents the best available mechanical approximation for design documentation purposes.
-
----
-
-# ZCU216 Accessories
-
-Supporting components developed for the ZCU216 enclosure are documented within this section.
-
-Additional accessory documentation will be added as applicable.
+[View RF Pathway Documentation →](rfsoc-4x2-rf-pathway/README.md)
 
 ---
 
@@ -119,4 +74,5 @@ Each accessory folder contains:
 # Credits
 
 Mechanical design and documentation:
-- Joshua D'Addario
+
+**Joshua D'Addario**
