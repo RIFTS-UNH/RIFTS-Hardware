@@ -51,13 +51,13 @@ The enclosure established the mechanical design approach later adapted for porta
 
 ## Hardware Accessories
 
-Supporting components developed for RIFTS hardware platforms.
+Supporting mechanical components developed for the RIFTS hardware platforms.
 
-Includes:
+Accessories include both shared and platform-specific designs:
 
-- RFSoC 4x2 cooling air ducts
-- TPU corner protection pads
-- RF pathway mechanical CAD model
+- Cooling air ducts for ZCU216 and RFSoC 4x2 enclosure thermal management
+- RFSoC 4x2 TPU corner protection pads
+- RFSoC 4x2 RF pathway mechanical CAD model
 - Additional integration hardware
 
 [View Hardware Accessories →](hardware/accessories/README.md)
@@ -79,15 +79,21 @@ Features:
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 ```
 RIFTS-Hardware/
 
 ├── hardware/
+│   │
 │   ├── rfsoc-4x2/
+│   │
 │   ├── zcu216/
+│   │
 │   └── accessories/
+│       ├── cooling-air-ducts/
+│       ├── rfsoc-4x2-corner-pads/
+│       └── rfsoc-4x2-rf-pathway/
 │
 ├── antenna-mounts/
 │
