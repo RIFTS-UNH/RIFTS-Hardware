@@ -6,100 +6,146 @@
 
 This repository contains the mechanical design archive and documentation for the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
-The archive includes the mechanical hardware designs, CAD models, manufacturing files, and documentation developed for RF sensing platforms used in lightning research.
+The archive preserves the mechanical engineering work completed for the RIFTS hardware platforms, including enclosure designs, supporting components, CAD models, manufacturing files, and documentation.
 
-The primary goal of this repository is to preserve the engineering work completed during the development of RIFTS hardware and provide a clear reference for future project development.
+The goal of this repository is to provide a clear and maintainable reference for future development, hardware reproduction, and continued project support.
 
 ---
 
-## Hardware Platforms
+# Hardware Platforms
 
-### RFSoC 4x2 Portable Enclosure
+## RFSoC 4x2 Portable Field Enclosure
 
-A compact, field-deployable enclosure designed for the AMD Xilinx RFSoC 4x2 platform.
+The RFSoC 4x2 enclosure was developed as a portable, field-deployable hardware platform for mobile lightning measurement campaigns.
 
-Features:
-- Portable field deployment design
-- Integrated carrying handles
-- Rubber feet for benchtop operation
-- Aluminum construction for mechanical protection and electromagnetic shielding
-- Active cooling provisions
+The enclosure provides:
+
+- Portable field deployment capability
+- Aluminum mechanical protection
+- Electromagnetic shielding considerations
+- Active thermal management
+- Interface accessibility for RFSoC hardware
+- Integration of custom RF pathway components
 
 [View RFSoC 4x2 Documentation →](hardware/rfsoc-4x2/README.md)
 
 ---
 
-### ZCU216 Rack-Mount Enclosure
+## ZCU216 Rack-Mount Enclosure
 
-A 2U rack-mounted enclosure designed for the AMD Xilinx ZCU216 RFSoC platform and associated RF hardware.
+The ZCU216 enclosure was the original RIFTS hardware enclosure platform.
 
-Features:
-- 2U rack integration
-- Aluminum construction
-- Electromagnetic shielding
-- Active cooling provisions
-- Integration with the MIT Haystack RF Interface Board
+Designed as a 2U rack-mounted laboratory system, it provides mechanical integration for:
+
+- AMD Xilinx ZCU216 RFSoC development platform
+- MIT Haystack RF Interface Board
+- Associated RF hardware
+
+The enclosure established the mechanical design approach later adapted for portable field hardware.
 
 [View ZCU216 Documentation →](hardware/zcu216/README.md)
 
 ---
 
-## Additional Hardware
+# Additional Hardware
 
-### OmniLOG Antenna Mounts
+## Hardware Accessories
+
+Supporting components developed for RIFTS hardware platforms.
+
+Includes:
+
+- RFSoC 4x2 cooling air ducts
+- TPU corner protection pads
+- RF pathway mechanical CAD model
+- Additional integration hardware
+
+[View Hardware Accessories →](hardware/accessories/README.md)
+
+---
+
+## OmniLOG Antenna Mounts
 
 Weather-resistant antenna mounting hardware designed for field deployment of OmniLOG antennas.
 
 Features:
+
 - FDM-manufactured components
 - Weather-resistant materials
 - Integrated sealing features
-- Designed for rapid field deployment
+- Field deployment considerations
 
 [View Antenna Mount Documentation →](antenna-mounts/README.md)
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```
-hardware/
-├── rfsoc-4x2/
-├── zcu216/
-└── accessories/
+RIFTS-Hardware/
 
-antenna-mounts/
-
-docs/
-
-images/
-
-downloads/
+├── hardware/
+│   ├── rfsoc-4x2/
+│   ├── zcu216/
+│   └── accessories/
+│
+├── antenna-mounts/
+│
+├── docs/
+│
+├── images/
+│
+└── downloads/
 ```
 
 ---
 
-## Documentation
+# Documentation
 
-Additional documentation, design notes, manufacturing files, and archived releases are available throughout the repository.
+Each hardware section contains:
 
-Large CAD archives and manufacturing packages are maintained separately through the project file archive.
+- Design overview
+- Engineering rationale
+- CAD model information
+- Manufacturing notes
+- Revision history
+- Associated documentation
 
 ---
 
-## Acknowledgements
+# CAD and Manufacturing Files
 
-This hardware was developed as part of the RIFTS project at the University of New Hampshire.
+Large CAD assemblies and manufacturing archives may be maintained separately from this repository due to file size limitations.
+
+The repository documentation provides navigation and context for all archived hardware files.
+
+---
+
+# Acknowledgements
+
+This hardware was developed as part of the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
 Additional hardware contributions and reference designs include:
-- MIT Haystack Observatory RF Interface Board developed by Frank Lind
-- AMD Xilinx RFSoC development platforms
+
+- Frank Lind, MIT Haystack Observatory  
+  - RF Interface Board reference design
+
+- AMD Xilinx
+  - ZCU216 RFSoC Development Platform
+  - RFSoC 4x2 Development Platform
 
 ---
 
-## Maintainer
+# Maintainer
 
 Mechanical design and documentation:
-- Joshua D'Addario
 
-```
+**Joshua D'Addario**
+
+---
+
+# Revision History
+
+| Revision | Date | Description |
+|----------|------|-------------|
+| Rev A | July 2026 | Initial RIFTS hardware documentation archive. |
