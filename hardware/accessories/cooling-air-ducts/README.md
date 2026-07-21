@@ -146,9 +146,9 @@ Universal CAD exchange files:
 
 STL files intended for FDM manufacturing:
 
-- [Cooling Air Duct Type A (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_A.stl)
+- [Cooling Air Duct Type A (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_A.STL)
 
-- [Cooling Air Duct Type B (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_B.stl)
+- [Cooling Air Duct Type B (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_B.STL)
 
 ---
 
