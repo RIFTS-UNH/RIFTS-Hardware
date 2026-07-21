@@ -1,6 +1,6 @@
 # Cooling Air Ducts
 
-![Cooling Air Ducts](../../../images/accessories/air_ducts_installed.jpg)
+![Cooling Air Ducts](../../../images/accessories/air_ducts_table.jpg)
 
 ## Overview
 
