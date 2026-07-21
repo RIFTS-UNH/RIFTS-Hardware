@@ -114,32 +114,41 @@ The ducting system was integrated alongside the portable enclosure architecture,
 
 ---
 
-## File Contents
+## File Downloads
 
-This directory contains the following design files:
+The following files are available for download.
 
-### CAD
+---
 
-Native and exchange CAD formats for mechanical design integration.
+## CAD Files
 
-Included formats:
+### SolidWorks Native Files
 
-- `.SLDPRT`
-  - Native SolidWorks part files
-  - Editable source geometry
+Editable SolidWorks part files:
 
-- `.STEP`
-  - CAD exchange format
-  - Compatible with most mechanical CAD software
+- [Cooling Air Duct Type A (.SLDPRT)](CAD/RIFTS_Cooling_Air_Duct_Type_A.SLDPRT)
 
-### STL
+- [Cooling Air Duct Type B (.SLDPRT)](CAD/RIFTS_Cooling_Air_Duct_Type_B.SLDPRT)
 
-Manufacturing-ready mesh files for additive manufacturing.
+---
 
-Included format:
+### STEP Export Files
 
-- `.STL`
-  - Intended for FDM 3D printing
+Universal CAD exchange files:
+
+- [Cooling Air Duct Type A (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_A.STEP)
+
+- [Cooling Air Duct Type B (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_B.STEP)
+
+---
+
+## 3D Printing Files
+
+STL files intended for FDM manufacturing:
+
+- [Cooling Air Duct Type A (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_A.stl)
+
+- [Cooling Air Duct Type B (.STL)](STL/RIFTS_Cooling_Air_Duct_Type_B.stl)
 
 ---
 
