@@ -126,9 +126,9 @@ The following files are available for download.
 
 Editable SolidWorks part files:
 
-- [Cooling Air Duct Type A (.SLDPRT)](CAD/RIFTS_Cooling_Air_Duct_Type_A.SLDPRT)
+- [Cooling Air Duct Type A (.SLDPRT)](RIFTS_Cooling_Air_Duct_Type_A.SLDPRT)
 
-- [Cooling Air Duct Type B (.SLDPRT)](CAD/RIFTS_Cooling_Air_Duct_Type_B.SLDPRT)
+- [Cooling Air Duct Type B (.SLDPRT)](RIFTS_Cooling_Air_Duct_Type_B.SLDPRT)
 
 ---
 
@@ -136,9 +136,9 @@ Editable SolidWorks part files:
 
 Universal CAD exchange files:
 
-- [Cooling Air Duct Type A (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_A.STEP)
+- [Cooling Air Duct Type A (.STEP)](RIFTS_Cooling_Air_Duct_Type_A.STEP)
 
-- [Cooling Air Duct Type B (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_B.STEP)
+- [Cooling Air Duct Type B (.STEP)](RIFTS_Cooling_Air_Duct_Type_B.STEP)
 
 ---
 
