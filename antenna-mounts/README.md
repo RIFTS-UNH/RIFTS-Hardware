@@ -192,11 +192,11 @@ CAD model of the complete antenna mounting system.
 
 ---
 
-### Deployed System
+### In-Field System Assembly
 
 ![Field Deployment](../images/antenna-mounts/two_piece_on_table.jpg)
 
-Antenna mount deployed during field testing.
+Antenna mount being assembled during field testing.
 
 ---
 
