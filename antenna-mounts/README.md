@@ -192,6 +192,14 @@ CAD model of the complete antenna mounting system.
 
 ---
 
+### Engineering Drawing
+
+![Engineering Drawing](../images/antenna-mounts/drawing.jpg)
+
+Manufacturing drawing of the antenna mount assembly including exploded view, cross-sectional view, and bill of materials.
+
+---
+
 ### In-Field System Assembly
 
 ![Field Deployment](../images/antenna-mounts/two_piece_on_table.jpg)
@@ -231,14 +239,13 @@ antenna-mounts/
 │   └── Print_Settings.md
 │
 ├── Documentation/
-│   └── Drawing.pdf
+│   └── Assembly_Drawing.pdf
 │
 ├── Testing/
 │   ├── Water_Immersion_Test.md
 │   └── immersion_test.jpg
 │
 └── README.md
-```
 
 ---
 
