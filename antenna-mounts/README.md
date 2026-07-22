@@ -1,6 +1,6 @@
 # OmniLOG PRO 1030 N Antenna Mount System
 
-![Antenna Mount CAD Assembly](../images/antenna-mounts/CAD_of_assembly.jpg)
+![Antenna Mount CAD Assembly](../images/antenna-mounts/assembly_neighbor_box_closer.jpg)
 
 ## Overview
 
