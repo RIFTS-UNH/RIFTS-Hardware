@@ -196,7 +196,7 @@ CAD model of the complete antenna mounting system.
 
 ![Engineering Drawing](../images/antenna-mounts/drawing.jpg)
 
-Manufacturing drawing of the antenna mount assembly including exploded view, cross-sectional view, and bill of materials.
+Manufacturing drawing of the Top Lid x Cylindrical Housing assembly including exploded view, cross-sectional view, and bill of materials.
 
 ---
 
