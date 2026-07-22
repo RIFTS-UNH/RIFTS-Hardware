@@ -94,7 +94,7 @@ The archive includes both original and simplified CAD models where applicable. S
 - Connector locations
 - Mechanically relevant interfaces
 
-[View Electronics Reference Models →](electronics-reference-models.md)
+[View Electronics Reference Models →](electronics-reference-models/README.md)
 
 ---
 
