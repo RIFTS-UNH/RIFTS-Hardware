@@ -276,10 +276,3 @@ The long-term goal of this repository is to serve as a living engineering archiv
 * [OmniLOG PRO 1030 N Antenna Mount](../../README.md)
 * [Print Settings](../../Manufacturing/Print_Settings.md)
 * [Bill of Materials](../../Manufacturing/BOM.md)
-
-
-# Related Documentation
-
-- [OmniLOG PRO 1030 N Antenna Mount](../../README.md)
-- [Print Settings](../../Manufacturing/Print_Settings.md)
-- [Bill of Materials](../../Manufacturing/BOM.md)
