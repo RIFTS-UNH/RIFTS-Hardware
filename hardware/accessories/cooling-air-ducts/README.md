@@ -2,59 +2,98 @@
 
 ![Cooling Air Ducts](../../../images/accessories/air_ducts_table.jpg)
 
-## Overview
+---
 
-The RIFTS cooling air ducts are custom airflow management components developed to improve thermal performance within the project enclosure platforms.
+# Project Summary
 
-These components were designed to direct fan-generated airflow toward intended cooling regions, improving heat removal from internally mounted electronics.
+| | |
+|---|---|
+| **Project** | RIFTS Cooling Air Duct System |
+| **Purpose** | Directed airflow management for RF electronics enclosures |
+| **Associated Platforms** | ZCU216 Enclosure, RFSoC 4x2 Portable Field Enclosure |
+| **Manufacturing Method** | FDM Additive Manufacturing |
+| **Material** | PLA |
+| **CAD Formats** | SLDPRT, STEP |
+| **Manufacturing Formats** | STL |
+| **Future Manufacturing Package** | Bambu Studio `.3mf` files |
+| **Status** | Complete |
+
+---
+
+# Overview
+
+The RIFTS cooling air ducts are custom airflow management components developed to improve thermal performance within project enclosure platforms.
+
+These components were designed to direct fan-generated airflow toward intended cooling regions, improving heat removal from internally mounted RF electronics.
 
 The cooling air duct system was implemented across multiple RIFTS hardware platforms:
 
 - ZCU216 rack-mounted enclosure
 - RFSoC 4x2 portable field enclosure
 
+Unlike passive ventilation features, these duct assemblies actively control airflow paths within the enclosure to improve cooling effectiveness and repeatability.
+
 ---
 
-## Design Purpose
+# Design Purpose
 
-Active thermal management was required due to the significant heat generation of the RF electronics contained within the RIFTS enclosures.
+The RF electronics contained within the RIFTS enclosure platforms generate significant heat during operation.
 
 Rather than relying solely on unrestricted enclosure airflow, custom ducting was developed to:
 
-- Improve airflow directionality
-- Reduce bypass airflow
-- Increase effectiveness of intake and exhaust fans
-- Provide repeatable thermal performance between enclosure builds
+- Improve airflow directionality.
+- Reduce airflow bypass around cooling targets.
+- Increase effectiveness of intake and exhaust fans.
+- Provide repeatable airflow behavior between enclosure builds.
 
 ---
 
-## Design Features
+# Design Features
 
 The cooling duct assemblies provide:
 
-- Directed airflow paths from enclosure fans
-- Mechanical integration with existing enclosure geometry
-- Lightweight construction
-- Rapid iteration through additive manufacturing
+- Directed airflow paths from enclosure fans.
+- Mechanical integration with existing enclosure geometry.
+- Lightweight construction.
+- Rapid manufacturing through desktop FDM printing.
 
-The designs were developed around the available enclosure space, fan locations, and internal hardware arrangement.
+The designs were developed around:
+
+- Available enclosure volume.
+- Fan locations.
+- Internal hardware arrangement.
+- Required airflow direction.
 
 The two duct designs are designated as:
 
 - Cooling Air Duct Type A
 - Cooling Air Duct Type B
 
-These names describe the component geometries and do not indicate a fixed installation orientation or enclosure location.
+These names describe the component geometries only and do **not** indicate a permanent installation orientation, fan location, or enclosure side.
+
+Either duct may be installed in multiple orientations depending on the specific enclosure configuration.
 
 ---
 
-## Gallery
+# Design Evolution
 
-### CAD Models
+The cooling air ducts were developed as part of the thermal management improvements for the RIFTS enclosure platforms.
+
+The use of custom printed ducting allowed airflow management features to be iterated quickly without requiring additional sheet metal fabrication.
+
+The final designs provide a reusable solution that can be manufactured alongside future enclosure builds.
+
+---
+
+# Gallery
+
+## CAD Models
 
 ![Cooling Air Duct Type A CAD](../../../images/accessories/cooling_air_duct_type_a_CAD.jpg)
 
 Cooling Air Duct Type A CAD model.
+
+---
 
 ![Cooling Air Duct Type B CAD](../../../images/accessories/cooling_air_duct_type_b_CAD.jpg)
 
@@ -62,63 +101,90 @@ Cooling Air Duct Type B CAD model.
 
 ---
 
-### Installed Components
+## Installed Components
 
 ![Installed Air Ducts](../../../images/accessories/air_ducts_installed.jpg)
 
-Installed cooling duct assemblies within the enclosure.
+Installed cooling duct assemblies within an enclosure platform.
 
 ---
 
-## Manufacturing
+# Manufacturing
 
 The cooling air ducts were manufactured using fused deposition modeling (FDM) additive manufacturing.
 
-### Manufacturing Details
+## Manufacturing Details
 
-- Manufacturing method:
+- **Manufacturing method:**
   - FDM 3D printing
 
-- Material:
+- **Material:**
   - PLA
 
-- File formats:
+- **Printer:**
+  - Bambu Lab A1
+
+- **Filament:**
+  - Bambu PLA Basic
+
+- **File formats:**
   - SLDPRT
   - STEP
   - STL
 
-PLA was selected for rapid prototyping, dimensional accuracy, and ease of fabrication.
+PLA was selected due to its dimensional accuracy, ease of fabrication, and suitability for rapid production of rigid airflow components.
+
+Future revisions may include `.3mf` Bambu Studio project files containing complete print profiles.
 
 ---
 
-## Associated Hardware Platforms
+# Associated Hardware Platforms
 
-### ZCU216 Enclosure
+## ZCU216 Enclosure
 
 The cooling ducts support thermal management of the laboratory-oriented ZCU216 enclosure.
 
-The ducting system directs airflow generated by the enclosure fans through intended cooling paths.
+The ducting system directs airflow generated by enclosure fans through intended cooling paths.
 
 ---
 
-### RFSoC 4x2 Portable Enclosure
+## RFSoC 4x2 Portable Enclosure
 
-The cooling ducts support thermal management during mobile field deployment.
+The cooling ducts support thermal management during portable operation.
 
-The ducting system was integrated alongside the portable enclosure architecture, which includes:
+The ducting system was integrated alongside:
 
-- Intake fan
-- Exhaust fan
-- RFSoC 4x2 heatsink assembly
-- Field-deployment mechanical constraints
+- RFSoC 4x2 development hardware.
+- Intake fan system.
+- Heatsink-mounted exhaust fan.
+- RF pathway components.
+- Portable enclosure constraints.
+
+---
+
+# File Organization
+
+```text
+Cooling_Air_Ducts/
+
+├── CAD/
+│   ├── RIFTS_Cooling_Air_Duct_Type_A.SLDPRT
+│   └── RIFTS_Cooling_Air_Duct_Type_B.SLDPRT
+│
+├── STEP/
+│   ├── RIFTS_Cooling_Air_Duct_Type_A.STEP
+│   └── RIFTS_Cooling_Air_Duct_Type_B.STEP
+│
+├── STL/
+│   ├── RIFTS_Cooling_Air_Duct_Type_A.STL
+│   └── RIFTS_Cooling_Air_Duct_Type_B.STL
+│
+└── README.md
+```
 
 ---
 
-## File Downloads
-
-The following files are available for download.
-
----
+# File Downloads
 
 ## CAD Files
 
@@ -136,9 +202,9 @@ Editable SolidWorks part files:
 
 Universal CAD exchange files:
 
-- [Download Cooling Air Duct Type A (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_A.STEP)
+- [Download Cooling Air Duct Type A (.STEP)](STEP/RIFTS_Cooling_Air_Duct_Type_A.STEP)
 
-- [Download Cooling Air Duct Type B (.STEP)](CAD/RIFTS_Cooling_Air_Duct_Type_B.STEP)
+- [Download Cooling Air Duct Type B (.STEP)](STEP/RIFTS_Cooling_Air_Duct_Type_B.STEP)
 
 ---
 
@@ -152,23 +218,24 @@ STL files intended for FDM manufacturing:
 
 ---
 
-## Recommended Usage
+# Recommended Usage
 
 - Use SolidWorks (`.SLDPRT`) files for future design modifications.
-- Use STEP files for other CAD softwares.
-- Use STL files for direct FDM 3D printing fabrication.
+- Use STEP files for compatibility with other CAD software.
+- Use STL files for direct FDM printing.
+- Use future Bambu Studio (`.3mf`) files for repeatable print preparation.
 
 ---
 
-## Revision History
+# Revision History
 
 | Revision | Date | Description |
-|----------|------|-------------|
+|---|---|---|
 | Rev A | July 2026 | Initial cooling air duct documentation and archive release. |
 
 ---
 
-## Credits
+# Credits
 
 Mechanical design and documentation:
 
