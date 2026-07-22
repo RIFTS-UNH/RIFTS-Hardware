@@ -87,7 +87,7 @@ The mast was printed vertically, standing upright with the M5 heat-set insert mo
 
 ### Rationale
 
-This orientation follows the natural loading direction of the component and provides a straightforward print configuration with minimal support requirements.
+This orientation follows the natural loading direction of the component and provides a straightforward print configuration with no support requirements.
 
 ---
 
