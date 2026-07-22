@@ -97,7 +97,7 @@ Representative CAD model of a corner pad assembly.
 
 ### Installed Assembly
 
-![Installed Corner Pads](../../../images/accessories/corner_pads_installed.jpg)
+![Installed Corner Pad](../../../images/accessories/corner_pads_installed.jpg)
 
 Completed corner pad assemblies installed on the RFSoC 4x2 enclosure.
 
