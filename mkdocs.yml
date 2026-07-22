@@ -1,0 +1,25 @@
+site_name: RIFTS Hardware Documentation
+
+theme:
+  name: material
+
+docs_dir: docs
+
+nav:
+  - Home: index.md
+
+  - Hardware Platforms:
+      - RFSoC 4x2 Portable Field Enclosure: hardware/rfsoc-4x2/README.md
+      - ZCU216 Rack-Mount Enclosure: hardware/zcu216/README.md
+
+  - Antenna Systems:
+      - OmniLOG PRO 1030 N Antenna Mount: antenna-mounts/README.md
+
+  - Hardware Accessories:
+      - Overview: hardware/accessories/README.md
+      - Cooling Air Ducts: hardware/accessories/cooling-air-ducts/README.md
+      - RFSoC 4x2 TPU Corner Pads: hardware/accessories/rfsoc-4x2-corner-pads/README.md
+      - RFSoC 4x2 RF Pathway Reference Model: hardware/accessories/rfsoc-4x2-rf-pathway/README.md
+
+  - Electronics Reference Models:
+      - Board CAD Library: electronics-reference-models.md
