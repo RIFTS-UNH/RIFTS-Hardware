@@ -1,6 +1,6 @@
 # OmniLOG PRO 1030 N Antenna Mount System
 
-![Antenna Mount CAD Assembly](../images/antenna-mounts/assembly_neighbor_box_closer.jpg)
+![Antenna Mount CAD Assembly](../images/antenna-mounts/assembly_deployed_in_field.jpg)
 
 ## Overview
 
@@ -194,7 +194,7 @@ CAD model of the complete antenna mounting system.
 
 ### Deployed System
 
-![Field Deployment](../images/antenna-mounts/assembly_deployed_in_field.jpg)
+![Field Deployment](../images/antenna-mounts/two_piece_on_table.jpg)
 
 Antenna mount deployed during field testing.
 
