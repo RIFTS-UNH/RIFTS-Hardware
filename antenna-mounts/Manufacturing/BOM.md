@@ -67,8 +67,11 @@ The two M5 brass heat-set inserts used in the mounting mast are installed after 
 Recommended installation procedure:
 
 1. Heat a soldering iron to approximately **230 °C**.
-2. Carefully press the brass heat-set insert into the prepared hole while applying controlled downward pressure.
-3. Allow the surrounding plastic to cool and solidify around the insert before applying mechanical load.
+2. Orient the brass heat-set insert so that the **serrated face is facing outward from the printed part** (toward the ceiling during installation), with the smooth face entering the printed hole first. The serrated face should **not** be pointed down into the hole.
+3. Carefully press the heat-set insert into the prepared hole while applying controlled downward pressure.
+4. Allow the surrounding plastic to cool and solidify around the insert before applying mechanical load.
+
+Proper insert orientation is important. Installing the insert upside down may reduce mechanical retention because the serrated surface is intended to embed into the surrounding plastic and resist pull-out forces.
 
 A heat-set insert press attachment designed to work with a soldering iron can improve alignment and consistency.
 
