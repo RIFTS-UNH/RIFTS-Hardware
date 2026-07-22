@@ -360,7 +360,7 @@ Potential improvements include:
 
 ---
 
-# If I Were Redesigning This Today
+# Retrospective
 
 The overall enclosure architecture has proven successful and would remain largely unchanged.
 
