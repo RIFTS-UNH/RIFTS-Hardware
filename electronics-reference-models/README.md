@@ -1,6 +1,4 @@
-# Electronics Reference Models
-
-![Electronics Reference Models](../../images/hero/rfsoc_4x2.jpg)
+# Electronics Reference ModelS
 
 ---
 
