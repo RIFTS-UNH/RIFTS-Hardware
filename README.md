@@ -123,7 +123,7 @@ Where appropriate, simplified CAD models are included to improve SolidWorks perf
 * Connector locations
 * Mechanically relevant interfaces
 
-[View Electronics Reference Models →](electronics-reference-models.md)
+[View Electronics Reference Models →](electronics-reference-models/README.md)
 
 ---
 
