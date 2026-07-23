@@ -1,4 +1,4 @@
-# Electronics Reference ModelS
+# Electronics Reference Models
 
 ---
 
