@@ -1,5 +1,7 @@
 # RFSoC 4x2 Portable Field Enclosure
 
+![RFSoC 4x2 Enclosure](../images/hero/rear_isometric_view.jpg)
+
 ---
 
 # Project Summary

@@ -1,4 +1,4 @@
-site_name: RIFTS Hardware Documentation
+site_name: RIFTS HDA
 
 theme:
   name: material
@@ -13,12 +13,61 @@ nav:
   - Home: index.md
 
   - RF-Shielded Enclosures:
-      - RFSoC 4x2 Portable Field Enclosure: hardware/rfsoc-4x2.md
-      - ZCU216 Rack-Mounted Enclosure: hardware/zcu216.md
+      - RFSoC 4x2 Portable Field Enclosure: 
+        - Enclosure CAD: hardware/rfsoc-4x2/cad.md
+        - Overview: hardware/rfsoc-4x2/overview.md
+        - Project Summary: hardware/rfsoc-4x2/project-summary.md
+        - Design Requirements: hardware/rfsoc-4x2/design-requirements.md
+        - Mechanical Design: hardware/rfsoc-4x2/mechanical-design.md
+        - Associated Components: hardware/rfsoc-4x2/associated-components.md
+        - Manufacturing: hardware/rfsoc-4x2/manufacturing.md
+        - Design Evolution: hardware/rfsoc-4x2/design-evolution.md
+        - Engineering Notes: hardware/rfsoc-4x2/engineering-notes.md
+        - Future Work & Retrospective: hardware/rfsoc-4x2/future-work.md
+        - Photo Gallery: hardware/rfsoc-4x2/photo-gallery.md
+        - Credits: hardware/rfsoc-4x2/credits.md
+        
+      - ZCU216 Rack-Mounted Enclosure:
+        - Enclosure CAD: hardware/zcu216/enclosure-cad.md
+        - Overview: hardware/zcu216/overview.md
+        - Project Summary: hardware/zcu216/project-summary.md
+        - Design Requirements: hardware/zcu216/design-requirements.md
+        - Mechanical Design: hardware/zcu216/mechanical-design.md
+        - Manufacturing: hardware/zcu216/manufacturing.md
+        - Design Evolution: hardware/zcu216/design-evolution.md
+        - Engineering Notes: hardware/zcu216/engineering-notes.md
+        - Future Work & Retrospective: hardware/zcu216/future-work-and-retrospective.md
+        - Photo Gallery: hardware/zcu216/photo-gallery.md
+        - Credits: hardware/zcu216/credits.md
 
   - Antenna Systems:
-      - OmniLOG PRO 1030 N Antenna Mount: antenna/omnilog.md
+      - OmniLOG PRO 1030 N Antenna Mount:
+        - Overview: antenna/overview.md
+        - Project Summary: antenna/project-summary.md
+        - Design Requirements: antenna/design-requirements.md
+        - EM Design Considerations: antenna/electromagnetic-design-considerations.md
+        - Mechanical Design: antenna/mechanical-design.md
+        - Environmental Sealing: antenna/environmental-sealing.md
+        - Design Evolution: antenna/design-evolution.md
+        - Manufacturing:
+          - Overview: antenna/manufacturing/overview.md
+          - 3D print Settings: antenna/manufacturing/print-settings.md
+          - Bill of Materials: antenna/manufacturing/bom.md
+        - Assembly Procedure: antenna/field-deployment.md
+        - Water Immersion Testing: antenna/testing.md
+        - Gallery: antenna/gallery.md
+        - Credits: antenna/credits.md
 
-  - Supporting Hardware: hardware/accessories.md
+  - Supporting Hardware:
+      - Cooling Air Ducts: hardware/cooling-air-ducts.md
+      - TPU Corner Pads: hardware/rfsoc-4x2-corner-pads.md
+      - RF Pathway CAD Model: hardware/rfsoc-4x2-rf-pathway.md
 
-  - Electronics Reference Models: electronics-reference-models.md
+  - Electronics Reference Models:
+      - Overview: electronics-cads/electronics-reference-models.md
+      - RFSoC 4x2: electronics-cads/rfsoc-4x2.md
+      - ZCU216: electronics-cads/zcu216.md
+      - RF Interface Board: electronics-cads/rf-interface-board.md
+      - SparkFun Thing Plus - ESP32 WROOM (Micro B): electronics-cads/sparkfun-thing.md
+      - SparkFun GNSS Timing Breakout - ZED-F9T (Qwiic): electronics-cads/sparkfun-gnss.md
+      - Ethernet Bulkhead cat5e: electronics-cads/ethernet-bulkhead-cat5e.md
