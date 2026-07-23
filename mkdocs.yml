@@ -9,7 +9,7 @@ nav:
   - Home: index.md
 
   - Hardware Platforms:
-      - RFSoC 4x2 Portable Field Enclosure: hardware/rfsoc-4x2/README.md
+      - RFSoC 4x2 Portable Field Enclosure: hardware/rfsoc-4x2.md
       - ZCU216 Rack-Mount Enclosure: hardware/zcu216/README.md
 
   - Antenna Systems:
