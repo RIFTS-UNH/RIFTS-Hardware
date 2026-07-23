@@ -1,23 +1,5 @@
 # Manufacturing
 
-## Files
-
-Contains the original fabrication package submitted for manufacturing.
-
-Manufacturer:
-
-- Protocase
-
-Available formats:
-
-- Protocase PDA
-
-These files preserve the exact enclosure geometry used for fabrication and may be used as the starting point for future enclosure revisions.
-
----
-
-### Notes
-
 The enclosure was manufactured by **Protocase** using CNC sheet metal fabrication from **0.064-inch 5052 aluminum**.
 
 Unlike the earlier ZCU216 enclosure, the increased material thickness provided substantially greater rigidity for transportation and field handling while maintaining good manufacturability.
@@ -26,7 +8,7 @@ The enclosure utilizes standardized Protocase PEM hardware for board mounting an
 
 ---
 
-#### Manufacturing Compliance Issue Report
+### Manufacturing Compliance Issue Report
 
 Only one enclosure design was produced.
 

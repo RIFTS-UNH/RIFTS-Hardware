@@ -8,13 +8,16 @@ docs_dir: docs
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
   - Home: index.md
 
   - RF-Shielded Enclosures:
       - RFSoC 4x2 Portable Field Enclosure: 
-        - Enclosure CAD: hardware/rfsoc-4x2/cad.md
         - Overview: hardware/rfsoc-4x2/overview.md
         - Project Summary: hardware/rfsoc-4x2/project-summary.md
         - Design Requirements: hardware/rfsoc-4x2/design-requirements.md
@@ -25,10 +28,10 @@ nav:
         - Engineering Notes: hardware/rfsoc-4x2/engineering-notes.md
         - Future Work & Retrospective: hardware/rfsoc-4x2/future-work.md
         - Photo Gallery: hardware/rfsoc-4x2/photo-gallery.md
+        - Media: hardware/rfsoc-4x2/media.md
         - Credits: hardware/rfsoc-4x2/credits.md
-        
+
       - ZCU216 Rack-Mounted Enclosure:
-        - Enclosure CAD: hardware/zcu216/enclosure-cad.md
         - Overview: hardware/zcu216/overview.md
         - Project Summary: hardware/zcu216/project-summary.md
         - Design Requirements: hardware/zcu216/design-requirements.md
@@ -38,6 +41,7 @@ nav:
         - Engineering Notes: hardware/zcu216/engineering-notes.md
         - Future Work & Retrospective: hardware/zcu216/future-work-and-retrospective.md
         - Photo Gallery: hardware/zcu216/photo-gallery.md
+        - Media: hardware/zcu216/media.md
         - Credits: hardware/zcu216/credits.md
 
   - Antenna Systems:
@@ -56,15 +60,18 @@ nav:
         - Assembly Procedure: antenna/field-deployment.md
         - Water Immersion Testing: antenna/testing.md
         - Gallery: antenna/gallery.md
+        - Media: antenna/media.md
         - Credits: antenna/credits.md
 
   - Supporting Hardware:
-      - Cooling Air Ducts: hardware/cooling-air-ducts.md
-      - TPU Corner Pads: hardware/rfsoc-4x2-corner-pads.md
-      - RF Pathway CAD Model: hardware/rfsoc-4x2-rf-pathway.md
+    - Ventilation:
+      - 3D Printed Air Ducts: hardware/cooling-air-ducts.md
+      - Fans: hardware/fans.md
+    - TPU Corner Pads: hardware/rfsoc-4x2-corner-pads.md
+    - RF Pathway CAD Model: hardware/rfsoc-4x2-rf-pathway.md
 
-  - Electronics Reference Models:
-      - Overview: electronics-cads/electronics-reference-models.md
+  - Electronics Reference CAD Models:
+      - Overview: electronics-cads/overview.md
       - RFSoC 4x2: electronics-cads/rfsoc-4x2.md
       - ZCU216: electronics-cads/zcu216.md
       - RF Interface Board: electronics-cads/rf-interface-board.md

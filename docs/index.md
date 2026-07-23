@@ -48,7 +48,7 @@ The author gratefully acknowledges the guidance, support, and contributions of t
 
 - **Stephen Horn, University of New Hampshire** — Senior member of the RIFTS research team whose technical expertise and assistance contributed to the development and integration of the project hardware.
 
-- **Frank Lind, MIT Haystack Observatory** — RF Interface Board reference design and technical support for the RIFTS hardware platform.
+- **Dr. Frank Lind, MIT Haystack Observatory** — RF Interface Board reference design and technical support for the RIFTS hardware platform.
 
 ---
 
