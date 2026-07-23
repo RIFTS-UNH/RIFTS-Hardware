@@ -1,12 +1,8 @@
-# RIFTS Hardware Documentation
+# RIFTS Hardware Design Archive
 
-![ZCU216 Enclosure](images/hero/front_with_board_v1.jpg)
+Mechanical design, validation testing, and engineering documentation for the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
-## Radio Interferometer For Thunderstorm Studies (RIFTS)
-
-This documentation site serves as the engineering archive for the mechanical hardware developed for the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
-
-The archive preserves the design process, fabrication history, testing procedures, and engineering decisions behind the RIFTS hardware platforms.
+This site serves as the engineering archive for the mechanical hardware developed for RIFTS, preserving the design process, fabrication history, testing procedures, and engineering decisions behind each hardware platform.
 
 Included documentation covers:
 
@@ -21,15 +17,23 @@ The goal of this archive is to provide a clear, maintainable reference for futur
 
 ---
 
-# Hardware Platforms
+## Hardware Platforms
 
-## RFSoC 4x2 Portable Field Enclosure
+### ZCU216 Rack-Mount Enclosure
 
-![RFSoC 4x2 Enclosure](images/hero/rear_isometric_view.jpg)
+The ZCU216 enclosure was the original RIFTS hardware platform: a 2U rack-mounted laboratory system providing mechanical integration for:
 
-The RFSoC 4x2 enclosure was developed as a portable hardware platform for mobile lightning measurement campaigns.
+* AMD Xilinx ZCU216 RFSoC development platform
+* MIT Haystack RF Interface Board
+* Associated RF hardware
 
-The design builds upon lessons learned from the earlier ZCU216 enclosure while introducing improvements focused on portability, thermal management, and field deployment.
+The ZCU216 enclosure established the mechanical design approach later adapted for portable hardware iterations.
+
+[View ZCU216 Documentation →](hardware/zcu216.md)
+
+### RFSoC 4x2 Portable Field Enclosure
+
+The RFSoC 4x2 enclosure was developed as a portable hardware platform for mobile lightning measurement campaigns, building on lessons learned from the ZCU216 enclosure while improving portability, thermal management, and field deployment.
 
 Key features include:
 
@@ -40,73 +44,43 @@ Key features include:
 * Custom RF pathway integration
 * Portable field deployment capability
 
-[View RFSoC 4x2 Documentation →](hardware/rfsoc-4x2/README.md)
+[View RFSoC 4x2 Documentation →](hardware/rfsoc-4x2.md)
 
 ---
 
-## ZCU216 Rack-Mount Enclosure
+## Antenna Systems
 
-The ZCU216 enclosure was the original RIFTS hardware enclosure platform.
+### OmniLOG PRO 1030 N Antenna Mount System
 
-Designed as a 2U rack-mounted laboratory system, it provided mechanical integration for:
-
-* AMD Xilinx ZCU216 RFSoC development platform
-* MIT Haystack RF Interface Board
-* Associated RF hardware
-
-The ZCU216 enclosure established the mechanical design approach later adapted for portable hardware iterations.
-
-[View ZCU216 Documentation →](hardware/zcu216/README.md)
-
----
-
-# Antenna Systems
-
-## OmniLOG PRO 1030 N Antenna Mount System
-
-The OmniLOG antenna mount system was developed as a rugged, field-deployable mounting solution for lightning observation campaigns.
-
-The design focuses on:
+The OmniLOG antenna mount system is a rugged, field-deployable mounting solution for lightning observation campaigns, focused on:
 
 * Dielectric construction to reduce RF scattering effects
 * Environmental sealing
 * Mechanical stability
 * Repeatable field deployment
 
-Documentation includes:
+Documentation includes mechanical design rationale, manufacturing information, print settings, bill of materials, and water immersion validation testing.
 
-* Mechanical design rationale
-* Manufacturing information
-* Print settings
-* Bill of materials
-* Water immersion validation testing
-
-[View Antenna Mount Documentation →](antenna-mounts/README.md)
+[View Antenna Mount Documentation →](antenna/omnilog.md)
 
 ---
 
-# Supporting Hardware
+## Supporting Hardware
 
-## Hardware Accessories
-
-Supporting mechanical components developed throughout the RIFTS hardware development process.
-
-Included systems:
+Supporting mechanical components developed throughout the RIFTS hardware development process, including:
 
 * Cooling air ducts for enclosure thermal management
 * RFSoC 4x2 TPU corner protection pads
 * RFSoC 4x2 RF pathway reference model
 * Additional integration hardware
 
-[View Hardware Accessories →](hardware/accessories/README.md)
+[View Hardware Accessories →](hardware/accessories.md)
 
 ---
 
-# Electronics Reference Models
+## Electronics Reference Models
 
-This archive contains mechanical CAD models of electronic hardware used throughout RIFTS development.
-
-These models support:
+This archive contains mechanical CAD models of electronic hardware used throughout RIFTS development, supporting:
 
 * Enclosure design
 * Mechanical integration studies
@@ -114,24 +88,15 @@ These models support:
 * Internal packaging development
 * Hardware visualization
 
-The collection includes both manufacturer-provided and internally created CAD models.
-
-Where appropriate, simplified CAD models are included to improve SolidWorks performance while maintaining:
-
-* Board dimensions
-* Mounting locations
-* Connector locations
-* Mechanically relevant interfaces
+The collection includes both manufacturer-provided and internally created CAD models. Where appropriate, simplified models are included to improve SolidWorks performance while preserving board dimensions, mounting locations, connector locations, and other mechanically relevant interfaces.
 
 [View Electronics Reference Models →](electronics-reference-models.md)
 
 ---
 
-# Engineering Archive Philosophy
+## Engineering Archive Philosophy
 
-This repository documents not only completed hardware, but also the engineering decisions and lessons learned that shaped each design.
-
-Each major subsystem includes:
+This repository documents not only completed hardware, but also the engineering decisions and lessons learned that shaped each design. Each major subsystem includes:
 
 * Design requirements
 * Engineering rationale
@@ -144,72 +109,32 @@ The objective is to preserve the complete engineering process rather than only t
 
 ---
 
-# Repository Organization
+## CAD and Manufacturing Files
 
-```
-RIFTS-Hardware/
-
-├── hardware/
-│   ├── rfsoc-4x2/
-│   ├── zcu216/
-│   └── accessories/
-│       ├── cooling-air-ducts/
-│       ├── rfsoc-4x2-corner-pads/
-│       └── rfsoc-4x2-rf-pathway/
-│
-├── antenna-mounts/
-│
-├── electronics-reference-models/
-│
-├── docs/
-│
-├── images/
-│
-└── downloads/
-```
+Native CAD models, manufacturing files, and associated documentation are included throughout this archive. Larger design files are managed separately using Git Large File Storage (Git LFS) where appropriate.
 
 ---
 
-# CAD and Manufacturing Files
+## Acknowledgements
 
-Large CAD assemblies and manufacturing archives may be maintained separately or through Git Large File Storage (Git LFS) due to file size limitations.
-
-Documentation pages provide navigation, engineering context, and access information for archived hardware files.
-
----
-
-# Acknowledgements
-
-This hardware was developed as part of the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
+This hardware was developed as part of the Radio Interferometer For Thunderstorm Studies (RIFTS) project at the University of New Hampshire.
 
 Additional hardware contributions and reference designs include:
 
-* **Frank Lind, MIT Haystack Observatory**
-
-  * RF Interface Board reference design
-
-* **AMD Xilinx**
-
-  * ZCU216 RFSoC Development Platform
-  * RFSoC 4x2 Development Platform
-
-* **SparkFun Electronics**
-
-  * ZED-F9T GNSS Timing Breakout
-  * ESP32 WROOM Thing Plus
+* **Frank Lind, MIT Haystack Observatory** — RF Interface Board reference design
+* **AMD Xilinx** — ZCU216 RFSoC Development Platform, RFSoC 4x2 Development Platform
+* **SparkFun Electronics** — ZED-F9T GNSS Timing Breakout, ESP32 WROOM Thing Plus
 
 ---
 
-# Maintainer
+## Maintainer
 
-Mechanical design and documentation:
-
-**Joshua D'Addario**
+Mechanical design and documentation: **Joshua D'Addario**
 
 ---
 
-# Revision History
+## Revision History
 
 | Revision | Date      | Description                                   |
-| -------- | --------- | --------------------------------------------- |
-| Rev A    | July 2026 | Initial RIFTS hardware documentation archive. |
+| -------- | --------- | ---------------------------------------------- |
+| Rev A    | July 2026 | Initial RIFTS hardware documentation archive.  |

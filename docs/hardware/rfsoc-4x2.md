@@ -136,7 +136,7 @@ The removable cover provides full access to the enclosure interior while maintai
 
 ## Complete Enclosure
 
-![Rear Isometric View](../../images/rfsoc-4x2/rear_isometric_view.jpg)
+![Rear Isometric View](../images/hero/rear_isometric_view.jpg)
 
 Overall view of the completed RFSoC 4x2 enclosure.
 
