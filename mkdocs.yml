@@ -28,7 +28,7 @@ nav:
         - Engineering Notes: hardware/rfsoc-4x2/engineering-notes.md
         - Future Work & Retrospective: hardware/rfsoc-4x2/future-work.md
         - Photo Gallery: hardware/rfsoc-4x2/photo-gallery.md
-        - Media: hardware/rfsoc-4x2/media.md
+        - '<span style="font-weight: 800; color: #ff0000;">Media</span>': hardware/rfsoc-4x2/media.md
         - Credits: hardware/rfsoc-4x2/credits.md
 
       - ZCU216 Rack-Mounted Enclosure:
@@ -41,7 +41,7 @@ nav:
         - Engineering Notes: hardware/zcu216/engineering-notes.md
         - Future Work & Retrospective: hardware/zcu216/future-work-and-retrospective.md
         - Photo Gallery: hardware/zcu216/photo-gallery.md
-        - Media: hardware/zcu216/media.md
+        - '<span style="font-weight: 800; color: #ff0000;">Media</span>': hardware/zcu216/media.md
         - Credits: hardware/zcu216/credits.md
 
   - Antenna Systems:
@@ -60,13 +60,11 @@ nav:
         - Assembly Procedure: antenna/field-deployment.md
         - Water Immersion Testing: antenna/testing.md
         - Gallery: antenna/gallery.md
-        - Media: antenna/media.md
+        - '<span style="font-weight: 800; color: #ff0000;">Media</span>': antenna/media.md
         - Credits: antenna/credits.md
 
   - Supporting Hardware:
-    - Ventilation:
-      - 3D Printed Air Ducts: hardware/cooling-air-ducts.md
-      - Fans: hardware/fans.md
+    - Cooling Air Ducts & Fans: hardware/ventilation/air-ducts.md
     - TPU Corner Pads: hardware/rfsoc-4x2-corner-pads.md
     - RF Pathway CAD Model: hardware/rfsoc-4x2-rf-pathway.md
 

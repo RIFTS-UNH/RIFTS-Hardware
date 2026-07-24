@@ -4,8 +4,9 @@ Several accessories were developed specifically for the RFSoC 4x2 enclosure and 
 
 These include:
 
-- RF Pathway
+- RF Pathways
 - Air Ducts
 - TPU Corner Pads
+- Fans
 
 Together, these components complete the portable field enclosure assembly.
