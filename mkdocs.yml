@@ -8,10 +8,14 @@ docs_dir: docs
 plugins:
   - glightbox
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -36,35 +40,40 @@ nav:
 
       - ZCU216 Rack-Mounted Enclosure:
         - Overview: hardware/zcu216/overview.md
-        - Project Summary: hardware/zcu216/project-summary.md
-        - Design Requirements: hardware/zcu216/design-requirements.md
-        - Mechanical Design: hardware/zcu216/mechanical-design.md
-        - Manufacturing: hardware/zcu216/manufacturing.md
-        - Design Evolution: hardware/zcu216/design-evolution.md
-        - Engineering Notes: hardware/zcu216/engineering-notes.md
-        - Future Work & Retrospective: hardware/zcu216/future-work-and-retrospective.md
+        # - Project Summary: hardware/zcu216/project-summary.md
+        # - Design Requirements: hardware/zcu216/design-requirements.md
+        # - Mechanical Design: hardware/zcu216/mechanical-design.md
+        # - Manufacturing: hardware/zcu216/manufacturing.md
+        # - Design Evolution: hardware/zcu216/design-evolution.md
+        # - Engineering Notes: hardware/zcu216/engineering-notes.md
+        # - Future Work & Retrospective: hardware/zcu216/future-work-and-retrospective.md
         - Photo Gallery: hardware/zcu216/photo-gallery.md
         - '<span style="font-weight: 800; color: #ff0000;">Media</span>': hardware/zcu216/media.md
-        - Credits: hardware/zcu216/credits.md
+        # - Credits: hardware/zcu216/credits.md
 
   - Antenna Systems:
       - OmniLOG PRO 1030 N Antenna Mount:
-        - Overview: antenna/overview.md
-        - Project Summary: antenna/project-summary.md
-        - Design Requirements: antenna/design-requirements.md
-        - EM Design Considerations: antenna/electromagnetic-design-considerations.md
-        - Mechanical Design: antenna/mechanical-design.md
-        - Environmental Sealing: antenna/environmental-sealing.md
-        - Design Evolution: antenna/design-evolution.md
-        - Manufacturing:
-          - Overview: antenna/manufacturing/overview.md
-          - 3D print Settings: antenna/manufacturing/print-settings.md
-          - Bill of Materials: antenna/manufacturing/bom.md
-        - Assembly Procedure: antenna/field-deployment.md
-        - Water Immersion Testing: antenna/testing.md
-        - Gallery: antenna/gallery.md
-        - '<span style="font-weight: 800; color: #ff0000;">Media</span>': antenna/media.md
-        - Credits: antenna/credits.md
+        # - Overview: antenna/overview.md
+        # - Project Summary: antenna/project-summary.md
+        # - Design Requirements: antenna/design-requirements.md
+        # - EM Design Considerations: antenna/electromagnetic-design-considerations.md
+        # - Mechanical Design: antenna/mechanical-design.md
+        # - Environmental Sealing: antenna/environmental-sealing.md
+        # - Design Evolution: antenna/design-evolution.md
+        # - Manufacturing:
+        #   - Overview: antenna/manufacturing/overview.md
+        #   - 3D print Settings: antenna/manufacturing/print-settings.md
+        #   - Bill of Materials: antenna/manufacturing/bom.md
+        # - Assembly Procedure: antenna/field-deployment.md
+        # - Water Immersion Testing: antenna/testing.md
+        # - Gallery: antenna/gallery.md
+        # - '<span style="font-weight: 800; color: #ff0000;">Media</span>': antenna/media.md
+        # - Credits: antenna/credits.md
+        - Overview: antenna/nav_2/antenna-overview.md
+        - Manufacturing Details: antenna/nav_2/antenna-manufacturing-details.md
+        - Photo Gallery: antenna/nav_2/antenna-gallery.md
+        - '<span style="font-weight: 800; color: #ff0000;">Media</span>': antenna/nav_2/antenna-media.md
+
 
   - Supporting Hardware:
     - Cooling Air Ducts & Fans: hardware/ventilation/air-ducts.md
