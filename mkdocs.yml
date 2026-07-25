@@ -5,8 +5,8 @@ theme:
 
 docs_dir: docs
 
-# plugins:
-#   - glightbox
+plugins:
+  - glightbox
 
 markdown_extensions:
   - admonition
