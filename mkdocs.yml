@@ -5,6 +5,9 @@ theme:
 
 docs_dir: docs
 
+# plugins:
+#   - glightbox
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -19,17 +22,17 @@ nav:
   - RF-Shielded Enclosures:
       - RFSoC 4x2 Portable Field Enclosure: 
         - Overview: hardware/rfsoc-4x2/overview.md
-        - Project Summary: hardware/rfsoc-4x2/project-summary.md
-        - Design Requirements: hardware/rfsoc-4x2/design-requirements.md
-        - Mechanical Design: hardware/rfsoc-4x2/mechanical-design.md
-        - Associated Components: hardware/rfsoc-4x2/associated-components.md
-        - Manufacturing: hardware/rfsoc-4x2/manufacturing.md
-        - Design Evolution: hardware/rfsoc-4x2/design-evolution.md
-        - Engineering Notes: hardware/rfsoc-4x2/engineering-notes.md
-        - Future Work & Retrospective: hardware/rfsoc-4x2/future-work.md
+        # - Project Summary: hardware/rfsoc-4x2/project-summary.md
+        # - Design Requirements: hardware/rfsoc-4x2/design-requirements.md
+        # - Mechanical Design: hardware/rfsoc-4x2/mechanical-design.md
+        # - Associated Components: hardware/rfsoc-4x2/associated-components.md
+        # - Manufacturing: hardware/rfsoc-4x2/manufacturing.md
+        # - Design Evolution: hardware/rfsoc-4x2/design-evolution.md
+        # - Engineering Notes: hardware/rfsoc-4x2/engineering-notes.md
+        # - Future Work & Retrospective: hardware/rfsoc-4x2/future-work.md
         - Photo Gallery: hardware/rfsoc-4x2/photo-gallery.md
         - '<span style="font-weight: 800; color: #ff0000;">Media</span>': hardware/rfsoc-4x2/media.md
-        - Credits: hardware/rfsoc-4x2/credits.md
+        # - Credits: hardware/rfsoc-4x2/credits.md
 
       - ZCU216 Rack-Mounted Enclosure:
         - Overview: hardware/zcu216/overview.md

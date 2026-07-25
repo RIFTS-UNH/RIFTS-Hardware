@@ -1,35 +1,54 @@
 # Gallery
 
-## Complete Enclosure
+Click any photo below to open it full-size. Use the arrow keys or on-screen arrows to page through the rest of that section without returning to this page.
 
-![Rear Isometric View](../images/hero/rear_isometric_view.jpg)
+!!! note "Highly editable"
+    This page is a starting scaffold — add, remove, or re-group images freely as photos come in. Each image just needs a `{: gallery="group-name" }` tag; images sharing the same group name will page through together in the click-through viewer.
 
-Overall view of the completed RFSoC 4x2 enclosure.
+---
+
+## CAD Renders
+
+<!-- Add CAD render images here, e.g.:
+![Render description](../../images/rfsoc-4x2/render_01.jpg){: gallery="cad-renders" }
+-->
+
+*Renders pending upload.*
 
 ---
 
 ## Exterior Views
 
-![Front View](../../images/rfsoc-4x2/front_view.jpg)
+<div class="grid" markdown>
 
-Front panel showing external interfaces.
+![Front View](../../images/rfsoc-4x2/front_view.jpg){: gallery="exterior-views" }
 
----
+![Side View](../../images/rfsoc-4x2/side_view.jpg){: gallery="exterior-views" }
 
-![Side View](../../images/rfsoc-4x2/side_view.jpg)
+![Top View](../../images/rfsoc-4x2/top_view.jpg){: gallery="exterior-views" }
 
-Side panel illustrating cooling features and enclosure geometry.
+</div>
 
----
-
-![Top View](../../images/rfsoc-4x2/top_view.jpg)
-
-Top cover showing exhaust ventilation.
+*Front panel, side profile, and top cover of the completed enclosure.*
 
 ---
 
 ## Cooling System
 
-![Fan Side View](../../images/rfsoc-4x2/fan_side_view.jpg)
+<div class="grid" markdown>
 
-Side-mounted intake fan and overall airflow configuration.
+![Fan Side View](../../images/rfsoc-4x2/fan_side_view.jpg){: gallery="cooling-system" }
+
+</div>
+
+*Side-mounted intake fan and overall airflow configuration.*
+
+---
+
+## Field & Lab Photos
+
+<!-- Add real-world field/lab photos here, e.g.:
+![Description](../../images/rfsoc-4x2/field_photo_01.jpg){: gallery="field-lab" }
+-->
+
+*Photos pending upload.*
