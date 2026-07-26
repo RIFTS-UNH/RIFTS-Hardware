@@ -1,7 +1,5 @@
 # ZCU216 RF Shielded Enclosure
 
-![ZCU216 Enclosure](../../images/hero/front_with_board_v1.jpg)
-
 ## Project Summary
 
 | | |
@@ -139,6 +137,23 @@ These improvements resulted in a noticeably more robust enclosure while simultan
 Protocase PEM hardware follows standardized dimensions. When selecting threaded standoffs, designers should note that the published dimensions correspond to the hardware **before installation**.
 
 Because part of each PEM becomes embedded within the sheet metal during installation, the installed height will be shorter than the catalog dimension. Future enclosure designs should account for this reduction when selecting standoff lengths.
+
+Standardized PEM standoffs were selected to mount the two PCBs housed within the enclosure. Selecting the correct standoff required accounting for board thickness, required standoff height, and the mounting hole pattern of each board.
+
+| PCB | Standoff Part Number |
+|-----|----------------------|
+| *AMD Xilinx ZCU216* | *BSO-440-1871* |
+| *RF Interface Board* | *BSO-440-32Z1* |
+
+<div class="photo-stack" markdown>
+
+![Front View](../../images/zcu216/Standoff types.jpg){: class="stack-item" style="--tx:0px; --htx:0px; --rot:-4deg; --z:5;" data-gallery="exterior-views" }
+
+![Front View](../../images/zcu216/zcu216_standoffs.jpg){: class="stack-item" style="--tx:14px; --htx:60px; --rot:3deg; --z:4;" data-gallery="exterior-views" }
+
+</div>
+
+<!-- TODO: fill in standoff part numbers/names and add photos showing placement for each PCB -->
 
 ### Cooling Layout
 

@@ -1,7 +1,5 @@
 # RFSoC 4x2 Portable Field Enclosure
 
-![RFSoC 4x2 Enclosure](../../images/hero/rear_isometric_view.jpg)
-
 ## Project Summary
 
 | | |
@@ -131,15 +129,22 @@ The direct mounting of the exhaust fan to the RFSoC heatsink proved to be an eff
 
 ### PEM Hardware Selection
 
+Protocase PEM hardware follows standardized dimensions. When selecting threaded standoffs, designers should note that the published dimensions correspond to the hardware **before installation**.
+
+Because part of each PEM becomes embedded within the sheet metal during installation, the installed height will be shorter than the catalog dimension. Future enclosure designs should account for this reduction when selecting standoff lengths.
+
 Standardized PEM standoffs were selected to mount the two PCBs housed within the enclosure. Selecting the correct standoff required accounting for board thickness, required standoff height, and the mounting hole pattern of each board.
 
-| PCB | Standoff Part Number | Notes |
-|-----|----------------------|-------|
-| *TBD* | *TBD* | *TBD* |
-| *TBD* | *TBD* | *TBD* |
+| PCB | Standoff Part Number |
+|-----|----------------------|
+| *AMD Xilinx RFSoC 4x2* | *TSOS-256-500* |
+| *SparkFun ZED-F9T GNSS Timing Breakout (Qwiic)* | *BSO4-M3-12* |
 
-!!! note "Photos pending"
-    Reference photos illustrating standoff placement within the enclosure will be added here once uploaded.
+<div class="photo-stack" markdown>
+
+![Front View](../../images/rfsoc-4x2/STANDOFF INFORMATION.jpg){: class="stack-item" style="--tx:0px; --htx:0px; --rot:-4deg; --z:5;" data-gallery="exterior-views" }
+
+</div>
 
 <!-- TODO: fill in standoff part numbers/names and add photos showing placement for each PCB -->
 

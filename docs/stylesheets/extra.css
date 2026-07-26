@@ -49,3 +49,33 @@
   transform: scale(1.03);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
+
+/* Render showcase — for transparent-background PNG renders.
+   No rotation/border/box-shadow (which would frame the empty alpha space);
+   uses drop-shadow, which follows the object's silhouette instead of its bounding box. */
+.render-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1.5rem 0;
+}
+
+.render-showcase img {
+  max-width: 260px;
+  max-height: 260px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  cursor: zoom-in;
+  padding: 1rem;
+  background: radial-gradient(ellipse at center, rgba(127, 127, 127, 0.08) 0%, transparent 70%);
+  filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.35));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.render-showcase img:hover {
+  transform: translateY(-6px) scale(1.05);
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.4));
+}

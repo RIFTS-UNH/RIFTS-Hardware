@@ -1,6 +1,8 @@
 # RIFTS Hardware Design Archive
 
-Mechanical design, validation testing, and engineering documentation for the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
+![ZCU216 Enclosure](images/hero/zcu216_fully_populated.jpg)
+
+Mechanical design, validation testing, and engineering documentation for the **Radio Interferometer for Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
 This site serves as the engineering archive for the mechanical hardware developed for RIFTS, preserving the design process, fabrication history, testing procedures, and engineering decisions behind each hardware platform.
 
@@ -9,17 +11,39 @@ Included documentation covers:
 * Mechanical enclosure design
 * Additively manufactured components
 * CAD reference models
-* Manufacturing files
+* Manufacturing files, print settings, and bills of materials
 * Environmental validation testing
+* Photo galleries and assembly/installation videos
 * Engineering lessons learned
 
 The goal of this archive is to provide a clear, maintainable reference for future hardware development, reproduction, and continued project support.
 
 ---
 
+## What's In This Archive
+
+### Hardware Platforms
+- [RFSoC 4x2 Portable Field Enclosure](hardware/rfsoc-4x2/overview.md)
+- [ZCU216 Rack-Mount Enclosure](hardware/zcu216/overview.md)
+
+### Antenna Systems
+- [OmniLOG PRO 1030 N Antenna Mount](antenna/nav_2/antenna-overview.md)
+
+### Supporting Hardware
+- [Cooling Air Ducts & Fans](hardware/ventilation/air-ducts.md)
+- [TPU Corner Pads](hardware/tpu-pads/corner-pads-overview.md)
+- [RF Pathway Reference Model](hardware/rfsoc-4x2-rf-pathway.md)
+
+### Electronics Reference CAD Models
+- [Electronics Reference CAD Catalog](electronics-cads/electronics-reference-cad-models.md)
+
+---
+
 ## CAD and Manufacturing Files
 
 Native CAD models, manufacturing files, and associated documentation are included throughout this archive. Larger design files are managed separately using Git Large File Storage (Git LFS) where appropriate.
+
+Some third-party electronics CAD models are cataloged rather than directly downloadable, due to varying redistribution rights across manufacturers and collaborators — see the Electronics Reference CAD Models page for details on requesting those files.
 
 ---
 
@@ -40,7 +64,7 @@ The objective is to preserve the complete engineering process rather than only t
 
 ## Acknowledgements
 
-This hardware was developed as part of the **RIFTS** project at the University of New Hampshire.
+This hardware was developed as part of the RIFTS project at the University of New Hampshire.
 
 The author gratefully acknowledges the guidance, support, and contributions of the following individuals and organizations throughout the development of the hardware documented in this archive.
 
@@ -49,6 +73,8 @@ The author gratefully acknowledges the guidance, support, and contributions of t
 - **Stephen Horn, University of New Hampshire** — Senior member of the RIFTS research team whose technical expertise and assistance contributed to the development and integration of the project hardware.
 
 - **Dr. Frank Lind, MIT Haystack Observatory** — RF Interface Board reference design and technical support for the RIFTS hardware platform.
+
+Manufacturer and hardware vendor credits (AMD Xilinx, SparkFun Electronics, Aaronia, Protocase, and others) are listed on each individual hardware page.
 
 ---
 
