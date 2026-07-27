@@ -28,24 +28,24 @@ Both duct types share this same two-part mounting approach; the difference betwe
 ### Installation Video — Type A
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="../media/air-ducts/RIFTS_Duct_Fan_Installation_TypeA.mp4" type="video/mp4">
+  <source src="/hardware/ventilation/media/Type_A/Type_A_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 *SolidWorks assembly walkthrough showing the Type A fan + duct assembly mounting to the enclosure wall.*
 
-<!-- TODO: replace with actual video filename once exported/uploaded to docs/media/air-ducts/ -->
+<!-- TODO: replace with actual video filename once exported/uploaded to docs/hardware/ventilation/media/Type_A/ -->
 
 ### Installation Video — Type B
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="../media/air-ducts/RIFTS_Duct_Fan_Installation_TypeB.mp4" type="video/mp4">
+  <source src="/hardware/ventilation/media/Type_B/Type_B_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 *SolidWorks assembly walkthrough showing the Type B fan + duct assembly mounting to the enclosure wall.*
 
-<!-- TODO: replace with actual video filename once exported/uploaded to docs/media/air-ducts/ -->
+<!-- TODO: replace with actual video filename once exported/uploaded to docs/hardware/ventilation/media/Type_B/ -->
 
 ---
 
