@@ -2,15 +2,6 @@
 
 Click any photo below to open it full-size. Use the arrow keys or on-screen arrows to page through the rest of that section without returning to this page.
 
-!!! note "Highly editable"
-    This page is a starting scaffold — add, remove, or re-group images freely as photos come in. Each image needs:
-
-    - `class="stack-item"` — required for the stacked layout
-    - `style="--tx:Npx; --htx:Mpx; --rot:Xdeg; --z:Y;"` — collapsed offset, hover (fanned-out) offset, rotation, and stacking order
-    - `data-gallery="group-name"` — images sharing a group name page through together in the click-through viewer
-
-    To add a 5th+ photo to a stack, just increase `--tx`/`--htx`/decrease `--z` following the same pattern as the ones below.
-
 ---
 
 ## CAD & Engineering
