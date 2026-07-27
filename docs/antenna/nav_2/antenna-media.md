@@ -22,6 +22,24 @@ The Bambu Studio project file contains all three components along with the valid
 
 ---
 
+## HD Renders
+
+<div class="render-showcase" markdown>
+
+![Antenna Mount Render — Front](../../antenna/Antenna_Mount_Render.png){: data-gallery="antenna-renders" }
+
+![Antenna Mount Render — Exploded](../../antenna/Antenna_Render_with_LagScrews.png){: data-gallery="antenna-renders" }
+
+![Antenna Mount Render — Cross-Section](../../antenna/Antenna_Exploded_Render.png){: data-gallery="antenna-renders" }
+
+</div>
+
+*HD renders — click to view full size.*
+
+<!-- TODO: confirm final render filenames once uploaded to docs/images/antenna-mounts/ -->
+
+---
+
 ### Notes
 
 - The **.SLDPRT** files are native SolidWorks part files and require SolidWorks to open.

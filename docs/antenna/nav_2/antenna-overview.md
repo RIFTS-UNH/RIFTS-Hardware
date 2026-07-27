@@ -1,7 +1,5 @@
 # OmniLOG PRO 1030 N Antenna Mount System
 
-![Antenna Mount CAD Assembly](../images/antenna-mounts/assembly_deployed_in_field.jpg)
-
 ## Project Summary
 
 | | |
@@ -142,6 +140,19 @@ For detailed printer parameters, orientation rationale, structural settings, and
 ---
 
 ## Assembly Procedure
+
+### Installation Video
+
+<video controls style="width:100%; max-width:640px; border-radius:8px;">
+  <source src="../../antenna/Antenna_Mount_Installation_Tutorial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+*SolidWorks assembly walkthrough covering the full sequence below — O-ring installation through final housing attachment. Refer to the written steps for reference while assembling.*
+
+<!-- TODO: confirm final video filename/path once uploaded -->
+
+### Written Steps
 
 The recommended assembly sequence is:
 
