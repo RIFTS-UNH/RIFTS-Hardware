@@ -20,6 +20,8 @@ The collection includes both manufacturer-provided models and models created or 
 | SparkFun ZED-F9T GNSS Timing Breakout (Qwiic) | SparkFun Electronics | Converted from SparkFun's published Eagle files | No |
 | SparkFun ESP32 WROOM Thing Plus (Micro B) | SparkFun Electronics | Converted from SparkFun's published Eagle files | No |
 | Ethernet Cat5e Bulkhead Connector | Third-party | Sourced from GrabCAD | No |
+| Type A Duct Fan | Sanyo Denki | Sourced from DigiKey | No |
+| Type B Duct Fan | Sanyo Denki | Sourced from DigiKey | No |
 
 !!! note "SparkFun models are board outline only"
     Both SparkFun models (ZED-F9T and ESP32 Thing Plus) represent the bare PCB geometry only — mounting holes, board outline, and connector locations — without populated components. Full component-level geometry could not be reliably converted from SparkFun's Eagle files. This was sufficient for the mechanical integration work these models were created for, but worth knowing in advance if you're requesting one for a different purpose.

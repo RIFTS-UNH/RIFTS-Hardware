@@ -22,13 +22,13 @@
 
 <div class="render-scroll" markdown>
 
-![RFSoC 4x2 Enclosure Render 1](../../images/rfsoc-4x2/renders/RFSoC_4x2_Render_01.jpg){: data-gallery="rfsoc-4x2-renders" }
+![RFSoC 4x2 Enclosure Render 1](media/4x2_Cover_On_Isometric_Render.png){: data-gallery="rfsoc-4x2-renders" }
 
-![RFSoC 4x2 Enclosure Render 2](../../images/rfsoc-4x2/renders/RFSoC_4x2_Render_02.jpg){: data-gallery="rfsoc-4x2-renders" }
+<!-- ![RFSoC 4x2 Enclosure Render 2](media/4x2_Hero_Render.png){: data-gallery="rfsoc-4x2-renders" } -->
 
-![RFSoC 4x2 Enclosure Render 3](../../images/rfsoc-4x2/renders/RFSoC_4x2_Render_03.jpg){: data-gallery="rfsoc-4x2-renders" }
+![RFSoC 4x2 Enclosure Render 3](media/4x2_Isometric_Render.png){: data-gallery="rfsoc-4x2-renders" }
 
-![RFSoC 4x2 Enclosure Render 4](../../images/rfsoc-4x2/renders/RFSoC_4x2_Render_04.jpg){: data-gallery="rfsoc-4x2-renders" }
+![RFSoC 4x2 Enclosure Render 4](media/4x2_Top_Render.png){: data-gallery="rfsoc-4x2-renders" }
 
 </div>
 
@@ -158,14 +158,14 @@ Standardized PEM standoffs were selected to mount the two PCBs housed within the
 
 The full Protocase standoff catalog is available at [protocase.com/products/components/standoff](https://www.protocase.com/products/components/standoff/) for reference when selecting standoffs for future revisions.
 
-![Standoff Placement Diagram](../../images/rfsoc-4x2/standoff_placement_diagram.jpg)
+![Standoff Placement Diagram](media/STANDOFF INFORMATION.jpg)
 
 *Diagram illustrating standoff placement and type for each PCB within the enclosure.*
 
 #### Board Installation Video
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="../../media/rfsoc-4x2/RIFTS_RFSoC4x2_Board_Installation_Tutorial.mp4" type="video/mp4">
+  <source src="/hardware/rfsoc-4x2/media/4x2_board_installation_tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -205,12 +205,9 @@ Although the enclosure successfully met its design objectives, several opportuni
 
 Several accessories were developed specifically for the RFSoC 4x2 enclosure and are documented elsewhere on this site. Together, these components complete the portable field enclosure assembly:
 
-- [RF Pathway](../accessories/rfsoc-4x2-rf-pathway.md)
-- [Cooling Air Ducts](../accessories/cooling-air-ducts.md) *(includes the fan CAD reference)*
-- [TPU Corner Pads](../accessories/rfsoc-4x2-corner-pads.md)
-
-!!! note
-    Link paths above are placeholders based on the site's current folder conventions — verify against your final file locations once the accessories section is finalized.
+- [RF Pathway](../rfsoc-4x2-rf-pathway.md)
+- [Cooling Air Ducts](../ventilation/air-ducts.md) *(includes the fan CAD reference)*
+- [TPU Corner Pads](../tpu-pads/corner-pads-overview.md)
 
 ---
 
@@ -218,11 +215,8 @@ Several accessories were developed specifically for the RFSoC 4x2 enclosure and 
 
 | Revision | Date | Description |
 |----------|------|--------------|
-| Rev A | *TBD* | Initial enclosure manufactured and delivered by Protocase. |
-| Rev A (replacement) | *TBD* | Replacement enclosure produced to correct PEM installation compliance issue. |
-
-!!! note
-    Add actual dates once confirmed — left as placeholders since none were provided in the source material.
+| Rev A | 06/12/2026 | Initial enclosure manufactured and delivered by Protocase. |
+| Rev A (replacement) | 07/13/2026 | Replacement enclosure produced to correct PEM installation compliance issue. |
 
 ---
 

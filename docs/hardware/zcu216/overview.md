@@ -23,13 +23,13 @@
 
 <div class="render-scroll" markdown>
 
-![ZCU216 Enclosure Render 1](../../images/zcu216/renders/ZCU216_Render_01.jpg){: data-gallery="zcu216-renders" }
+![ZCU216 Enclosure Render 1](media/ZCU216_CoverOn_Isometric_Render.png){: data-gallery="zcu216-renders" }
 
-![ZCU216 Enclosure Render 2](../../images/zcu216/renders/ZCU216_Render_02.jpg){: data-gallery="zcu216-renders" }
+![ZCU216 Enclosure Render 2](media/ZCU216_Isometric_Render.png){: data-gallery="zcu216-renders" }
 
-![ZCU216 Enclosure Render 3](../../images/zcu216/renders/ZCU216_Render_03.jpg){: data-gallery="zcu216-renders" }
+![ZCU216 Enclosure Render 3](media/ZCU216_Top_Render.png){: data-gallery="zcu216-renders" }
 
-![ZCU216 Enclosure Render 4](../../images/zcu216/renders/ZCU216_Render_04.jpg){: data-gallery="zcu216-renders" }
+<!-- ![ZCU216 Enclosure Render 4](../../images/zcu216/renders/ZCU216_Render_04.jpg){: data-gallery="zcu216-renders" } -->
 
 </div>
 
@@ -163,7 +163,7 @@ Standardized PEM standoffs were selected to mount the two PCBs housed within the
 
 The full Protocase standoff catalog is available at [protocase.com/products/components/standoff](https://www.protocase.com/products/components/standoff/) for reference when selecting standoffs for future revisions.
 
-![Standoff Types](../../images/zcu216/standoff_types.jpg)
+![Standoff Types](media/Standoff types.jpg)
 
 *Standoff types used for the ZCU216 and RF Interface Board mounting.*
 
@@ -174,7 +174,7 @@ The full Protocase standoff catalog is available at [protocase.com/products/comp
 #### Board Installation Video
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="../../media/zcu216/RIFTS_ZCU216_Board_Installation_Tutorial.mp4" type="video/mp4">
+  <source src="/hardware/zcu216/media/ZCU216_Board_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -229,9 +229,6 @@ Although Revision B represents a mature enclosure design, several opportunities 
 - MIT Haystack RF Interface Board (see Electronics Reference CAD Models)
 - [RFSoC 4x2 Enclosure](../rfsoc-4x2/overview.md)
 - [Cooling Air Ducts](../ventilation/air-ducts.md)
-
-!!! note
-    Link paths above are placeholders based on the site's current folder conventions — verify against your final file locations.
 
 ---
 

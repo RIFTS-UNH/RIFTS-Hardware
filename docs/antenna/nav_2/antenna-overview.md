@@ -23,11 +23,11 @@
 
 <div class="render-scroll" markdown>
 
-![Antenna Mount Render — Front](../images/antenna-mounts/renders/Antenna_Mount_Render_01.jpg){: data-gallery="antenna-renders" }
+![Antenna Mount Render — Front](../Antenna_Exploded_Render.png){: data-gallery="antenna-renders" }
 
-![Antenna Mount Render — Exploded](../images/antenna-mounts/renders/Antenna_Mount_Render_02.jpg){: data-gallery="antenna-renders" }
+![Antenna Mount Render — Exploded](../Antenna_Mount_Render.png){: data-gallery="antenna-renders" }
 
-![Antenna Mount Render — Cross-Section](../images/antenna-mounts/renders/Antenna_Mount_Render_03.jpg){: data-gallery="antenna-renders" }
+![Antenna Mount Render — Cross-Section](../Antenna_Render_with_LagScrews.png){: data-gallery="antenna-renders" }
 
 </div>
 

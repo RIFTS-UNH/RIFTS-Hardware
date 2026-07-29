@@ -142,7 +142,7 @@ Downloadable CAD and manufacturing files for all four unique corner assemblies (
 ## Installed Assembly
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="/hardware/tpu-pads/rfsoc-4x2-corner-pads/RIFTS_CornerPads_All_Installed_Rotation.mp4" type="video/mp4">
+  <source src="/hardware/tpu-pads/rfsoc-4x2-corner-pads/Corner_Pads_Rotate_View.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

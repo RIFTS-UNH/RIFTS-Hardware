@@ -46,6 +46,7 @@ Proper insert orientation matters — installing the insert upside down may redu
 
 - **Cable Gland:** QILIPSU M16L Waterproof Cable Gland — [amazon.com](https://www.amazon.com/QILIPSU-Thread-Waterproof-Through-Connector/dp/B0F99JGRYY)
 - **Heat-Set Insert Press:** Vertical Heat Insert Press Attachment for Soldering Iron — [amazon.com](https://www.amazon.com/Vertical-Machine-Heat-Insertion-Threaded-Components/dp/B0DHKPHKJZ)
+- **Threaded Inserts:** Brass Heat-Set M5 Threaded Inserts - [amazon.com](https://www.amazon.com/Pofsnnx-80PCS-Threaded-Inserts-Assortment/dp/B0FJXP9LBM?pd_rd_w=8TOz4&content-id=amzn1.sym.71d49514-09b4-487a-9091-20bb08d7a0a0&pf_rd_p=71d49514-09b4-487a-9091-20bb08d7a0a0&pf_rd_r=SX7GS5SXSC7G92A9J1BV&pd_rd_wg=46Ziz&pd_rd_r=0b63d713-b7c8-4bca-a260-4f1a84e8b059&pd_rd_i=B0FJXP9LBM&ref_=pd_bap_d_grid_rp_0_9_i&th=1)
 
 ---
 
