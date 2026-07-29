@@ -19,6 +19,24 @@
 
 ---
 
+## HD Renders
+
+<div class="render-scroll" markdown>
+
+![ZCU216 Enclosure Render 1](../../images/zcu216/renders/ZCU216_Render_01.jpg){: data-gallery="zcu216-renders" }
+
+![ZCU216 Enclosure Render 2](../../images/zcu216/renders/ZCU216_Render_02.jpg){: data-gallery="zcu216-renders" }
+
+![ZCU216 Enclosure Render 3](../../images/zcu216/renders/ZCU216_Render_03.jpg){: data-gallery="zcu216-renders" }
+
+![ZCU216 Enclosure Render 4](../../images/zcu216/renders/ZCU216_Render_04.jpg){: data-gallery="zcu216-renders" }
+
+</div>
+
+<!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->
+
+---
+
 ## Overview
 
 The ZCU216 RF Shielded Enclosure was the first major mechanical hardware platform developed for the University of New Hampshire's Radio Interferometer for Thunderstorm Studies (RIFTS) project.
@@ -134,26 +152,35 @@ These improvements resulted in a noticeably more robust enclosure while simultan
 
 ### PEM Hardware Selection
 
-Protocase PEM hardware follows standardized dimensions. When selecting threaded standoffs, designers should note that the published dimensions correspond to the hardware **before installation**.
+Protocase PEM hardware follows standardized dimensions. When selecting threaded standoffs, designers should note that the published dimensions correspond to the hardware **before installation** — part of each PEM becomes embedded within the sheet metal during installation, so the installed height will be shorter than the catalog dimension. Future enclosure designs should account for this reduction when selecting standoff lengths.
 
-Because part of each PEM becomes embedded within the sheet metal during installation, the installed height will be shorter than the catalog dimension. Future enclosure designs should account for this reduction when selecting standoff lengths.
-
-Standardized PEM standoffs were selected to mount the two PCBs housed within the enclosure. Selecting the correct standoff required accounting for board thickness, required standoff height, and the mounting hole pattern of each board.
+Standardized PEM standoffs were selected to mount the two PCBs housed within the enclosure — the AMD Xilinx ZCU216 development board and the MIT Haystack RF Interface Board — accounting for board thickness, required standoff height, and each board's mounting hole pattern:
 
 | PCB | Standoff Part Number |
 |-----|----------------------|
-| *AMD Xilinx ZCU216* | *BSO-440-1871* |
-| *RF Interface Board* | *BSO-440-32Z1* |
+| AMD Xilinx ZCU216 | BSO-440-1871 |
+| RF Interface Board | BSO-440-32Z1 |
 
-<div class="photo-stack" markdown>
+The full Protocase standoff catalog is available at [protocase.com/products/components/standoff](https://www.protocase.com/products/components/standoff/) for reference when selecting standoffs for future revisions.
 
-![Front View](../../images/zcu216/Standoff types.jpg){: class="stack-item" style="--tx:0px; --htx:0px; --rot:-4deg; --z:5;" data-gallery="exterior-views" }
+![Standoff Types](../../images/zcu216/standoff_types.jpg)
 
-![Front View](../../images/zcu216/zcu216_standoffs.jpg){: class="stack-item" style="--tx:14px; --htx:60px; --rot:3deg; --z:4;" data-gallery="exterior-views" }
+*Standoff types used for the ZCU216 and RF Interface Board mounting.*
 
-</div>
+![Standoff Placement](../../images/zcu216/zcu216_standoffs.jpg)
 
-<!-- TODO: fill in standoff part numbers/names and add photos showing placement for each PCB -->
+*Standoff placement within the ZCU216 enclosure.*
+
+#### Board Installation Video
+
+<video controls style="width:100%; max-width:640px; border-radius:8px;">
+  <source src="../../media/zcu216/RIFTS_ZCU216_Board_Installation_Tutorial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+*SolidWorks walkthrough showing installation of the AMD Xilinx ZCU216 development board and the MIT Haystack RF Interface Board onto their respective standoffs within the enclosure.*
+
+<!-- TODO: confirm final video filename/path once uploaded -->
 
 ### Cooling Layout
 

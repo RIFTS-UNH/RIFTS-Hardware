@@ -18,6 +18,24 @@
 
 ---
 
+## HD Renders
+
+<div class="render-scroll" markdown>
+
+![RFSoC 4x2 Enclosure Render 1](../../images/rfsoc-4x2/renders/RFSoC_4x2_Render_01.jpg){: data-gallery="rfsoc-4x2-renders" }
+
+![RFSoC 4x2 Enclosure Render 2](../../images/rfsoc-4x2/renders/RFSoC_4x2_Render_02.jpg){: data-gallery="rfsoc-4x2-renders" }
+
+![RFSoC 4x2 Enclosure Render 3](../../images/rfsoc-4x2/renders/RFSoC_4x2_Render_03.jpg){: data-gallery="rfsoc-4x2-renders" }
+
+![RFSoC 4x2 Enclosure Render 4](../../images/rfsoc-4x2/renders/RFSoC_4x2_Render_04.jpg){: data-gallery="rfsoc-4x2-renders" }
+
+</div>
+
+<!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->
+
+---
+
 ## Overview
 
 The RFSoC 4x2 Portable Field Enclosure was developed as the second major enclosure platform for the University of New Hampshire's Radio Interferometer for Thunderstorm Studies (RIFTS) project.
@@ -129,24 +147,31 @@ The direct mounting of the exhaust fan to the RFSoC heatsink proved to be an eff
 
 ### PEM Hardware Selection
 
-Protocase PEM hardware follows standardized dimensions. When selecting threaded standoffs, designers should note that the published dimensions correspond to the hardware **before installation**.
+Protocase PEM hardware follows standardized dimensions. When selecting threaded standoffs, designers should note that the published dimensions correspond to the hardware **before installation** — part of each PEM becomes embedded within the sheet metal during installation, so the installed height will be shorter than the catalog dimension. Future enclosure designs should account for this reduction when selecting standoff lengths.
 
-Because part of each PEM becomes embedded within the sheet metal during installation, the installed height will be shorter than the catalog dimension. Future enclosure designs should account for this reduction when selecting standoff lengths.
-
-Standardized PEM standoffs were selected to mount the two PCBs housed within the enclosure. Selecting the correct standoff required accounting for board thickness, required standoff height, and the mounting hole pattern of each board.
+Standardized PEM standoffs were selected to mount the two PCBs housed within the enclosure — the RFSoC 4x2 development board and the SparkFun GNSS timing breakout board — accounting for board thickness, required standoff height, and each board's mounting hole pattern:
 
 | PCB | Standoff Part Number |
 |-----|----------------------|
-| *AMD Xilinx RFSoC 4x2* | *TSOS-256-500* |
-| *SparkFun ZED-F9T GNSS Timing Breakout (Qwiic)* | *BSO4-M3-12* |
+| AMD Xilinx RFSoC 4x2 | TSOS-256-500 |
+| SparkFun ZED-F9T GNSS Timing Breakout (Qwiic) | BSO4-M3-12 |
 
-<div class="photo-stack" markdown>
+The full Protocase standoff catalog is available at [protocase.com/products/components/standoff](https://www.protocase.com/products/components/standoff/) for reference when selecting standoffs for future revisions.
 
-![Front View](../../images/rfsoc-4x2/STANDOFF INFORMATION.jpg){: class="stack-item" style="--tx:0px; --htx:0px; --rot:-4deg; --z:5;" data-gallery="exterior-views" }
+![Standoff Placement Diagram](../../images/rfsoc-4x2/standoff_placement_diagram.jpg)
 
-</div>
+*Diagram illustrating standoff placement and type for each PCB within the enclosure.*
 
-<!-- TODO: fill in standoff part numbers/names and add photos showing placement for each PCB -->
+#### Board Installation Video
+
+<video controls style="width:100%; max-width:640px; border-radius:8px;">
+  <source src="../../media/rfsoc-4x2/RIFTS_RFSoC4x2_Board_Installation_Tutorial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+*SolidWorks walkthrough showing installation of the RFSoC 4x2 development board and the GNSS timing breakout board onto their respective standoffs within the enclosure.*
+
+<!-- TODO: confirm final video filename/path once uploaded -->
 
 ---
 

@@ -19,6 +19,22 @@
 
 ---
 
+## HD Renders
+
+<div class="render-scroll" markdown>
+
+![Antenna Mount Render — Front](../images/antenna-mounts/renders/Antenna_Mount_Render_01.jpg){: data-gallery="antenna-renders" }
+
+![Antenna Mount Render — Exploded](../images/antenna-mounts/renders/Antenna_Mount_Render_02.jpg){: data-gallery="antenna-renders" }
+
+![Antenna Mount Render — Cross-Section](../images/antenna-mounts/renders/Antenna_Mount_Render_03.jpg){: data-gallery="antenna-renders" }
+
+</div>
+
+<!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->
+
+---
+
 ## Overview
 
 The OmniLOG PRO 1030 N Antenna Mount System was developed as a rugged, field-deployable mounting solution for the RIFTS lightning observation platform.

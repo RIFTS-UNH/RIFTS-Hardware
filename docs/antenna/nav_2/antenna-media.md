@@ -22,21 +22,11 @@ The Bambu Studio project file contains all three components along with the valid
 
 ---
 
-## HD Renders
+## Full SolidWorks Assembly (All Parts)
 
-<div class="render-showcase" markdown>
+[:fontawesome-solid-file-zipper: Download Full Assembly Package (.zip — .SLDASM + every referenced part)](../../media/antenna-mount/RIFTS_AntennaMount_Full_Assembly_Package.zip){: .md-button :download}
 
-![Antenna Mount Render — Front](../../antenna/Antenna_Mount_Render.png){: data-gallery="antenna-renders" }
-
-![Antenna Mount Render — Exploded](../../antenna/Antenna_Render_with_LagScrews.png){: data-gallery="antenna-renders" }
-
-![Antenna Mount Render — Cross-Section](../../antenna/Antenna_Exploded_Render.png){: data-gallery="antenna-renders" }
-
-</div>
-
-*HD renders — click to view full size.*
-
-<!-- TODO: confirm final render filenames once uploaded to docs/images/antenna-mounts/ -->
+This bundle contains the complete SolidWorks assembly file along with **every part it references** — the three printed components, all fasteners, washers, nuts, the heat-set inserts, and any other hardware CAD used in the assembly. SolidWorks assemblies fail to open correctly if any referenced part is missing, so this package is provided as a single self-contained download rather than requiring you to individually track down each fastener from the Bill of Materials.
 
 ---
 
@@ -46,3 +36,4 @@ The Bambu Studio project file contains all three components along with the valid
 - The **.STEP** files are neutral-format exports compatible with most CAD software, recommended if you don't have access to SolidWorks.
 - The **.STL** files are print-ready mesh geometry for slicing in any FDM slicer.
 - The **.3mf** file requires Bambu Studio to open.
+- The **Full Assembly Package** (.zip) requires SolidWorks to open and is the recommended download if you want the complete assembly to open without missing-reference errors.

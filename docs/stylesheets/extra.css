@@ -79,3 +79,41 @@
   transform: translateY(-6px) scale(1.05);
   filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.4));
 }
+
+/* Horizontal-scroll render strip — compact, side-scrolling showcase.
+   For sections where visuals should feel like a supporting accent, not the main content. */
+.render-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.75rem 0.5rem 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.render-scroll img {
+  flex: 0 0 auto;
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  scroll-snap-align: start;
+  cursor: zoom-in;
+  border-radius: 8px;
+  background: radial-gradient(ellipse at center, rgba(127, 127, 127, 0.08) 0%, transparent 70%);
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.3));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.render-scroll img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 12px 14px rgba(0, 0, 0, 0.35));
+}
+
+.render-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.render-scroll::-webkit-scrollbar-thumb {
+  background: var(--md-default-fg-color--lighter, #ccc);
+  border-radius: 3px;
+}
