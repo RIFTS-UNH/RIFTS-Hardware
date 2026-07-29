@@ -19,22 +19,6 @@
 
 ---
 
-## HD Renders
-
-<div class="render-scroll" markdown>
-
-![Antenna Mount Render — Front](../Antenna_Exploded_Render.png){: data-gallery="antenna-renders" }
-
-![Antenna Mount Render — Exploded](../Antenna_Mount_Render.png){: data-gallery="antenna-renders" }
-
-![Antenna Mount Render — Cross-Section](../Antenna_Render_with_LagScrews.png){: data-gallery="antenna-renders" }
-
-</div>
-
-<!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->
-
----
-
 ## Overview
 
 The OmniLOG PRO 1030 N Antenna Mount System was developed as a rugged, field-deployable mounting solution for the RIFTS lightning observation platform.
@@ -113,13 +97,15 @@ The enclosure was designed for outdoor operation and underwent water immersion t
 
 The interface between the top lid and cylindrical housing uses:
 
-- One 50 mm × 3.5 mm (ID × CS) nitrile rubber O-ring
+- One 50 mm × 3.5 mm (ID × CS) O-ring
 - Molykote 111 silicone grease, applied lightly to sealing surfaces
-- Six stainless steel M5 fasteners
+- Stainless steel M5 hardware
 
 The O-ring provides the primary environmental barrier between the lid and cylindrical housing. Only a light coating of silicone grease is required — its purpose is to improve seating and sealing performance, not to fill the O-ring groove, so excess grease should be avoided.
 
-Early prototypes evaluated custom TPU-printed O-rings. While functional, printed TPU seals did not provide the desired sealing performance, leading to the adoption of a commercially manufactured nitrile rubber O-ring for validation testing. The nitrile O-ring was selected for the prototype and testing phases due to its availability and reliable performance; for long-term outdoor deployment, however, a silicone O-ring of the same size (50 mm ID × 3.5 mm CS) is recommended for its improved low-temperature flexibility.
+Early prototypes evaluated custom TPU-printed O-rings. While functional, printed TPU seals did not provide the desired sealing performance, leading to the adoption of a commercially manufactured nitrile rubber O-ring for validation testing. The nitrile O-ring was selected for the prototype and testing phases due to its availability and reliable performance.
+
+For long-term outdoor deployment, silicone remains the preferred O-ring material for this application, given its superior low-temperature flexibility. However, a silicone O-ring matching the required dimensions (50 mm ID × 3.5 mm CS) could not be readily sourced. A **fluoroelastomer (FKM)** O-ring of the same size, rated to −15 °F, was identified as a practical substitute — it should perform adequately for outdoor use through New England winters, though silicone would still be the superior choice if a matching size becomes available. See the **Manufacturing Details** page for the specific sourced part and commercial link.
 
 ### Cable Entry Seal
 
@@ -160,7 +146,7 @@ For detailed printer parameters, orientation rationale, structural settings, and
 ### Installation Video
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="/hardware/ventilation/media/Type_A/Antenna_Mount_Installation_Tutorial.mp4" type="video/mp4">
+  <source src="/antenna/Antenna_Mount_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

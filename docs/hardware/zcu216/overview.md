@@ -29,6 +29,8 @@
 
 ![ZCU216 Enclosure Render 3](media/ZCU216_Top_Render.png){: data-gallery="zcu216-renders" }
 
+![ZCU216 Enclosure Render 3](media/zcu216_front_render.png){: data-gallery="zcu216-renders" }
+
 <!-- ![ZCU216 Enclosure Render 4](../../images/zcu216/renders/ZCU216_Render_04.jpg){: data-gallery="zcu216-renders" } -->
 
 </div>

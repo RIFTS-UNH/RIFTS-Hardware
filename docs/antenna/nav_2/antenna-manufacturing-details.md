@@ -46,7 +46,24 @@ Proper insert orientation matters — installing the insert upside down may redu
 
 - **Cable Gland:** QILIPSU M16L Waterproof Cable Gland — [amazon.com](https://www.amazon.com/QILIPSU-Thread-Waterproof-Through-Connector/dp/B0F99JGRYY)
 - **Heat-Set Insert Press:** Vertical Heat Insert Press Attachment for Soldering Iron — [amazon.com](https://www.amazon.com/Vertical-Machine-Heat-Insertion-Threaded-Components/dp/B0DHKPHKJZ)
-- **Threaded Inserts:** Brass Heat-Set M5 Threaded Inserts - [amazon.com](https://www.amazon.com/Pofsnnx-80PCS-Threaded-Inserts-Assortment/dp/B0FJXP9LBM?pd_rd_w=8TOz4&content-id=amzn1.sym.71d49514-09b4-487a-9091-20bb08d7a0a0&pf_rd_p=71d49514-09b4-487a-9091-20bb08d7a0a0&pf_rd_r=SX7GS5SXSC7G92A9J1BV&pd_rd_wg=46Ziz&pd_rd_r=0b63d713-b7c8-4bca-a260-4f1a84e8b059&pd_rd_i=B0FJXP9LBM&ref_=pd_bap_d_grid_rp_0_9_i&th=1)
+- **Threaded Inserts:** Brass Heat-Set M5 Threaded Inserts — [amazon.com](https://www.amazon.com/Pofsnnx-80PCS-Threaded-Inserts-Assortment/dp/B0FJXP9LBM?pd_rd_w=8TOz4&content-id=amzn1.sym.71d49514-09b4-487a-9091-20bb08d7a0a0&pf_rd_p=71d49514-09b4-487a-9091-20bb08d7a0a0&pf_rd_r=SX7GS5SXSC7G92A9J1BV&pd_rd_wg=46Ziz&pd_rd_r=0b63d713-b7c8-4bca-a260-4f1a84e8b059&pd_rd_i=B0FJXP9LBM&ref_=pd_bap_d_grid_rp_0_9_i&th=1)
+- **Silicone Grease:** Molykote 111 — [amazon.com](https://www.amazon.com/Molykote-Lubricant-Components-Resistant-Volatility/dp/B0DYDFLXGZ?pd_rd_w=eK2Wk&content-id=amzn1.sym.71d49514-09b4-487a-9091-20bb08d7a0a0&pf_rd_p=71d49514-09b4-487a-9091-20bb08d7a0a0&pf_rd_r=ZP4GKMAGMKQDXHPCRN77&pd_rd_wg=prJKo&pd_rd_r=f0185fec-a678-409a-9468-1f9d0002e513&pd_rd_i=B0DYDFLXGZ&psc=1&ref_=pd_bap_d_grid_rp_0_8_i)
+- **O-Ring (Fluoroelastomer):** 75 Durometer Fluoroelastomer O-Ring, 50 mm ID × 3.5 mm CS, rated to −15 °F — [callapg.com](https://callapg.com/fluoroelastomer-75-durometer-o-ring-50-mm-id-x-35-mm-cs-v35x50)
+- **Lid/Housing Fasteners:** Stainless Steel Flanged Button Head Hex Drive Screws — [mcmaster.com](https://www.mcmaster.com/products/screws/rounded-head-screws-2~/stainless-steel-flanged-button-head-hex-drive-screws~~/)
+- **Lid/Housing Nuts:** Flange Nuts, Nylon Insert Type — [mcmaster.com](https://www.mcmaster.com/products/nuts/flange-nuts-4~/flange-nuts-4~locking-type~nylon-insert/)
+- **Ground Stakes (Standard):** Stainless Steel Hex Head Wood Lag Screws — [mcmaster.com](https://www.mcmaster.com/products/lag-screws/stainless-steel-hex-head-wood-screws~~/)
+- **Washers, Standard Stakes:** General Purpose Corrosion-Resistant Washers — [mcmaster.com](https://www.mcmaster.com/products/washers/general-purpose-washers-3~~/washers-2~performance~corrosion-resistant-2/)
+- **Ground Stakes (Upgrade):** 1/2" Rebar Ground Stakes — [amazon.com](https://www.amazon.com/s?k=rebar+ground+stakes+1%2F2&crid=3230UUM0480DP&sprefix=rebar+ground+stakes+1%2F2%2Caps%2C155&ref=nb_sb_noss_1)
+
+!!! note "O-ring material: fluoroelastomer, not silicone"
+    Silicone is generally the preferred O-ring material for cold-weather flexibility, but a silicone O-ring matching the required dimensions (50 mm ID × 3.5 mm CS) could not be readily sourced. The fluoroelastomer O-ring linked above is rated to −15 °F, which should provide reasonably solid cold-weather performance for New England winters, and was selected as the practical substitute given sourcing constraints.
+
+!!! warning "Renders show different hardware than what's specified above"
+    The CAD renders throughout this site were built before final hardware selection was finalized, and show slightly different fasteners than what's actually recommended for a build. If you're sourcing hardware, follow the specifications on this page rather than what's visually depicted in the renders:
+
+    - **Lid/housing screws:** Renders show standard rounded head screws. The **flanged** button head screws linked above are the actual recommendation — the flange helps prevent deformation (creep) of the 3D-printed top lid over time, which a standard round head does not address.
+    - **Lid/housing nuts:** Renders show standard hex nuts used together with separate washers. The **flange nuts** linked above eliminate the need for a separate washer, since the flange itself serves that function. They're also a **nylon-insert** locking type, which provides a stronger hold to keep the top lid and housing sealed — but the nylon insert wears down with repeated use and should only be reused a handful of times before replacement.
+    - **Ground stakes:** Lag screws with washers, shown in the renders, are the **standard/stock** ground stake option — they're cheaper, work reliably, and are what's depicted throughout. Rebar ground stakes are an **optional upgrade** for a more permanent or robust field installation, not a required change.
 
 ---
 

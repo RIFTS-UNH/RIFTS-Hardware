@@ -73,8 +73,8 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 
 **Short (ZCU216):**
 
-[:fontawesome-solid-cubes: Download Full Assembly — Short (.SLDASM)](/hardware/ventilation/media/Type_A/Type_A_Assembly_Short.SLDASM){: .md-button :download}
-[:fontawesome-solid-layer-group: Download Print Project — Short (.3mf)](/hardware/ventilation/media/Type_A/RIFTS_Duct_FanMount_AirflowDuct_TypeA_Short_PrintAssembly.3mf){: .md-button :download}
+[:fontawesome-solid-cubes: Download Full Assembly — Short (.SLDASM)](/hardware/ventilation/media/Type_A_Assembly_Short.SLDASM){: .md-button :download}
+[:fontawesome-solid-layer-group: Download Print Project — Short (.3mf)](/hardware/ventilation/media/Type_A/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeA_PrintAssembly.3mf){: .md-button :download}
 
 *Designed for: [Fan model TBD](#) — CAD available from the manufacturer.*
 
@@ -115,8 +115,8 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 
 **Short (ZCU216):**
 
-[:fontawesome-solid-cubes: Download Full Assembly — Short (.SLDASM)](/hardware/ventilation/media/Type_B/Type_B_Assembly_Short.SLDASM){: .md-button :download}
-[:fontawesome-solid-layer-group: Download Print Project — Short (.3mf)](/hardware/ventilation/media/Type_B/RIFTS_Duct_FanMount_AirflowDuct_TypeB_Short_PrintAssembly.3mf){: .md-button :download}
+[:fontawesome-solid-cubes: Download Full Assembly — Short (.SLDASM)](/hardware/ventilation/media/Type_B_Assembly_Short.SLDASM){: .md-button :download}
+[:fontawesome-solid-layer-group: Download Print Project — Short (.3mf)](/hardware/ventilation/media/Type_B/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeB_PrintAssembly.3mf){: .md-button :download}
 
 *Designed for: [Fan model TBD](#) — CAD available from the manufacturer.*
 

@@ -49,7 +49,7 @@ The RFIB Support is printed as two separate pieces and glued together after prin
 ### Assembly Tutorial
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="../../media/zcu216/RIFTS_RFIB_Support_Assembly_Tutorial.mp4" type="video/mp4">
+  <source src="/hardware/RFIB-support/media/RFIB_Support_Assembly.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -78,11 +78,11 @@ The RFIB Support is printed as two separate pieces and glued together after prin
 
 <div class="render-scroll" markdown>
 
-![RFIB Support Render 1](../../images/zcu216/renders/RFIB_Support_Render_01.jpg){: data-gallery="rfib-support-renders" }
+![RFIB Support Render 1](../../zcu216/media/RF_Interface_Board_Support_Render.png){: data-gallery="rfib-support-renders" }
 
-![RFIB Support Render 2](../../images/zcu216/renders/RFIB_Support_Render_02.jpg){: data-gallery="rfib-support-renders" }
+![RFIB Support Render 2](../../zcu216/media/RFIB_Support_Underside.png){: data-gallery="rfib-support-renders" }
 
-![RFIB Support Render 3](../../images/zcu216/renders/RFIB_Support_Render_03.jpg){: data-gallery="rfib-support-renders" }
+![RFIB Support Render 3](../../zcu216/media/RFIB_Support_Exploded.png){: data-gallery="rfib-support-renders" }
 
 </div>
 
@@ -112,9 +112,6 @@ The RFIB Support was manufactured using fused deposition modeling (FDM) additive
 ## Related Hardware
 
 - [ZCU216 RF Shielded Enclosure](../zcu216/overview.md) — the RFIB Support shares mounting standoffs with the RF Interface Board and is installed as part of the same board installation procedure shown on that page.
-
-!!! note
-    Link path above is a placeholder based on the site's current folder conventions — verify against your final file location.
 
 ---
 

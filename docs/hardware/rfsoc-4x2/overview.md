@@ -30,6 +30,8 @@
 
 ![RFSoC 4x2 Enclosure Render 4](media/4x2_Top_Render.png){: data-gallery="rfsoc-4x2-renders" }
 
+![RFSoC 4x2 Enclosure Render 4](media/4x2_front_render.png){: data-gallery="rfsoc-4x2-renders" }
+
 </div>
 
 <!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->

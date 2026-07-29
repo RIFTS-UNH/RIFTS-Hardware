@@ -113,9 +113,17 @@ Downloadable CAD and manufacturing files for all four unique corner assemblies (
 
 <div class="render-scroll" markdown>
 
-![Corner Pad Render](rfsoc-4x2-corner-pads/Images/corner_pad_render_01.jpg){: data-gallery="corner-pad-renders" }
+![Corner Pad 1 Render](media/Corner_Pad_1.png){: data-gallery="corner-pad-renders" }
+
+![Corner Pad 2 Render](media/Corner_Pad_2.png){: data-gallery="corner-pad-renders" }
+
+![Corner Pad 3 Render](media/Corner_Pad_3.png){: data-gallery="corner-pad-renders" }
+
+![Corner Pad 4 Render](media/Corner_Pad_4.png){: data-gallery="corner-pad-renders" }
 
 </div>
+
+*Renders are shown in order from Corner Pad 1 to Corner Pad 4, left to right.*
 
 <!-- Add more renders by appending additional image lines above, same pattern. -->
 
@@ -149,6 +157,14 @@ Downloadable CAD and manufacturing files for all four unique corner assemblies (
 *SolidWorks rotating view showing all four corner pads installed on the RFSoC 4x2 enclosure — cross-reference with the numbering diagram above to identify which pad goes where.*
 
 <!-- TODO: confirm final video filename once uploaded -->
+
+---
+
+## Commercial Sources
+
+- **Heat-Set Insert Press:** Vertical Heat Insert Press Attachment for Soldering Iron — [amazon.com](https://www.amazon.com/Vertical-Machine-Heat-Insertion-Threaded-Components/dp/B0DHKPHKJZ)
+- **M3 Brass Heat-Set Inserts:** *(link pending)*
+- **M3 Countersunk Machine Screws:** *(link pending)*
 
 ---
 
