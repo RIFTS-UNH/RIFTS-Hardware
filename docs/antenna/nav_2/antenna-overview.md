@@ -19,6 +19,24 @@
 
 ---
 
+## HD Renders
+
+<div class="render-scroll" markdown>
+
+![Antenna Mount Render 1](../Antenna_Mount_Render.png){: data-gallery="antenna-renders" }
+
+![Antenna Mount Render 2](../Antenna_Mount_Render_Back.png){: data-gallery="antenna-renders" }
+
+![Antenna Mount Render 3](../Antenna_Render_with_LagScrews.png){: data-gallery="antenna-renders" }
+
+![Antenna Mount Render 4](../Antenna_Exploded_Render.png){: data-gallery="antenna-renders" }
+
+</div>
+
+<!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->
+
+---
+
 ## Overview
 
 The OmniLOG PRO 1030 N Antenna Mount System was developed as a rugged, field-deployable mounting solution for the RIFTS lightning observation platform.
@@ -153,6 +171,9 @@ For detailed printer parameters, orientation rationale, structural settings, and
 *SolidWorks assembly walkthrough covering the full sequence below — O-ring installation through final housing attachment. Refer to the written steps for reference while assembling.*
 
 <!-- TODO: confirm final video filename/path once uploaded -->
+
+!!! warning "Cable routing not shown in video"
+    Step 4 (Route Antenna Cable) was omitted from the video — the cable routing looked visually awkward in the SolidWorks animation, so it was left out. **Don't skip this step during actual assembly**: the cable must be routed through the cable gland, into the cylindrical housing, and up to the base of the antenna stem before sealing the top lid to the housing. See the written steps below for the full sequence.
 
 ### Written Steps
 

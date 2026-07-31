@@ -56,25 +56,22 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 
 ## Type A Duct
 
-### Component Files
+### Downloads
 
-| Component | SolidWorks (.SLDPRT) | Neutral (.STEP) | Print-Ready (.STL) |
-|---|:---:|:---:|:---:|
-| Fan Mount | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_A/Type_A_Fan_Mount.SLDPRT){: title="Download Type A Fan Mount .SLDPRT" } | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_A/Type_A_Fan_Mount.STEP){: title="Download Type A Fan Mount .STEP" } | [:fontawesome-solid-cube:](/hardware/ventilation/media/Type_A/Type_A_Fan_Mount.STL){: title="Download Type A Fan Mount .STL" } |
-| Airflow Duct (Standard — RFSoC 4x2) | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_A/Type_A_Air_Duct.SLDPRT){: title="Download Type A Airflow Duct .SLDPRT" } | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_A/Type_A_Air_Duct.STEP){: title="Download Type A Airflow Duct .STEP" } | [:fontawesome-solid-cube:](/hardware/ventilation/media/Type_A/Type_A_Air_Duct.STL){: title="Download Type A Airflow Duct .STL" } |
-| Airflow Duct (Short — ZCU216) | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_A/Type_A_Air_Duct_Short.SLDPRT){: title="Download Type A Airflow Duct Short .SLDPRT" } | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_A/Type_A_Air_Duct_Short.STEP){: title="Download Type A Airflow Duct Short .STEP" } | [:fontawesome-solid-cube:](/hardware/ventilation/media/Type_A/Type_A_Air_Duct_Short.STL){: title="Download Type A Airflow Duct Short .STL" } |
+<p class="button-group-label">CAD Bundles</p>
 
-### Full Assembly & Print Project
+<div class="button-group" markdown>
+[:fontawesome-solid-file-zipper: SolidWorks Bundle (.zip)](/hardware/ventilation/media/Type_A/RIFTS_Duct_TypeA_SLDPRT_Bundle.zip){: .md-button :download title="Fan Mount, Airflow Duct Standard & Short, Full Assemblies" }
+[:fontawesome-solid-file-zipper: Neutral Bundle (.zip)](/hardware/ventilation/media/Type_A/RIFTS_Duct_TypeA_STEP_Bundle.zip){: .md-button :download title="STEP format, all parts" }
+[:fontawesome-solid-file-zipper: STL Bundle (.zip)](/hardware/ventilation/media/Type_A/RIFTS_Duct_TypeA_STL_Bundle.zip){: .md-button :download title="Print-ready STL, all parts" }
+</div>
 
-**Standard (RFSoC 4x2):**
+<p class="button-group-label">Print Projects</p>
 
-[:fontawesome-solid-cubes: Download Full Assembly (.SLDASM)](/hardware/ventilation/media/Type_A_Assembly.SLDASM){: .md-button :download}
-[:fontawesome-solid-layer-group: Download Print Project (.3mf)](/hardware/ventilation/media/Type_A/RIFTS_Duct_FanMount_AirflowDuct_TypeA_PrintAssembly.3mf){: .md-button :download}
-
-**Short (ZCU216):**
-
-[:fontawesome-solid-cubes: Download Full Assembly — Short (.SLDASM)](/hardware/ventilation/media/Type_A_Assembly_Short.SLDASM){: .md-button :download}
-[:fontawesome-solid-layer-group: Download Print Project — Short (.3mf)](/hardware/ventilation/media/Type_A/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeA_PrintAssembly.3mf){: .md-button :download}
+<div class="button-group" markdown>
+[:fontawesome-solid-layer-group: Standard (.3mf)](/hardware/ventilation/media/Type_A/RIFTS_Duct_FanMount_AirflowDuct_TypeA_PrintAssembly.3mf){: .md-button :download title="RFSoC 4x2 length" }
+[:fontawesome-solid-layer-group: Short (.3mf)](/hardware/ventilation/media/Type_A/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeA_PrintAssembly.3mf){: .md-button :download title="ZCU216 length" }
+</div>
 
 *Designed for: [Fan model TBD](#) — CAD available from the manufacturer.*
 
@@ -98,25 +95,22 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 
 ## Type B Duct
 
-### Component Files
+### Downloads
 
-| Component | SolidWorks (.SLDPRT) | Neutral (.STEP) | Print-Ready (.STL) |
-|---|:---:|:---:|:---:|
-| Fan Mount | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_B/Type_B_Fan_Mount.SLDPRT){: title="Download Type B Fan Mount .SLDPRT" } | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_B/Type_B_Fan_Mount.STEP){: title="Download Type B Fan Mount .STEP" } | [:fontawesome-solid-cube:](/hardware/ventilation/media/Type_B/Type_B_Fan_Mount.STL){: title="Download Type B Fan Mount .STL" } |
-| Airflow Duct (Standard — RFSoC 4x2) | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_B/Type_B_Air_Duct.SLDPRT){: title="Download Type B Airflow Duct .SLDPRT" } | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_B/Type_B_Air_Duct.STEP){: title="Download Type B Airflow Duct .STEP" } | [:fontawesome-solid-cube:](/hardware/ventilation/media/Type_B/Type_B_Air_Duct.STL){: title="Download Type B Airflow Duct .STL" } |
-| Airflow Duct (Short — ZCU216) | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_B/Type_B_Air_Duct_Short.SLDPRT){: title="Download Type B Airflow Duct Short .SLDPRT" } | [:fontawesome-solid-file-import:](/hardware/ventilation/media/Type_B/Type_B_Air_Duct_Short.STEP){: title="Download Type B Airflow Duct Short .STEP" } | [:fontawesome-solid-cube:](/hardware/ventilation/media/Type_B/Type_B_Air_Duct_Short.STL){: title="Download Type B Airflow Duct Short .STL" } |
+<p class="button-group-label">CAD Bundles</p>
 
-### Full Assembly & Print Project
+<div class="button-group" markdown>
+[:fontawesome-solid-file-zipper: SolidWorks Bundle (.zip)](/hardware/ventilation/media/Type_B/RIFTS_Duct_TypeB_SLDPRT_Bundle.zip){: .md-button :download title="Fan Mount, Airflow Duct Standard & Short, Full Assemblies" }
+[:fontawesome-solid-file-zipper: Neutral Bundle (.zip)](/hardware/ventilation/media/Type_B/RIFTS_Duct_TypeB_STEP_Bundle.zip){: .md-button :download title="STEP format, all parts" }
+[:fontawesome-solid-file-zipper: STL Bundle (.zip)](/hardware/ventilation/media/Type_B/RIFTS_Duct_TypeB_STL_Bundle.zip){: .md-button :download title="Print-ready STL, all parts" }
+</div>
 
-**Standard (RFSoC 4x2):**
+<p class="button-group-label">Print Projects</p>
 
-[:fontawesome-solid-cubes: Download Full Assembly (.SLDASM)](/hardware/ventilation/media/Type_B_Assembly.SLDASM){: .md-button :download}
-[:fontawesome-solid-layer-group: Download Print Project (.3mf)](/hardware/ventilation/media/Type_B/RIFTS_Duct_FanMount_AirflowDuct_TypeB_PrintAssembly.3mf){: .md-button :download}
-
-**Short (ZCU216):**
-
-[:fontawesome-solid-cubes: Download Full Assembly — Short (.SLDASM)](/hardware/ventilation/media/Type_B_Assembly_Short.SLDASM){: .md-button :download}
-[:fontawesome-solid-layer-group: Download Print Project — Short (.3mf)](/hardware/ventilation/media/Type_B/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeB_PrintAssembly.3mf){: .md-button :download}
+<div class="button-group" markdown>
+[:fontawesome-solid-layer-group: Standard (.3mf)](/hardware/ventilation/media/Type_B/RIFTS_Duct_FanMount_AirflowDuct_TypeB_PrintAssembly.3mf){: .md-button :download title="RFSoC 4x2 length" }
+[:fontawesome-solid-layer-group: Short (.3mf)](/hardware/ventilation/media/Type_B/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeB_PrintAssembly.3mf){: .md-button :download title="ZCU216 length" }
+</div>
 
 *Designed for: [Fan model TBD](#) — CAD available from the manufacturer.*
 
@@ -140,9 +134,8 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 
 ### Notes
 
-- The **.SLDASM** files are the full assembled duct models, combining both components, and require SolidWorks to open.
-- The **.SLDPRT** files are native SolidWorks part files and require SolidWorks to open.
-- The **.STEP** files are neutral-format exports compatible with most CAD software, recommended if you don't have access to SolidWorks.
-- The **.STL** files are print-ready mesh geometry for slicing in any FDM slicer.
-- The **.3mf** files are Bambu Studio print projects containing the validated print settings and slicer profile for that duct type and variant.
-- The **Short** variants use the same Fan Mount as the Standard variants — only the Airflow Duct differs in length to fit the shallower ZCU216 enclosure.
+- The **SolidWorks Bundle** (.zip) contains all `.SLDPRT` files for that duct type (Fan Mount, Standard Airflow Duct, Short Airflow Duct) along with both `.SLDASM` full assembly files (Standard and Short). Requires SolidWorks to open.
+- The **Neutral Bundle** (.zip) contains the same set of parts in `.STEP` format, compatible with most CAD software — recommended if you don't have access to SolidWorks.
+- The **STL Bundle** (.zip) contains print-ready mesh geometry for all parts, for slicing in any FDM slicer.
+- The **Print Project** (.3mf) files are Bambu Studio print projects containing the validated print settings and slicer profile — one for the Standard variant, one for the Short variant, since they're different length ducts.
+- The **Short** variant uses the same Fan Mount as the Standard variant — only the Airflow Duct differs in length to fit the shallower ZCU216 enclosure.

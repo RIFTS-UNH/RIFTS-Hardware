@@ -119,6 +119,9 @@ The enclosure was fabricated by Protocase using CNC sheet metal manufacturing te
 
 Standardized PEM hardware supplied by Protocase was incorporated throughout the design for board mounting and cover attachment. Although the enclosure was custom designed, the use of standardized manufacturing hardware simplified fabrication and ensured compatibility with Protocase manufacturing processes.
 
+!!! note "Protocase Contact"
+    UNH customer representative: [jhurd@protocase.com](mailto:jhurd@protocase.com)
+
 ---
 
 ## Design Evolution

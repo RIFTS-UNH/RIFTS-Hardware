@@ -15,9 +15,8 @@ The assembly consists of three primary FDM-printed components, commercial sealin
 | Ground Mounting Mast | 1 | FDM printed component | Provides ground stake interface and structural support |
 | Nitrile Rubber O-ring | 1 | 50 mm × 3.5 mm (ID × CS) | Commercially sourced sealing element |
 | M16L Waterproof Cable Gland | 1 | Waterproof cable entry fitting | Provides sealed cable routing through enclosure |
-| M5 Stainless Steel Machine Screws | 6 | Minimum 25 mm length | Secures top lid to cylindrical housing |
-| M5 Stainless Steel Washers | 6 | Flat washers | Used with lid fasteners |
-| M5 Stainless Steel Nuts | 6 | Threaded nuts | Used with lid fasteners |
+| M5 Stainless Steel Flanged Button Head Screws | 6 | Minimum 25 mm length | Secures top lid to cylindrical housing; flange helps prevent long-term creep of the printed lid |
+| M5 Stainless Steel Flange Nuts (Nylon Insert) | 6 | Locking type | Used with lid fasteners; flange eliminates the need for a separate washer |
 | M5 Brass Heat-set Inserts | 2 | Minimum 6 mm length recommended | Installed in mounting mast for housing attachment |
 | Ground Stakes | 2 | Approximately 16 inch length recommended | Used for field deployment anchoring |
 | Ground Stake Washers | 2 | Load distribution washers | Reduces localized compressive loading |
@@ -27,7 +26,7 @@ The assembly consists of three primary FDM-printed components, commercial sealin
 
 ### Fastener Notes
 
-**Lid Fasteners** — The top lid is secured to the cylindrical housing using six M5 stainless steel machine screws, washers, and nuts. A minimum screw length of 25 mm is recommended to provide sufficient engagement through the lid and housing interface. Fasteners should be tightened in a star pattern to apply even compression across the O-ring seal.
+**Lid Fasteners** — The top lid is secured to the cylindrical housing using six M5 stainless steel flanged button head screws and six M5 flange nuts (nylon insert type). The flange on each screw helps prevent long-term deformation (creep) of the 3D-printed top lid, and the flange on each nut eliminates the need for a separate washer. A minimum screw length of 25 mm is recommended to provide sufficient engagement through the lid and housing interface. Fasteners should be tightened in a star pattern to apply even compression across the O-ring seal. Note that the nylon insert in each flange nut wears with repeated use and should only be reused a handful of times before replacement.
 
 **Mast Inserts** — The cylindrical housing attaches to the ground mounting mast through two M5 brass heat-set inserts installed into the printed mast component. A minimum insert length of approximately 6 mm is recommended; insert length has not been found to be a critical design parameter provided sufficient engagement is achieved.
 
@@ -58,12 +57,8 @@ Proper insert orientation matters — installing the insert upside down may redu
 !!! note "O-ring material: fluoroelastomer, not silicone"
     Silicone is generally the preferred O-ring material for cold-weather flexibility, but a silicone O-ring matching the required dimensions (50 mm ID × 3.5 mm CS) could not be readily sourced. The fluoroelastomer O-ring linked above is rated to −15 °F, which should provide reasonably solid cold-weather performance for New England winters, and was selected as the practical substitute given sourcing constraints.
 
-!!! warning "Renders show different hardware than what's specified above"
-    The CAD renders throughout this site were built before final hardware selection was finalized, and show slightly different fasteners than what's actually recommended for a build. If you're sourcing hardware, follow the specifications on this page rather than what's visually depicted in the renders:
-
-    - **Lid/housing screws:** Renders show standard rounded head screws. The **flanged** button head screws linked above are the actual recommendation — the flange helps prevent deformation (creep) of the 3D-printed top lid over time, which a standard round head does not address.
-    - **Lid/housing nuts:** Renders show standard hex nuts used together with separate washers. The **flange nuts** linked above eliminate the need for a separate washer, since the flange itself serves that function. They're also a **nylon-insert** locking type, which provides a stronger hold to keep the top lid and housing sealed — but the nylon insert wears down with repeated use and should only be reused a handful of times before replacement.
-    - **Ground stakes:** Lag screws with washers, shown in the renders, are the **standard/stock** ground stake option — they're cheaper, work reliably, and are what's depicted throughout. Rebar ground stakes are an **optional upgrade** for a more permanent or robust field installation, not a required change.
+!!! note "Ground stakes: standard vs. upgrade"
+    Lag screws with washers are the **standard/stock** ground stake option — cheaper, and proven to work reliably. Rebar ground stakes are an **optional upgrade** for a more permanent or robust field installation, not a required change.
 
 ---
 
