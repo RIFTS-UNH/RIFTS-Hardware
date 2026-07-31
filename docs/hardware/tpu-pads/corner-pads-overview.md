@@ -16,6 +16,26 @@
 
 ---
 
+## HD Renders
+
+<div class="render-scroll" markdown>
+
+![Corner Pad 1 Render](media/Corner_Pad_1.png){: data-gallery="corner-pad-renders" }
+
+![Corner Pad 2 Render](media/Corner_Pad_2.png){: data-gallery="corner-pad-renders" }
+
+![Corner Pad 3 Render](media/Corner_Pad_3.png){: data-gallery="corner-pad-renders" }
+
+![Corner Pad 4 Render](media/Corner_Pad_4.png){: data-gallery="corner-pad-renders" }
+
+</div>
+
+*Renders are shown in order from Corner Pad 1 to Corner Pad 4, left to right.*
+
+<!-- Add more renders by appending additional image lines above, same pattern. -->
+
+---
+
 ## Overview
 
 The RFSoC 4x2 TPU Corner Pad System was developed specifically for the portable RIFTS RFSoC 4x2 enclosure to improve durability during transportation, handling, and field deployment.
@@ -90,6 +110,23 @@ The completed corner pad assemblies provide full enclosure corner protection, re
 !!! note
     Since all four pads assemble and install identically, both procedures shown apply equally regardless of which pad you're working with.
 
+### Corner Numbering Diagram
+
+![Corner Numbering Diagram](/hardware/tpu-pads/rfsoc-4x2-corner-pads/Corner_Pad_Number_Guide.JPG)
+
+*SolidWorks drawing labeling enclosure corners 1–4, showing which corner each pad is designed for.*
+
+### Installed Assembly
+
+<video controls style="width:100%; max-width:640px; border-radius:8px;">
+  <source src="/hardware/tpu-pads/rfsoc-4x2-corner-pads/Corner_Pads_Rotate_View.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+*SolidWorks rotating view showing all four corner pads installed on the RFSoC 4x2 enclosure — cross-reference with the numbering diagram above to identify which pad goes where.*
+
+<!-- TODO: confirm final video filename once uploaded -->
+
 ---
 
 ## Downloads
@@ -109,24 +146,6 @@ Downloadable CAD and manufacturing files for all four unique corner assemblies (
 [:fontawesome-solid-layer-group: Download All Pads (.3mf — 4 print plates, one per pad)](rfsoc-4x2-corner-pads/RIFTS_CornerPads_All_Print_Bundle.3mf){: .md-button :download}
 [:fontawesome-solid-file-zipper: Download Rigid Insert Only (.zip — SLDPRT, STEP, .3mf)](rfsoc-4x2-corner-pads/RIFTS_CornerPad_Rigid_Insert_Bundle.zip){: .md-button :download}
 
-### HD Renders
-
-<div class="render-scroll" markdown>
-
-![Corner Pad 1 Render](media/Corner_Pad_1.png){: data-gallery="corner-pad-renders" }
-
-![Corner Pad 2 Render](media/Corner_Pad_2.png){: data-gallery="corner-pad-renders" }
-
-![Corner Pad 3 Render](media/Corner_Pad_3.png){: data-gallery="corner-pad-renders" }
-
-![Corner Pad 4 Render](media/Corner_Pad_4.png){: data-gallery="corner-pad-renders" }
-
-</div>
-
-*Renders are shown in order from Corner Pad 1 to Corner Pad 4, left to right.*
-
-<!-- Add more renders by appending additional image lines above, same pattern. -->
-
 ### Notes
 
 - Each **SolidWorks Bundle** (.zip) contains four `.SLDPRT` files (Sections A–D) plus the rigid insert `.SLDPRT`, and requires SolidWorks to open.
@@ -136,27 +155,6 @@ Downloadable CAD and manufacturing files for all four unique corner assemblies (
 - The **Full Assembly** (.SLDASM) is the complete assembled corner pad model (all four sections combined) and requires SolidWorks to open.
 - **Download All Pads** is a single `.3mf` file containing four separate print plates, one per corner pad — load it in Bambu Studio and cycle through the plates to print the full set without opening four separate files.
 - **Rigid Insert Only** provides just the shared insert component on its own, in every format, without needing to open a full pad bundle to get it.
-
----
-
-## Corner Numbering Diagram
-
-![Corner Numbering Diagram](/hardware/tpu-pads/rfsoc-4x2-corner-pads/Corner_Pad_Number_Guide.JPG)
-
-*SolidWorks drawing labeling enclosure corners 1–4, showing which corner each pad is designed for.*
-
----
-
-## Installed Assembly
-
-<video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="/hardware/tpu-pads/rfsoc-4x2-corner-pads/Corner_Pads_Rotate_View.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-*SolidWorks rotating view showing all four corner pads installed on the RFSoC 4x2 enclosure — cross-reference with the numbering diagram above to identify which pad goes where.*
-
-<!-- TODO: confirm final video filename once uploaded -->
 
 ---
 

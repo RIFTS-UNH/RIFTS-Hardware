@@ -4,19 +4,47 @@ Downloadable CAD model of the completed ZCU216 RF Shielded Enclosure, Revision B
 
 ---
 
-## Available Formats
+## Downloads
 
-[:fontawesome-solid-file-import: Download CAD Model (.STEP)](../../media/zcu216/RIFTS_ZCU216_Enclosure.STEP){: .md-button :download}
-[:fontawesome-solid-file-import: Download CAD Model (.pda)](../../media/zcu216/RIFTS_ZCU216_Enclosure.pda){: .md-button :download}
+<div class="download-cards" markdown>
+
+<div class="download-card" style="--accent:#4A90D9;" markdown>
+<span class="card-icon">:fontawesome-solid-file-import:</span>
+
+**STEP**
+
+Neutral-format export compatible with SolidWorks, Fusion 360, OnShape, and most other CAD software.
+
+[Download](../../media/zcu216/RIFTS_ZCU216_Enclosure.STEP){: .md-button :download}
+
+</div>
+
+<div class="download-card" style="--accent:#E8833A;" markdown>
+<span class="card-icon">:fontawesome-solid-file-import:</span>
+
+**Protocase Designer**
+
+The exact fabrication package (.pda) submitted for manufacturing — opens in Protocase's free design software.
+
+[Download](../../media/zcu216/RIFTS_ZCU216_Enclosure.pda){: .md-button :download}
+
+</div>
+
+<div class="download-card" style="--accent:#8E5CD9;" markdown>
+<span class="card-icon">:fontawesome-solid-file-image:</span>
+
+**RIFTS Logo**
+
+Vector artwork (.svg) for panel engraving or printing during manufacturing.
+
+[Download](../../media/vectorized RIFTS logo.svg){: .md-button :download}
+
+</div>
+
+</div>
 
 !!! tip "Ordering from Protocase"
     To help avoid some of Protocase's setup fees, it's recommended to provide both the **.STEP** and **.pda** files for your enclosure CAD, along with an **.SVG** file for any logos or engraved artwork, when submitting for manufacturing.
-
----
-
-## RIFTS Logo (SVG)
-
-[:fontawesome-solid-file-image: Download RIFTS Logo (.SVG)](../../media/vectorized RIFTS logo.svg){: .md-button :download}
 
 ---
 

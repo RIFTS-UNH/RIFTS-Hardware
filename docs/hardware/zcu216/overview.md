@@ -23,11 +23,11 @@
 
 <div class="render-scroll" markdown>
 
-![ZCU216 Enclosure Render 1](media/ZCU216_CoverOn_Isometric_Render.png){: data-gallery="zcu216-renders" }
+![ZCU216 Enclosure Render 1](media/ZCU216_CoverOn_Isometric_Render (2).png){: data-gallery="zcu216-renders" }
 
-![ZCU216 Enclosure Render 2](media/ZCU216_Isometric_Render.png){: data-gallery="zcu216-renders" }
+![ZCU216 Enclosure Render 2](media/ZCU216_Isometric_Render (2).png){: data-gallery="zcu216-renders" }
 
-![ZCU216 Enclosure Render 3](media/ZCU216_Top_Render.png){: data-gallery="zcu216-renders" }
+![ZCU216 Enclosure Render 3](media/ZCU216_Top_Render (3).png){: data-gallery="zcu216-renders" }
 
 ![ZCU216 Enclosure Render 3](media/zcu216_front_render.png){: data-gallery="zcu216-renders" }
 
@@ -36,6 +36,9 @@
 </div>
 
 <!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->
+
+!!! note
+    Where visible, these renders depict the enclosure fitted with the **Type B (Short) air duct system** — chosen for these renders simply because it looks cooler than the Type A variant. Both duct types are functionally interchangeable; see [Cooling Air Ducts](../ventilation/air-ducts.md) for details on both.
 
 ---
 
