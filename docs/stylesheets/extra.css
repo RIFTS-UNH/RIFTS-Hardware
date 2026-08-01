@@ -225,3 +225,118 @@
   border-color: var(--accent, var(--md-primary-fg-color));
   color: #fff;
 }
+
+/* Pad cards — compact variant for per-item cards containing multiple format icons
+   (used where items are organized by part/pad rather than by file format) */
+.pad-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.pad-card {
+  position: relative;
+  padding: 1.5rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: linear-gradient(165deg, var(--md-code-bg-color) 0%, transparent 120%);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.pad-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent, var(--md-primary-fg-color));
+  opacity: 0.35;
+  transition: opacity 0.25s ease;
+}
+
+.pad-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  border-color: var(--accent, var(--md-primary-fg-color));
+}
+
+.pad-card:hover::before {
+  opacity: 1;
+}
+
+.pad-card strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.pad-card-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.pad-card-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  transition: all 0.2s ease;
+}
+
+.pad-card-icons a:hover {
+  background: var(--accent, var(--md-primary-fg-color));
+  border-color: var(--accent, var(--md-primary-fg-color));
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.pad-card-icons .icon-wrap {
+  display: inline-flex;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.pad-card-icons .icon-wrap svg,
+.pad-card-icons .icon-wrap img {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* Multi-action cards — same card shell, but a row of icon-only downloads instead of one button */
+.download-card .card-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.download-card .card-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid var(--accent, var(--md-primary-fg-color));
+  color: var(--accent, var(--md-primary-fg-color));
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.download-card .card-actions a:hover {
+  background: var(--accent, var(--md-primary-fg-color));
+  color: #fff;
+  transform: translateY(-3px);
+}

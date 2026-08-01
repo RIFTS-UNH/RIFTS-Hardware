@@ -4,21 +4,73 @@ Downloadable CAD and manufacturing files for the OmniLOG PRO 1030 N Antenna Moun
 
 ---
 
-## Downloads
+## Component Bundles
 
-<p class="button-group-label">Component Bundles</p>
+<div class="download-cards" markdown>
 
-<div class="button-group" markdown>
-[:fontawesome-solid-file-zipper: SolidWorks Bundle (.zip)](../../media/antenna-mount/RIFTS_AntennaMount_SLDPRT_Bundle.zip){: .md-button :download title="Top Lid, Cylindrical Housing, Ground Mounting Mast — SLDPRT" }
-[:fontawesome-solid-file-zipper: Neutral Bundle (.zip)](../../media/antenna-mount/RIFTS_AntennaMount_STEP_Bundle.zip){: .md-button :download title="Top Lid, Cylindrical Housing, Ground Mounting Mast — STEP" }
-[:fontawesome-solid-file-zipper: STL Bundle (.zip)](../../media/antenna-mount/RIFTS_AntennaMount_STL_Bundle.zip){: .md-button :download title="Top Lid, Cylindrical Housing, Ground Mounting Mast — STL" }
+<div class="download-card" style="--accent:#4A90D9;" markdown>
+<span class="card-icon">:fontawesome-solid-file-zipper:</span>
+
+**SolidWorks Bundle**
+
+Top Lid, Cylindrical Housing, and Ground Mounting Mast as native `.SLDPRT` files.
+
+[Download](../../media/antenna-mount/RIFTS_AntennaMount_SLDPRT_Bundle.zip){: .md-button :download}
+
 </div>
 
-<p class="button-group-label">Full Assembly</p>
+<div class="download-card" style="--accent:#5CB85C;" markdown>
+<span class="card-icon">:fontawesome-solid-file-zipper:</span>
 
-<div class="button-group" markdown>
-[:fontawesome-solid-layer-group: Print Project (.3mf)](../../media/antenna-mount/3mf/OmniLOG_Antenna_Mount_Print_Assembly.3mf){: .md-button :download title="Bambu Studio project — all 3 components with validated print settings" }
-[:fontawesome-solid-file-zipper: Full SolidWorks Assembly (.zip)](../../media/antenna-mount/RIFTS_AntennaMount_Full_Assembly_Package.zip){: .md-button :download title="SLDASM + every referenced part, including fasteners and heat-set inserts" }
+**Neutral Bundle**
+
+The same three components in `.STEP` format — works with most CAD software.
+
+[Download](../../media/antenna-mount/RIFTS_AntennaMount_STEP_Bundle.zip){: .md-button :download}
+
+</div>
+
+<div class="download-card" style="--accent:#E8833A;" markdown>
+<span class="card-icon">:fontawesome-solid-file-zipper:</span>
+
+**STL Bundle**
+
+Print-ready mesh geometry for all three components.
+
+[Download](../../media/antenna-mount/RIFTS_AntennaMount_STL_Bundle.zip){: .md-button :download}
+
+</div>
+
+</div>
+
+---
+
+## Full Assembly
+
+<div class="download-cards" markdown>
+
+<div class="download-card" style="--accent:#8E5CD9;" markdown>
+<span class="card-icon">:fontawesome-solid-layer-group:</span>
+
+**Print Project**
+
+Bambu Studio project (.3mf) with all 3 components and validated print settings.
+
+[Download](../../media/antenna-mount/3mf/OmniLOG_Antenna_Mount_Print_Assembly.3mf){: .md-button :download}
+
+</div>
+
+<div class="download-card" style="--accent:#D9534F;" markdown>
+<span class="card-icon">:fontawesome-solid-file-zipper:</span>
+
+**Full SolidWorks Assembly**
+
+`.SLDASM` plus every referenced part — fasteners, washers, nuts, heat-set inserts included.
+
+[Download](../../media/antenna-mount/RIFTS_AntennaMount_Full_Assembly_Package.zip){: .md-button :download}
+
+</div>
+
 </div>
 
 ---

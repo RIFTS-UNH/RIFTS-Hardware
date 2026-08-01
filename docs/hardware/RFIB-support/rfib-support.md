@@ -16,6 +16,26 @@
 
 ---
 
+## HD Renders
+
+<div class="render-scroll" markdown>
+
+![RFIB Support Render 1](../../zcu216/media/RF_Interface_Board_Support_Render.png){: data-gallery="rfib-support-renders" }
+
+![RFIB Support Render 2](../../zcu216/media/RFIB_Support_Underside.png){: data-gallery="rfib-support-renders" }
+
+![RFIB Support Render 3](../../zcu216/media/RFIB_Support_Exploded.png){: data-gallery="rfib-support-renders" }
+
+![RFIB Support Render 3](media/RFIB_Top_View.png){: data-gallery="rfib-support-renders" }
+
+![RFIB Support Render 3](media/Isometric_View.png){: data-gallery="rfib-support-renders" }
+
+</div>
+
+<!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->
+
+--- 
+
 ## Overview
 
 The RF Interface Board (RFIB) is secured within the ZCU216 enclosure at three mounting points that are spaced relatively far apart from one another. Left unsupported across that span, the board is more susceptible to flex — a concern for a board carrying precision RF hardware.
@@ -73,20 +93,6 @@ The RFIB Support is printed as two separate pieces and glued together after prin
 
 [:fontawesome-solid-cubes: Download Full Assembly (.SLDASM)](media/RIFTS_RFIB_Support_Assembly.SLDASM){: .md-button :download}
 [:fontawesome-solid-layer-group: Download Print Project (.3mf)](media/RIFTS_RFIB_Support_PrintAssembly.3mf){: .md-button :download}
-
-### HD Renders
-
-<div class="render-scroll" markdown>
-
-![RFIB Support Render 1](../../zcu216/media/RF_Interface_Board_Support_Render.png){: data-gallery="rfib-support-renders" }
-
-![RFIB Support Render 2](../../zcu216/media/RFIB_Support_Underside.png){: data-gallery="rfib-support-renders" }
-
-![RFIB Support Render 3](../../zcu216/media/RFIB_Support_Exploded.png){: data-gallery="rfib-support-renders" }
-
-</div>
-
-<!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->
 
 ### Notes
 
