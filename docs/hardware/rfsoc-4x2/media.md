@@ -6,41 +6,10 @@ Downloadable CAD model of the completed RFSoC 4x2 Portable Field Enclosure — t
 
 ## Downloads
 
-<div class="download-cards" markdown>
-
-<div class="download-card" style="--accent:#4A90D9;" markdown>
-<span class="card-icon">:fontawesome-solid-file-import:</span>
-
-**STEP**
-
-Neutral-format export compatible with SolidWorks, Fusion 360, OnShape, and most other CAD software.
-
-[Download](../../media/rfsoc-4x2/RIFTS_RFSoC_4x2_Enclosure.STEP){: .md-button :download}
-
-</div>
-
-<div class="download-card" style="--accent:#E8833A;" markdown>
-<span class="card-icon">:fontawesome-solid-file-import:</span>
-
-**Protocase Designer**
-
-The exact fabrication package (.pda) submitted for manufacturing — opens in Protocase's free design software.
-
-[Download](../../media/rfsoc-4x2/RIFTS_RFSoC_4x2_Enclosure.pda){: .md-button :download}
-
-</div>
-
-<div class="download-card" style="--accent:#8E5CD9;" markdown>
-<span class="card-icon">:fontawesome-solid-file-image:</span>
-
-**RIFTS Logo**
-
-Vector artwork (.svg) for panel engraving or printing during manufacturing.
-
-[Download](../../media/vectorized RIFTS logo.svg){: .md-button :download}
-
-</div>
-
+<div class="file-tile-grid" markdown>
+[:fontawesome-solid-file-import: STEP](../../media/rfsoc-4x2/RIFTS_RFSoC_4x2_Enclosure.STEP){: .file-tile download title="Neutral-format CAD export" }
+[:fontawesome-solid-file-import: Protocase Designer (.pda)](../../media/rfsoc-4x2/RIFTS_RFSoC_4x2_Enclosure.pda){: .file-tile download title="Exact fabrication package used for manufacturing" }
+[:fontawesome-solid-file-image: RIFTS Logo (.svg)](../../media/vectorized RIFTS logo.svg){: .file-tile download title="Vector logo for panel engraving or printing" }
 </div>
 
 !!! tip "Ordering from Protocase"

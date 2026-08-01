@@ -133,7 +133,7 @@ ZCU216 length — Bambu Studio print project.
 
 ![Type A Render — Back](/hardware/ventilation/media/Type_A/Type_A_Assembly_Render_Back.png){: data-gallery="type-a-renders" }
 
-![Type A Render — In Enclosure](/hardware/ventilation/media/Type_A/Type_A_In_Enclosure_Render.png){: data-gallery="type-a-renders" }
+![Type A Render — In Enclosure](/hardware/ventilation/media/Type_A/Type_A_In_Enclosure_Render (2).png){: data-gallery="type-a-renders" }
 
 ![Type A Render — Short Variant](/hardware/ventilation/media/Type_A/Type_A_Assembly_Short_Render.png){: data-gallery="type-a-renders" }
 
@@ -224,7 +224,7 @@ ZCU216 length — Bambu Studio print project.
 
 ![Type B Render — In Enclosure](/hardware/ventilation/media/Type_B/Type_B_In_Enclosure_Render.png){: data-gallery="type-b-renders" }
 
-![Type B Render — Short Variant](/hardware/ventilation/media/Type_B/Type_B_Assembly_Short_Render.png){: data-gallery="type-b-renders" }
+![Type B Render — Short Variant](/hardware/ventilation/media/Type_B/Type_B_Assembly_Short_Render (2).png){: data-gallery="type-b-renders" }
 
 </div>
 

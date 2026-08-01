@@ -340,3 +340,47 @@
   color: #fff;
   transform: translateY(-3px);
 }
+
+/* RIFTS brand colors */
+:root {
+  --rifts-blue: #00539B;
+  --rifts-yellow: #FFEE00;
+  --rifts-yellow-tint: #FFFAD1;
+}
+
+/* File tiles — compact, symmetrical, low-height download row */
+.file-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.file-tile-grid a.file-tile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--rifts-blue);
+  color: var(--rifts-blue);
+  background: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.file-tile-grid a.file-tile:hover {
+  background: var(--rifts-yellow-tint);
+  border-color: var(--rifts-yellow);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.file-tile-grid a.file-tile:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

@@ -2,6 +2,8 @@ site_name: RIFTS HDA
 
 theme:
   name: material
+  logo: rifts logo.jpg
+  favicon: rifts logo.jpg
 
 docs_dir: docs
 
