@@ -52,11 +52,13 @@ Each enclosure corner uses a **unique corner pad assembly** designed to accommod
 
 Each assembly contains:
 
-- Four TPU body sections.
-- Ten custom rigid insert components.
-- Ten M3 brass heat-set threaded inserts.
-- Eight M3 x 10 mm countersunk machine screws.
-- Two M3 x 16 mm countersunk machine screws.
+| Item | Quantity |
+|---|---|
+| TPU Body Sections | 4 |
+| Rigid Insert Components | 10 |
+| M3 Brass Heat-Set Threaded Inserts | 10 |
+| M3 × 10 mm Countersunk Machine Screws | 8 |
+| M3 × 16 mm Countersunk Machine Screws | 2 |
 
 The rigid insert components are glued into dedicated pockets within the TPU sections. Because TPU is flexible and does not provide an ideal material for directly installing heat-set inserts, rigid printed inserts were incorporated to provide a more reliable threaded interface. The heat-set inserts are installed into the rigid insert components, allowing the TPU sections to be mechanically fastened together into a complete three-dimensional corner pad assembly — a modular construction that allows damaged sections to be replaced individually rather than requiring replacement of an entire corner assembly.
 
@@ -83,7 +85,7 @@ The M3 brass heat-set inserts are installed into the rigid printed insert compon
 4. Ensure the **serrated face of the heat-set insert faces outward toward the opening of the hole** — the serrated surface should face upward/outward, not into the printed insert.
 5. Apply heat and gently press the insert into position until fully seated.
 
-A suitable heat-set insert press attachment can be purchased commercially: [amazon.com](https://www.amazon.com/Vertical-Machine-Heat-Insertion-Threaded-Components/dp/B0DHKPHKJZ)
+Regardless of whether a standard soldering iron or a dedicated press is used, a soldering tip sized specifically for the insert's diameter is needed for a clean, controlled installation — a standard conical or chisel tip will not seat the insert evenly. See Commercial Sources below for the heat-set insert press and a sourced set of insert-sized tips; note that the press linked there already includes a set of these tips.
 
 ### Design Features
 
@@ -234,6 +236,7 @@ The shared insert component alone, in every format — no need to open a full pa
 ## Commercial Sources
 
 - **Heat-Set Insert Press:** [amazon.com](https://www.amazon.com/Vertical-Machine-Heat-Insertion-Threaded-Components/dp/B0DHKPHKJZ)
+- **Soldering Tips (Insert-Sized Assortment):** Dedicated tips sized for heat-set insert installation; note the heat-set insert press linked above already includes a set of these tips - [amazon.com](https://www.amazon.com/HANGLIFE-Heat-Set-Soldering-Compatible-Components/dp/B0CS662NVK/ref=sr_1_3_sspa?crid=1NQNNIUH0FOV1&dib=eyJ2IjoiMSJ9.MX8J1hxLmqis0sDm2DqXTU427CGUaL4IYHn6ajCdMQD1nXUjH2DVdCUPG5jTbcNX_B7HmcKsTLMP8U7qp1NHyBdq0GzA_y-jaKxhlKvwg0AakqpJWY2JcwnfWitei9q1yUWP3BpVIxe6WThBzvxz1_IE-RnIA3QDgz2QCjBj2D9ZkgPbTO3tePx9my72W1EnFIsZi2zhwJMRu6Z3Kbi51CPoxLOF_lE1TIv6IGs3vuq562elEKHx4JyhpQcOjj62T4CKEpINtsHvyF5uUCIh0zQ0jfOICjaPBPWFFGyZXl4.s5AecupYm1Avf0ckTKVZD5RpEaTMfEZOJiQOx-5Is_A&dib_tag=se&keywords=heat%2Bset%2Binsert%2Btips&qid=1785794356&sprefix=heat%2Bset%2Binsert%2Btips%2Caps%2C171&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
 - **M3 Brass Heat-Set Inserts:** [amazon.com](https://www.amazon.com/Yaocom-Inserts-Threaded-Printing-Components/dp/B0DG59PW2R?pd_rd_w=7Grzo&content-id=amzn1.sym.a17d2b69-5d25-4d1d-9e89-ce7360646089&pf_rd_p=a17d2b69-5d25-4d1d-9e89-ce7360646089&pf_rd_r=JZVH9V0PMGPMA1Y3VAPB&pd_rd_wg=Yz636&pd_rd_r=59a2750d-b8a0-4a42-a022-94f63fb32d20&pd_rd_i=B0DG59PW2R&ref_=pd_bap_d_grid_rp_0_3_i&th=1)
 - **M3 Countersunk Machine Screws:** [amazon.com](https://www.amazon.com/Metric-Assortment-Machine-Countersunk-Washers/dp/B0GFDHNDM1/ref=sr_1_3?crid=1QST9NAJ35K4S&dib=eyJ2IjoiMSJ9.WMfSNpVPhbPwghbXTCS6rzBl7bOstqUAEK_lUiiBB2qcG8SB5pssGuiF_bVL5HPGF6DscMhqWKqhYmFJ-7pZh14xnlJHJxDg293-s0geeXWlQotNxzxCL_WkbvzqhIlKZm156zMGJeWKdp9jMDY_cJ_MILRjKXfEpwgoLay6HLk5Y-asI92aJ9y2wA39RH0c0lRRRMTLOaXBq_St3REJRw5BvteZFXNtI9cZYuxJX5sTK_vMTjEr3RBBj3R045HhXhxiObC7Nuu9vnIQHEDhgyQmUhcROsJsf9PDLEnxohA.ewszYRFlFnKXF1gt-jlAGKVr7keHDw2PTjCur7JnhB8&dib_tag=se&keywords=m3%2Bcountersunk%2Bmachine%2Bscrews&qid=1785779112&s=industrial&sprefix=m3%2Bcountersunk%2Bmachine%2Bscrew%2Cindustrial%2C188&sr=1-3&th=1)
 

@@ -1,5 +1,22 @@
 # Cooling Air Ducts & Fans
 
+## Project Summary
+
+| | |
+|---|---|
+| **Project** | Cooling Air Ducts & Fans |
+| **Purpose** | Shared airflow management ducting for enclosure-mounted fans across RIFTS hardware platforms |
+| **Platform** | ZCU216 RF Shielded Enclosure, RFSoC 4x2 Portable Field Enclosure |
+| **Application** | Radio Interferometer for Thunderstorm Studies (RIFTS) |
+| **Manufacturing Method** | FDM Additive Manufacturing |
+| **Prototype Material** | PLA |
+| **Recommended Material** | PETG or ABS |
+| **Duct Variants** | Type A, Type B — each with Standard and Short length options |
+| **Status** | Final Design Complete |
+| **Related Hardware** | ZCU216 RF Shielded Enclosure, RFSoC 4x2 Portable Field Enclosure |
+
+---
+
 Shared thermal management components developed for use with RIFTS enclosure platforms.
 
 The air duct assemblies improve airflow management by directing fan-generated airflow toward intended cooling regions within the enclosure.
@@ -49,6 +66,14 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 *SolidWorks assembly walkthrough showing the Type B fan + duct assembly mounting to the enclosure wall.*
 
 <!-- TODO: replace with actual video filename once exported/uploaded to docs/hardware/ventilation/media/Type_B/ -->
+
+---
+
+## Material Selection
+
+Prototype ducts and fan mounts were printed in **PLA** for rapid iteration and geometry verification during early development. PLA's relatively low glass transition temperature and mechanical brittleness make it a poor long-term choice for components mounted near actively cooled electronics, however.
+
+**PETG or ABS is recommended** for production units — both offer improved heat resistance, layer adhesion, and impact durability better suited to sustained operation inside the enclosure than PLA.
 
 ---
 
@@ -122,6 +147,10 @@ ZCU216 length — Bambu Studio print project.
 </div>
 
 *A simplified reference model of the Type A fan's mounting footprint is included in the SolidWorks and Neutral Bundles above — see the note at the top of this page for details.*
+
+### Assembly Hardware
+
+Both the Standard and Short Type A duct assemblies require **four M3 × 50 mm machine screws and four M3 nuts** to secure the Fan Mount to the Airflow Duct.
 
 ### HD Renders
 
@@ -212,6 +241,16 @@ ZCU216 length — Bambu Studio print project.
 
 *A simplified reference model of the Type B fan's mounting footprint is included in the SolidWorks and Neutral Bundles above — see the note at the top of this page for details.*
 
+### Assembly Hardware
+
+Both the Standard and Short Type B duct assemblies require:
+
+- Four M3 × 15 mm machine screws and nuts
+- Four M3 × 50 mm machine screws and nuts (minimum length — see note below)
+
+!!! note "50 mm is a minimum, not a target — use longer screws on the Standard variant where possible"
+    50 mm M3 screws only just barely protrude far enough past the assembly to fit the nuts on, which isn't ideal. The 50 mm cap is strictly a fit constraint of the **Short (ZCU216) variant** — the ZCU216 enclosure doesn't have room for anything longer. The **Standard (RFSoC 4x2) variant** has no such restriction and has room for longer screws, so screws longer than 50 mm should be used there whenever available. 50 mm is listed as the baseline/minimum length for both variants simply because it's guaranteed to work on either one.
+
 ### HD Renders
 
 <div class="render-scroll" markdown>
@@ -227,6 +266,20 @@ ZCU216 length — Bambu Studio print project.
 </div>
 
 *HD renders — click to view full size.*
+
+---
+
+## Commercial Sources
+
+- **M3 × 15 mm Machine Screws:** [mcmaster.com](https://www.mcmaster.com/products/screws/socket-head-screws-2~/system-of-measurement~metric/thread-size~m3/length~15-mm/)
+- **M3 × 50 mm Machine Screws:** [mcmaster.com](https://www.mcmaster.com/products/screws/socket-head-screws-2~/system-of-measurement~metric/thread-size~m3/length~50-mm/)
+- **M3 Nuts (Nylon Insert Locknuts):** [mcmaster.com](https://www.mcmaster.com/products/nuts/locknuts-2~/nylon-insert-locknuts-2~~/system-of-measurement~metric/thread-size~m3/)
+
+!!! note "Locknuts recommended to resist loosening"
+    The nuts linked above are nylon-insert locknuts, the same fastener type used for the sealing hardware on the [antenna mount page](../../antenna/nav_2/antenna-overview.md) — the nylon insert resists loosening under vibration over time better than a standard hex nut, which is worth having on hardware that sees repeated field transport and handling.
+
+!!! note "Galvanic compatibility"
+    Pairing dissimilar metals (e.g., stainless steel fasteners against an aluminum enclosure panel) can, under the right conditions, lead to galvanic corrosion over time. This isn't expected to be a meaningful concern here, since these enclosures aren't deployed in environments with sustained exposure to moisture or salt spray. Still, it's worth keeping galvanic compatibility in mind if this hardware is ever adapted for a more corrosion-prone deployment environment.
 
 ---
 

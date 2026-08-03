@@ -12,7 +12,7 @@
 | **Material** | 5052 Aluminum |
 | **Revision A Thickness** | 0.040 in (1.02 mm) |
 | **Revision B Thickness** | 0.051 in (1.30 mm) |
-| **Cooling** | Dual forced-air cooling (side-mounted intake and exhaust fans) |
+| **Cooling** | Triple forced-air cooling (side-mounted intake and exhaust fans, plus a heatsink-mounted fan venting through the cover) |
 | **Shielding Strategy** | Conductive aluminum enclosure with seam-welded construction, dense fastener spacing, and controlled aperture geometry |
 | **Status** | Revision B Complete |
 | **Related Hardware** | MIT Haystack RF Interface Board, Air Ducts, RFIB Support |
@@ -86,9 +86,9 @@ Reducing these discontinuities improves overall shielding effectiveness while si
 
 ### Cooling Strategy
 
-Thermal management is provided using two internally mounted fans. Both the intake and exhaust fans are mounted directly to the enclosure side panels.
+Thermal management is provided using two side-panel mounted fans in addition to a dedicated heatsink-mounted fan. The intake and exhaust fans are mounted directly to the enclosure side panels, establishing the primary airflow path through the enclosure. A third fan is mounted directly to the ZCU216's heatsink; heated air is drawn from the heatsink and pushed upward through a dedicated vent in the enclosure cover.
 
-This arrangement produces a straightforward airflow path through the enclosure while simplifying manufacturing and maintenance. Unlike the later RFSoC 4x2 enclosure, neither fan is mounted directly to the RFSoC heatsink.
+This arrangement produces effective, multi-path airflow through the enclosure while remaining straightforward to manufacture and service. This heatsink-mounted exhaust approach was later carried forward and expanded upon in the RFSoC 4x2 enclosure.
 
 ### EMI Shielding Philosophy
 
@@ -148,7 +148,7 @@ Revision B incorporated the lessons learned during evaluation of the original en
 
 - Increased aluminum thickness from 0.040 in to 0.051 in
 - Seam-welded chassis construction
-- Improved vent alignment directly above the exhaust fan
+- Improved vent alignment directly above the heatsink-mounted fan
 - Relocation of engraved panel labels above connector cutouts
 - Increased overall enclosure rigidity
 
@@ -171,11 +171,11 @@ Standardized PEM standoffs were selected to mount the two PCBs housed within the
 
 The full Protocase standoff catalog is available at [protocase.com/products/components/standoff](https://www.protocase.com/products/components/standoff/) for reference when selecting standoffs for future revisions.
 
-![Standoff Types](media/Standoff types.jpg)
+![Standoff Types](media/Standoff types.jpg){: .hero-image }
 
 *Standoff types used for the ZCU216 and RF Interface Board mounting.*
 
-![Standoff Placement](../../images/zcu216/zcu216_standoffs.jpg)
+![Standoff Placement](../../images/zcu216/zcu216_standoffs.jpg){: .hero-image }
 
 *Standoff placement within the ZCU216 enclosure.*
 
@@ -192,7 +192,7 @@ The full Protocase standoff catalog is available at [protocase.com/products/comp
 
 ### Cooling Layout
 
-Both cooling fans are mounted directly to the enclosure side panels. This arrangement simplifies assembly while providing effective airflow through the enclosure. Future modifications should preserve a clear intake-to-exhaust airflow path.
+Two fans are mounted directly to the enclosure side panels, providing the primary intake and exhaust path. A third fan is mounted directly to the ZCU216 heatsink and exhausts upward through a dedicated vent in the enclosure cover. This arrangement simplifies assembly while providing effective, multi-path airflow through the enclosure. Future modifications should preserve a clear airflow path for all three fans.
 
 ### Shielding Philosophy
 
@@ -235,8 +235,8 @@ Although Revision B represents a mature enclosure design, several opportunities 
 ## Related Hardware
 
 - MIT Haystack RF Interface Board (see Electronics Reference CAD Models)
-- [RFSoC 4x2 Enclosure](../rfsoc-4x2/overview.md)
 - [Cooling Air Ducts](../ventilation/air-ducts.md)
+- [RF Interface Board (RFIB) Support](../RFIB-support/rfib-support.md)
 
 ---
 

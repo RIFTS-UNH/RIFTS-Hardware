@@ -84,29 +84,38 @@ The RFIB Support is printed as two separate pieces and glued together after prin
 
 ## Downloads
 
-<div class="download-cards cols-2" markdown>
+<div class="download-cards" markdown>
 
-<div class="download-card" markdown>
-<span class="card-icon">:fontawesome-solid-cubes:</span>
+<div class="download-card" style="--accent:#4A90D9;" markdown>
+<span class="card-icon">:fontawesome-solid-draw-polygon:</span>
 
-**Part A**
+**SolidWorks Bundle**
 
-[:fontawesome-solid-draw-polygon: SLDPRT](media/Part_A/RIFTS_RFIB_Support_PartA.SLDPRT){: .card-action title="Native SolidWorks part" }
-[:fontawesome-solid-diagram-project: STEP](media/Part_A/RIFTS_RFIB_Support_PartA.STEP){: .card-action title="Neutral format" }
-[:fontawesome-solid-cube: STL](media/Part_A/RIFTS_RFIB_Support_PartA.STL){: .card-action title="Print-ready mesh" }
-{: .card-actions-row }
+Part A, Part B, and the joined `.SLDASM` assembly, as native SolidWorks files.
+
+[Download](media/RIFTS_RFIB_Support_SLDPRT_Bundle.zip){: .md-button :download}
 
 </div>
 
-<div class="download-card" markdown>
-<span class="card-icon">:fontawesome-solid-cubes:</span>
+<div class="download-card" style="--accent:#5CB85C;" markdown>
+<span class="card-icon">:fontawesome-solid-diagram-project:</span>
 
-**Part B**
+**Neutral Bundle**
 
-[:fontawesome-solid-draw-polygon: SLDPRT](media/Part_B/RIFTS_RFIB_Support_PartB.SLDPRT){: .card-action title="Native SolidWorks part" }
-[:fontawesome-solid-diagram-project: STEP](media/Part_B/RIFTS_RFIB_Support_PartB.STEP){: .card-action title="Neutral format" }
-[:fontawesome-solid-cube: STL](media/Part_B/RIFTS_RFIB_Support_PartB.STL){: .card-action title="Print-ready mesh" }
-{: .card-actions-row }
+Same parts in `.STEP` format — works with most CAD software.
+
+[Download](media/RIFTS_RFIB_Support_STEP_Bundle.zip){: .md-button :download}
+
+</div>
+
+<div class="download-card" style="--accent:#E8833A;" markdown>
+<span class="card-icon">:fontawesome-solid-cube:</span>
+
+**STL Bundle**
+
+Print-ready mesh geometry for both parts.
+
+[Download](media/RIFTS_RFIB_Support_STL_Bundle.zip){: .md-button :download}
 
 </div>
 
@@ -115,17 +124,6 @@ The RFIB Support is printed as two separate pieces and glued together after prin
 ### Additional Downloads
 
 <div class="download-cards" markdown>
-
-<div class="download-card" markdown>
-<span class="card-icon">:fontawesome-solid-layer-group:</span>
-
-**Full Assembly**
-
-Both pieces joined together as a single `.SLDASM` file.
-
-[Download](media/RIFTS_RFIB_Support_Assembly.SLDASM){: .md-button :download}
-
-</div>
 
 <div class="download-card" markdown>
 <span class="card-icon">:fontawesome-solid-print:</span>
@@ -142,10 +140,9 @@ Bambu Studio project (.3mf) with both pieces and validated print settings.
 
 ### Notes
 
-- The **.SLDPRT** files are native SolidWorks part files for each individual piece and require SolidWorks to open.
-- The **.STEP** files are neutral-format exports compatible with most CAD software, recommended if you don't have access to SolidWorks.
-- The **.STL** files are print-ready mesh geometry for slicing in any FDM slicer.
-- The **.SLDASM** file represents the two pieces joined together and requires SolidWorks to open.
+- The **SolidWorks Bundle** (.zip) contains the `.SLDPRT` files for both Part A and Part B, **and the `.SLDASM` full assembly file** — everything needed to open the complete assembly is in this one zip. Requires SolidWorks to open.
+- The **Neutral Bundle** (.zip) contains the same two parts in `.STEP` format, compatible with most CAD software — recommended if you don't have access to SolidWorks.
+- The **STL Bundle** (.zip) contains print-ready mesh geometry for both parts, for slicing in any FDM slicer.
 - The **.3mf** file is a Bambu Studio print project containing both pieces with the validated print settings and slicer profile used for production.
 
 ---

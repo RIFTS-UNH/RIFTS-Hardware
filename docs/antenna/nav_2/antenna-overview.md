@@ -11,7 +11,7 @@
 | **Manufacturing Method** | FDM Additive Manufacturing |
 | **Primary Material** | ASA-CF |
 | **Prototype Materials** | PLA, TPU, ABS |
-| **Environmental Sealing** | 50 mm ID × 3.5 mm CS O-ring, silicone grease, M16L waterproof cable gland |
+| **Environmental Sealing** | 50 mm ID × 3.5 mm CS O-ring, silicone grease, M16L waterproof cable gland, 12 wall loops on printed components to resist moisture migration through layer lines |
 | **Validation Testing** | Water immersion testing consistent with IPX7-style conditions (not formally certified) |
 | **Electromagnetic Design** | Dielectric construction to minimize RF scattering and reduce susceptibility to multipath effects |
 | **Status** | Final Design Complete |
@@ -101,6 +101,7 @@ The mounting mast provides the interface between the antenna enclosure and the g
 
 - Two mounting holes for ground stakes
 - Two M5 heat-set inserts for attaching the cylindrical housing
+- Integrated seat that supports the base of the cylindrical housing, requiring no additional fasteners
 
 The final field deployment configuration uses 8-inch ground stakes driven into the surrounding terrain.
 
@@ -108,7 +109,7 @@ The final field deployment configuration uses 8-inch ground stakes driven into t
 
 ## Environmental Sealing
 
-The enclosure was designed for outdoor operation and underwent water immersion testing. Environmental sealing is achieved through two primary interfaces.
+The enclosure was designed for outdoor operation and underwent water immersion testing. Environmental sealing is achieved through two primary interfaces, supplemented by a print setting applied across all printed enclosure components: each is printed with 12 wall loops, increasing wall density and reducing the likelihood of moisture migrating inward through layer lines.
 
 ### Lid Seal
 
@@ -136,7 +137,7 @@ For validation results, see Water Immersion Testing below.
 
 ## Design Evolution
 
-The antenna mount geometry remained consistent throughout development while materials were evaluated for performance and field suitability.
+The top lid and cylindrical housing were the last components to reach their final geometry, and once finalized, went largely unchanged for the remainder of development aside from one earlier iteration. The ground mounting structure took a very different path: many wholly different design concepts were made and evaluated for the ground mount before settling on the current mast geometry. Independent of geometry, materials were evaluated throughout development for performance and field suitability.
 
 | Version | Material | Purpose |
 |---------|----------|---------|
@@ -152,7 +153,7 @@ Two ABS prototypes are currently deployed in the field for continued evaluation.
 
 ## Manufacturing
 
-The antenna mount was manufactured using fused deposition modeling (FDM) additive manufacturing. The validated manufacturing package includes native CAD files, STL files, Bambu Studio project files (`.3mf`), and documented slicer settings.
+The antenna mount was manufactured using fused deposition modeling (FDM) additive manufacturing. The validated manufacturing package includes native CAD files, STL files, Bambu Studio project files (`.3mf`), and documented slicer settings — including the 12-wall-loop setting used to help resist moisture ingress (see Environmental Sealing above).
 
 For detailed printer parameters, orientation rationale, structural settings, and the full bill of materials, see the **Manufacturing Details** page.
 

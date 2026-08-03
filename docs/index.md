@@ -127,7 +127,7 @@ Catalog of mechanical reference models collected for enclosure integration throu
 
 ## CAD and Manufacturing Files
 
-Native CAD models, manufacturing files, and associated documentation are included throughout this archive. Larger design files are managed separately using Git Large File Storage (Git LFS) where appropriate.
+Native CAD models, manufacturing files, and associated documentation are included throughout this archive.
 
 Some third-party electronics CAD models are cataloged rather than directly downloadable, due to varying redistribution rights across manufacturers and collaborators — see the Electronics Reference CAD Models page for details on requesting those files.
 
@@ -159,6 +159,8 @@ The author gratefully acknowledges the guidance, support, and contributions of t
 - **Stephen Horn, University of New Hampshire** — Senior member of the RIFTS research team whose technical expertise and assistance contributed to the development and integration of the project hardware.
 
 - **Dr. Frank Lind, MIT Haystack Observatory** — RF Interface Board reference design and technical support for the RIFTS hardware platform.
+
+- **Henry W. Ott** — author of *Electromagnetic Compatibility Engineering*, whose text was an invaluable reference throughout these projects, particularly Chapter 6 on shielding.
 
 Manufacturer and hardware vendor credits (AMD Xilinx, SparkFun Electronics, Aaronia, Protocase, and others) are listed on each individual hardware page.
 
