@@ -38,7 +38,7 @@
 
 ## Overview
 
-The RF Interface Board (RFIB) is secured within the ZCU216 enclosure at three mounting points that are spaced relatively far apart from one another. Left unsupported across that span, the board is more susceptible to flex — a concern for a board carrying precision RF hardware.
+The RF Interface Board (RFIB) is secured within the ZCU216 enclosure at mounting points that are spaced relatively far apart from one another. Left unsupported across that span, the board is more susceptible to flex — a concern for a board carrying precision RF hardware.
 
 The RFIB Support is a custom 3D-printed bracket designed to bridge these mounting points and reduce that flex, without adding any additional hardware to the enclosure — it mounts directly to the same three standoffs already used by the RFIB itself. The underside of the RFIB has several electronic component protrusions, so the support's geometry was specifically designed to clear all of them, avoiding any contact with active circuitry.
 
@@ -48,7 +48,7 @@ The support body is also shelled, creating internal channels that allow cabling 
 
 ## Design Features
 
-- Bridges the RFIB's three mounting points to reduce board flex across the span.
+- Bridges the RFIB's mounting points to reduce board flex across the span.
 - Clears all electronic component protrusions on the underside of the RFIB.
 - Shelled construction enables internal wire routing for improved cable management.
 - Mounts to the RFIB's existing standoffs — no additional enclosure hardware required.
@@ -58,7 +58,7 @@ The support body is also shelled, creating internal channels that allow cabling 
 
 ## Material Selection
 
-The support was manufactured and validated using PLA. For long-term use, **PETG is recommended** instead, given its improved thermal performance in an enclosure environment that experiences elevated temperatures during operation.
+The support was manufactured and validated using PLA. For long-term use, **PETG or ABS is recommended** instead, given its improved thermal performance in an enclosure environment that experiences elevated temperatures during operation.
 
 ---
 
@@ -156,8 +156,8 @@ The RFIB Support was manufactured using fused deposition modeling (FDM) additive
 
 | Component | Material | Manufacturing Method |
 |---|---|---|
-| Support Piece 1 | PLA (PETG recommended) | FDM 3D Printing |
-| Support Piece 2 | PLA (PETG recommended) | FDM 3D Printing |
+| Support Part A | PLA (PETG/ABS recommended) | FDM 3D Printing |
+| Support Part B | PLA (PETG/ABS recommended) | FDM 3D Printing |
 
 ---
 

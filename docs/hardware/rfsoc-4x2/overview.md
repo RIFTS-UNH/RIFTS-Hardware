@@ -98,7 +98,6 @@ The enclosure consists of a seam-welded aluminum chassis with a removable fasten
 - Integrated carrying handles
 - Six rubber isolation feet
 - RFSoC 4x2 mounting provisions
-- Internal RF pathway mounting
 - Side-mounted intake fan
 - Heatsink-mounted exhaust fan
 - Dedicated ventilation openings
@@ -142,10 +141,6 @@ Future enclosure designs could improve serviceability by replacing circular fast
 ### RFSoC Installation
 
 Positioning the RFSoC 4x2 in the rear corner of the enclosure successfully preserved access to both rear and side interfaces. However, this location leaves limited clearance when installing the development board onto the threaded standoffs. Future revisions should investigate alternative mounting strategies that preserve connector accessibility while simplifying installation.
-
-### Cooling Strategy
-
-The direct mounting of the exhaust fan to the RFSoC heatsink proved to be an effective cooling solution. Combined with the custom printed air ducts, the resulting airflow path efficiently removes heat from the primary heat source before exhausting it through the enclosure cover.
 
 ### PEM Hardware Selection
 

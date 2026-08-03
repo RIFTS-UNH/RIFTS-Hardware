@@ -100,10 +100,9 @@ The cylindrical housing contains the antenna electronic stem and provides enviro
 The mounting mast provides the interface between the antenna enclosure and the ground anchoring system. Features include:
 
 - Two mounting holes for ground stakes
-- Load distribution washers
 - Two M5 heat-set inserts for attaching the cylindrical housing
 
-The final field deployment configuration uses approximately 16-inch ground stakes driven into the surrounding terrain.
+The final field deployment configuration uses 8-inch ground stakes driven into the surrounding terrain.
 
 ---
 
@@ -116,12 +115,12 @@ The enclosure was designed for outdoor operation and underwent water immersion t
 The interface between the top lid and cylindrical housing uses:
 
 - One 50 mm × 3.5 mm (ID × CS) O-ring
-- Molykote 111 silicone grease, applied lightly to sealing surfaces
+- Molykote 111 silicone grease, applied lightly to the O-ring
 - Stainless steel M5 hardware
 
 The O-ring provides the primary environmental barrier between the lid and cylindrical housing. Only a light coating of silicone grease is required — its purpose is to improve seating and sealing performance, not to fill the O-ring groove, so excess grease should be avoided.
 
-Early prototypes evaluated custom TPU-printed O-rings. While functional, printed TPU seals did not provide the desired sealing performance, leading to the adoption of a commercially manufactured nitrile rubber O-ring for validation testing. The nitrile O-ring was selected for the prototype and testing phases due to its availability and reliable performance.
+Early prototypes evaluated custom TPU-printed O-rings which did not provide the desired sealing performance, leading to the adoption of a commercially manufactured nitrile rubber O-ring for validation testing. The nitrile O-ring was selected for the prototype and testing phases due to its availability and reliable performance.
 
 For long-term outdoor deployment, silicone remains the preferred O-ring material for this application, given its superior low-temperature flexibility. However, a silicone O-ring matching the required dimensions (50 mm ID × 3.5 mm CS) could not be readily sourced. A **fluoroelastomer (FKM)** O-ring of the same size, rated to −15 °F, was identified as a practical substitute — it should perform adequately for outdoor use through New England winters, though silicone would still be the superior choice if a matching size becomes available. See the **Manufacturing Details** page for the specific sourced part and commercial link.
 
@@ -179,7 +178,7 @@ For detailed printer parameters, orientation rationale, structural settings, and
 
 The recommended assembly sequence is:
 
-**1. Install O-ring** — Lightly coat the 50 mm × 3.5 mm nitrile rubber O-ring with Molykote 111 silicone grease and install it into the sealing groove on the top lid. Only a minimal amount of grease is required.
+**1. Install O-ring** — Lightly coat the 50 mm × 3.5 mm O-ring with silicone grease and install it into the sealing groove on the top lid. Only a minimal amount of grease is required.
 
 **2. Install Antenna** — Secure the antenna to the top lid using the retaining hardware supplied with the antenna. The antenna should be fully secured before continuing assembly.
 
@@ -193,7 +192,7 @@ The recommended assembly sequence is:
 
 **7. Attach Housing Assembly** — Attach the completed top lid and cylindrical housing assembly to the mast using the two additional M5 mounting screws installed into the mast's heat-set inserts.
 
-The antenna mount is now ready for deployment.
+The antenna mount is now successfully deployed.
 
 ---
 

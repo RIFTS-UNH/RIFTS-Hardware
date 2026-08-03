@@ -20,7 +20,7 @@ Two duct variants were developed — **Type A** and **Type B** — each consisti
 
 Both duct types share this same two-part mounting approach; the difference between Type A and Type B lies in their geometry, sized for the specific fan and airflow requirements of their target enclosure.
 
-Each duct type also has a **Short** variant of the airflow duct, sized to fit within the shallower ZCU216 enclosure — the original (Standard) airflow duct fits the RFSoC 4x2 enclosure. The Fan Mount component is shared between both variants; only the airflow duct length differs.
+Each duct type also has a **Short** variant of the airflow duct, sized to fit within the ZCU216 enclosure — the original (Standard) airflow duct fits the RFSoC 4x2 enclosure. The Fan Mount component is shared between both variants; only the airflow duct length differs.
 
 !!! note "Fan reference models included"
     The actual manufacturer fan CAD isn't included in these downloads due to IP restrictions. Instead, each SolidWorks and Neutral Bundle below includes a simplified **reference model** for that duct type's fan — a block matching the real fan's major footprint and four-hole mounting pattern at true dimensions, without any proprietary internal detail. It's intended for enclosure packaging, clearance checks, and mounting verification only, not as a substitute for the manufacturer's actual model.
@@ -236,5 +236,5 @@ ZCU216 length — Bambu Studio print project.
 - The **Neutral Bundle** (.zip) contains the same set of parts in `.STEP` format, compatible with most CAD software — recommended if you don't have access to SolidWorks.
 - The **STL Bundle** (.zip) contains print-ready mesh geometry for all parts, for slicing in any FDM slicer.
 - The **Print Project** (.3mf) files are Bambu Studio print projects containing the validated print settings and slicer profile — one for the Standard variant, one for the Short variant, since they're different length ducts.
-- The **Short** variant uses the same Fan Mount as the Standard variant — only the Airflow Duct differs in length to fit the shallower ZCU216 enclosure.
+- The **Short** variant uses the same Fan Mount as the Standard variant — only the Airflow Duct differs in length to fit inside the ZCU216 enclosure.
 - The **fan reference models** (included in the SolidWorks and Neutral Bundles, one per duct type) are simplified stand-ins for the actual manufacturer fan — a block matching its true footprint and four-hole mounting pattern, without proprietary internal geometry. They're provided for enclosure packaging and mounting verification only, not as manufacturer-accurate CAD.

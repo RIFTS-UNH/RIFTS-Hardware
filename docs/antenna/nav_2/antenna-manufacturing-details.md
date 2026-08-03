@@ -13,12 +13,12 @@ The assembly consists of three primary FDM-printed components, commercial sealin
 | Top Lid | 1 | FDM printed component | Provides antenna mounting interface and O-ring sealing surface |
 | Cylindrical Housing | 1 | FDM printed component | Houses antenna electronic stem and provides environmental enclosure |
 | Ground Mounting Mast | 1 | FDM printed component | Provides ground stake interface and structural support |
-| Nitrile Rubber O-ring | 1 | 50 mm × 3.5 mm (ID × CS) | Commercially sourced sealing element |
+| O-ring | 1 | 50 mm × 3.5 mm (ID × CS) | Commercially sourced sealing element |
 | M16L Waterproof Cable Gland | 1 | Waterproof cable entry fitting | Provides sealed cable routing through enclosure |
 | M5 Stainless Steel Flanged Button Head Screws | 6 | Minimum 25 mm length | Secures top lid to cylindrical housing; flange helps prevent long-term creep of the printed lid |
 | M5 Stainless Steel Flange Nuts (Nylon Insert) | 6 | Locking type | Used with lid fasteners; flange eliminates the need for a separate washer |
 | M5 Brass Heat-set Inserts | 2 | Minimum 6 mm length recommended | Installed in mounting mast for housing attachment |
-| Ground Stakes | 2 | Approximately 16 inch length recommended | Used for field deployment anchoring |
+| Ground Stakes | 2 | Minimum 8 in length, 3/8 in - 1/2 in diameter recommended | Used for field deployment anchoring |
 | Ground Stake Washers | 2 | Load distribution washers | Reduces localized compressive loading |
 
 !!! note
@@ -34,12 +34,12 @@ The assembly consists of three primary FDM-printed components, commercial sealin
 
 The two M5 brass heat-set inserts used in the mounting mast are installed after printing. Recommended procedure:
 
-1. Heat a soldering iron to approximately **230 °C**.
+1. Heat a soldering iron to approximately **230°C - 250°C**.
 2. Orient the brass heat-set insert so the **serrated face is facing outward from the printed part** (toward the ceiling during installation), with the smooth face entering the printed hole first — the serrated face should **not** point down into the hole.
 3. Carefully press the heat-set insert into the prepared hole while applying controlled downward pressure.
 4. Allow the surrounding plastic to cool and solidify around the insert before applying mechanical load.
 
-Proper insert orientation matters — installing the insert upside down may reduce mechanical retention, since the serrated surface is intended to embed into the surrounding plastic and resist pull-out forces. A heat-set insert press attachment designed to work with a soldering iron can improve alignment and consistency.
+Proper insert orientation matters — installing the insert upside down may reduce mechanical retention, since the serrated surface is intended to embed into the surrounding plastic and resist pull-out forces. A heat-set insert press can improve alignment and consistency.
 
 ### Commercial Sources
 
@@ -81,7 +81,7 @@ Validated FDM printing parameters used during development, manufactured and eval
 |----------|-------------|
 | Bambu PLA Basic | Initial prototype development and geometry verification |
 | Bambu ABS | Field evaluation prototypes |
-| ASA-CF | Final production design — improved UV resistance and long-term outdoor durability |
+| Bambu ASA-CF | Final production design — improved UV resistance and long-term outdoor durability |
 
 For future prints using Bambu Lab printers, Bambu brand filament is recommended where possible; equivalent materials from other manufacturers may also be suitable if comparable mechanical and thermal properties are maintained.
 

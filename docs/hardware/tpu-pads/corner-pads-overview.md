@@ -40,7 +40,7 @@
 
 The RFSoC 4x2 TPU Corner Pad System was developed specifically for the portable RIFTS RFSoC 4x2 enclosure to improve durability during transportation, handling, and field deployment.
 
-Unlike the laboratory-oriented ZCU216 enclosure, the RFSoC 4x2 platform was designed for repeated transportation and operation outside of a controlled laboratory environment. The corner pad assemblies provide mechanical protection for the aluminum enclosure while improving stability when placed on uneven or irregular surfaces.
+Unlike the laboratory-oriented ZCU216 enclosure, the RFSoC 4x2 platform was designed for repeated transportation and operation outside of a controlled laboratory environment. The corner pad assemblies provide mechanical protection for the aluminum enclosure.
 
 This system was developed exclusively for the RFSoC 4x2 portable enclosure — these assemblies are not used on the ZCU216 enclosure platform.
 
@@ -48,22 +48,22 @@ This system was developed exclusively for the RFSoC 4x2 portable enclosure — t
 
 ## Design Overview
 
-Each enclosure corner uses a **unique corner pad assembly** designed to accommodate the specific geometry of that corner. The complete system consists of four separate corner assemblies, each built from four TPU sections.
+Each enclosure corner uses a **unique corner pad assembly** designed to accommodate the specific labeling of that corner. The complete system consists of four separate corner assemblies, each built from four TPU sections.
 
 Each assembly contains:
 
 - Four TPU body sections.
 - Ten custom rigid insert components.
 - Ten M3 brass heat-set threaded inserts.
-- Mechanical fasteners for final assembly.
+- Eight M3 x 10 mm countersunk machine screws.
+- Two M3 x 16 mm countersunk machine screws.
 
-The rigid insert components are bonded into dedicated pockets within the TPU sections. Because TPU is flexible and does not provide an ideal material for directly installing heat-set inserts, rigid printed inserts were incorporated to provide a more reliable threaded interface. The heat-set inserts are installed into the rigid insert components, allowing the TPU sections to be mechanically fastened together into a complete three-dimensional corner pad assembly — a modular construction that allows damaged sections to be replaced individually rather than requiring replacement of an entire corner assembly.
+The rigid insert components are glued into dedicated pockets within the TPU sections. Because TPU is flexible and does not provide an ideal material for directly installing heat-set inserts, rigid printed inserts were incorporated to provide a more reliable threaded interface. The heat-set inserts are installed into the rigid insert components, allowing the TPU sections to be mechanically fastened together into a complete three-dimensional corner pad assembly — a modular construction that allows damaged sections to be replaced individually rather than requiring replacement of an entire corner assembly.
 
 The corner pad assemblies were developed to:
 
 - Protect enclosure corners during transportation and handling.
 - Reduce impact forces transferred to the aluminum enclosure.
-- Improve stability on uneven surfaces.
 - Provide a high-friction interface between the enclosure and supporting surfaces.
 - Improve long-term durability of the portable hardware platform.
 
@@ -77,17 +77,17 @@ The rigid insert components were originally manufactured using PLA to support ra
 
 The M3 brass heat-set inserts are installed into the rigid printed insert components. Recommended installation procedure:
 
-1. Heat a soldering iron to approximately **230°C**.
+1. Heat a soldering iron to approximately **230°C - 250°C**.
 2. Use a heat-set insert press attachment designed for soldering irons to maintain alignment during installation.
 3. Insert the brass threaded insert into the prepared hole.
-4. Ensure the **serrated face of the heat-set insert faces outward toward the opening of the hole** — the serrated surface should face upward/outward, not deeper into the printed insert.
+4. Ensure the **serrated face of the heat-set insert faces outward toward the opening of the hole** — the serrated surface should face upward/outward, not into the printed insert.
 5. Apply heat and gently press the insert into position until fully seated.
 
 A suitable heat-set insert press attachment can be purchased commercially: [amazon.com](https://www.amazon.com/Vertical-Machine-Heat-Insertion-Threaded-Components/dp/B0DHKPHKJZ)
 
 ### Design Features
 
-The completed corner pad assemblies provide full enclosure corner protection, replaceable modular construction, flexible impact absorption, increased friction against supporting surfaces, improved stability during transportation, and lightweight construction. The modular design allows individual TPU sections or rigid inserts to be replaced without recreating the entire assembly.
+The completed corner pad assemblies provide full enclosure corner protection, replaceable modular construction, flexible impact absorption, increased friction against supporting surfaces, and lightweight construction. The modular design allows individual TPU sections or rigid inserts to be replaced without recreating the entire assembly.
 
 ### Assembly Tutorial
 
@@ -233,9 +233,9 @@ The shared insert component alone, in every format — no need to open a full pa
 
 ## Commercial Sources
 
-- **Heat-Set Insert Press:** Vertical Heat Insert Press Attachment for Soldering Iron — [amazon.com](https://www.amazon.com/Vertical-Machine-Heat-Insertion-Threaded-Components/dp/B0DHKPHKJZ)
-- **M3 Brass Heat-Set Inserts:** *(link pending)*
-- **M3 Countersunk Machine Screws:** *(link pending)*
+- **Heat-Set Insert Press:** [amazon.com](https://www.amazon.com/Vertical-Machine-Heat-Insertion-Threaded-Components/dp/B0DHKPHKJZ)
+- **M3 Brass Heat-Set Inserts:** [amazon.com](https://www.amazon.com/Yaocom-Inserts-Threaded-Printing-Components/dp/B0DG59PW2R?pd_rd_w=7Grzo&content-id=amzn1.sym.a17d2b69-5d25-4d1d-9e89-ce7360646089&pf_rd_p=a17d2b69-5d25-4d1d-9e89-ce7360646089&pf_rd_r=JZVH9V0PMGPMA1Y3VAPB&pd_rd_wg=Yz636&pd_rd_r=59a2750d-b8a0-4a42-a022-94f63fb32d20&pd_rd_i=B0DG59PW2R&ref_=pd_bap_d_grid_rp_0_3_i&th=1)
+- **M3 Countersunk Machine Screws:** [amazon.com](https://www.amazon.com/Metric-Assortment-Machine-Countersunk-Washers/dp/B0GFDHNDM1/ref=sr_1_3?crid=1QST9NAJ35K4S&dib=eyJ2IjoiMSJ9.WMfSNpVPhbPwghbXTCS6rzBl7bOstqUAEK_lUiiBB2qcG8SB5pssGuiF_bVL5HPGF6DscMhqWKqhYmFJ-7pZh14xnlJHJxDg293-s0geeXWlQotNxzxCL_WkbvzqhIlKZm156zMGJeWKdp9jMDY_cJ_MILRjKXfEpwgoLay6HLk5Y-asI92aJ9y2wA39RH0c0lRRRMTLOaXBq_St3REJRw5BvteZFXNtI9cZYuxJX5sTK_vMTjEr3RBBj3R045HhXhxiObC7Nuu9vnIQHEDhgyQmUhcROsJsf9PDLEnxohA.ewszYRFlFnKXF1gt-jlAGKVr7keHDw2PTjCur7JnhB8&dib_tag=se&keywords=m3%2Bcountersunk%2Bmachine%2Bscrews&qid=1785779112&s=industrial&sprefix=m3%2Bcountersunk%2Bmachine%2Bscrew%2Cindustrial%2C188&sr=1-3&th=1)
 
 ---
 

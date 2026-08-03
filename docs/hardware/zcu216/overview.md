@@ -15,7 +15,7 @@
 | **Cooling** | Dual forced-air cooling (side-mounted intake and exhaust fans) |
 | **Shielding Strategy** | Conductive aluminum enclosure with seam-welded construction, dense fastener spacing, and controlled aperture geometry |
 | **Status** | Revision B Complete |
-| **Related Hardware** | MIT Haystack RF Interface Board, RFSoC 4x2 Enclosure, Air Ducts |
+| **Related Hardware** | MIT Haystack RF Interface Board, Air Ducts, RFIB Support |
 
 ---
 
@@ -44,7 +44,7 @@
 
 ## Overview
 
-The ZCU216 RF Shielded Enclosure was the first major mechanical hardware platform developed for the University of New Hampshire's Radio Interferometer for Thunderstorm Studies (RIFTS) project.
+The ZCU216 RF Shielded Enclosure was the first major enclosure platform developed for the University of New Hampshire's Radio Interferometer for Thunderstorm Studies (RIFTS) project.
 
 The enclosure was designed to integrate the AMD Xilinx ZCU216 RFSoC development platform with the MIT Haystack RF Interface Board while providing mechanical protection, electromagnetic shielding, active cooling, and convenient laboratory operation within a standard 2U rack-mounted form factor.
 
@@ -196,7 +196,7 @@ Both cooling fans are mounted directly to the enclosure side panels. This arrang
 
 ### Shielding Philosophy
 
-See EMI Shielding Philosophy under Design Rationale above — the enclosure intentionally relies on conductive construction, welded seams, and fastener spacing rather than gaskets, trading a small amount of shielding performance for reduced manufacturing cost and assembly complexity.
+See EMI Shielding Philosophy under Design Rationale above — the enclosure intentionally relies on conductive construction, welded seams, and fastener spacing rather than gaskets, trading some shielding performance for reduced manufacturing cost and assembly complexity.
 
 ### Serviceability
 

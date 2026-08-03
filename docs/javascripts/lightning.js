@@ -1,4 +1,7 @@
-// RIFTS site — realistic full-screen lightning strike effect on download clicks
+// RIFTS site — realistic full-screen lightning strike effect, triggered by clicking
+// anywhere on the page EXCEPT interactive elements (links, buttons, downloads, form
+// controls, images). This makes it a voluntary easter egg — clicking empty space,
+// text, headings, etc. — rather than something tied to downloading or navigating.
 (function () {
   var SVG_NS = "http://www.w3.org/2000/svg";
 
@@ -150,8 +153,15 @@
   }
 
   document.addEventListener("click", function (e) {
-    var target = e.target.closest("a[download], a.md-button, a.card-action, a.file-tile");
-    if (!target) return;
+    // Anything a person clicks expecting an actual outcome — a link, button, download,
+    // form control, or image (which opens the lightbox) — is left alone. Everything
+    // else (body text, whitespace, headings, table cells, card padding, etc.) triggers
+    // the strike, so it's something people opt into by clicking around, not something
+    // that ambushes them mid-download or mid-navigation.
+    var interactive = e.target.closest(
+      "a, button, input, textarea, select, label, img, video, iframe, [role='button'], [onclick]"
+    );
+    if (interactive) return;
     spawnBolt(e.clientX);
   });
 })();

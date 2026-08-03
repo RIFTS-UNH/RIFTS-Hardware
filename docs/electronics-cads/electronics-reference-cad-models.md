@@ -2,7 +2,7 @@
 
 ## Overview
 
-This section catalogs the mechanical CAD reference models of electronic hardware collected over the course of RIFTS development, used to support enclosure design, mechanical integration studies, connector placement verification, and internal packaging development.
+This section catalogs the mechanical CAD reference models of electronic hardware collected over the course of RIFTS project developments, used to support enclosure design, mechanical integration studies, connector placement verification, and internal packaging development.
 
 These are **mechanical reference models only** — dimensional and geometric representations used for CAD integration work, not schematics, PCB layout, or electrical design files.
 
