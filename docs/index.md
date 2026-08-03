@@ -1,6 +1,6 @@
 # RIFTS Hardware Design Archive
 
-![ZCU216 Enclosure](images/hero/zcu216_fully_populated.jpg)
+![ZCU216 Enclosure](images/hero/zcu216_fully_populated.jpg){: .hero-image }
 
 Mechanical design, validation testing, and engineering documentation for the **Radio Interferometer for Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
@@ -23,19 +23,105 @@ The goal of this archive is to provide a clear, maintainable reference for futur
 ## What's In This Archive
 
 ### Hardware Platforms
-- [RFSoC 4x2 Portable Field Enclosure](hardware/rfsoc-4x2/overview.md)
-- [ZCU216 Rack-Mount Enclosure](hardware/zcu216/overview.md)
+
+<div class="download-cards" markdown>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-suitcase:</span>
+
+**RFSoC 4x2 Portable Field Enclosure**
+
+EMI-shielded aluminum enclosure engineered for field deployment, active cooling, and vehicle transport.
+
+[View Page](hardware/rfsoc-4x2/overview.md){: .md-button }
+
+</div>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-server:</span>
+
+**ZCU216 Rack-Mount Enclosure**
+
+Laboratory-oriented 2U rack-mounted enclosure for the ZCU216 development platform.
+
+[View Page](hardware/zcu216/overview.md){: .md-button }
+
+</div>
+
+</div>
 
 ### Antenna Systems
-- [OmniLOG PRO 1030 N Antenna Mount](antenna/nav_2/antenna-overview.md)
+
+<div class="download-cards" markdown>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-satellite-dish:</span>
+
+**OmniLOG PRO 1030 N Antenna Mount**
+
+Ground mounting system for the OmniLOG PRO 1030 N antenna, including mast and cylindrical housing.
+
+[View Page](antenna/nav_2/antenna-overview.md){: .md-button }
+
+</div>
+
+</div>
 
 ### Supporting Hardware
-- [Cooling Air Ducts & Fans](hardware/ventilation/air-ducts.md)
-- [TPU Corner Pads](hardware/tpu-pads/corner-pads-overview.md)
-- [RF Pathway Reference Model](hardware/rfsoc-4x2-rf-pathway.md)
+
+<div class="download-cards" markdown>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-fan:</span>
+
+**Cooling Air Ducts & Fans**
+
+Shared FDM-printed airflow ducts and fan mounts used across both enclosure platforms.
+
+[View Page](hardware/ventilation/air-ducts.md){: .md-button }
+
+</div>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-cubes:</span>
+
+**TPU Corner Pads**
+
+Modular TPU corner protection system developed for the RFSoC 4x2 enclosure.
+
+[View Page](hardware/tpu-pads/corner-pads-overview.md){: .md-button }
+
+</div>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-diagram-project:</span>
+
+**RF Pathway Reference Model**
+
+Reverse-engineered mechanical reference model of the RFSoC 4x2's analog RF signal pathway.
+
+[View Page](hardware/rfsoc-4x2-rf-pathway.md){: .md-button }
+
+</div>
+
+</div>
 
 ### Electronics Reference CAD Models
-- [Electronics Reference CAD Catalog](electronics-cads/electronics-reference-cad-models.md)
+
+<div class="download-cards" markdown>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-microchip:</span>
+
+**Electronics Reference CAD Catalog**
+
+Catalog of mechanical reference models collected for enclosure integration throughout the project.
+
+[View Page](electronics-cads/electronics-reference-cad-models.md){: .md-button }
+
+</div>
+
+</div>
 
 ---
 

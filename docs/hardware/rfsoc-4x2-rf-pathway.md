@@ -32,18 +32,47 @@ The model prioritizes overall dimensions, connector locations, and approximate c
 
 ## Download
 
-[:fontawesome-solid-file-import: Download Reference Model (.SLDPRT)](../rf-pathway/rf_pathway.SLDPRT){: .md-button :download}
-[:fontawesome-solid-file-import: Download Reference Model (.STEP)](../rf-pathway/rf_pathway.STEP){: .md-button :download}
+<div class="download-cards" markdown>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-draw-polygon:</span>
+
+**SLDPRT**
+
+Native SolidWorks part file for the reference model.
+
+[Download](../rf-pathway/rf_pathway.SLDPRT){: .md-button :download}
+
+</div>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-diagram-project:</span>
+
+**STEP**
+
+Neutral-format export compatible with most other CAD software.
+
+[Download](../rf-pathway/rf_pathway.STEP){: .md-button :download}
+
+</div>
+
+</div>
 
 ---
 
 ## Gallery
 
-<div class="photo-stack" markdown>
+<div class="compare-grid" markdown>
 
-![RF Pathway CAD](../images/rf-pathway/rf_pathway_cad.jpg){: class="stack-item" style="--tx:0px; --htx:0px; --rot:-4deg; --z:5;" data-gallery="rf-pathway" }
+<div class="compare-item" markdown>
+![RF Pathway CAD](../images/rf-pathway/rf_pathway_cad.jpg){ data-gallery="rf-pathway" }
+<p class="compare-label">Reference Model (CAD)</p>
+</div>
 
-![RF Pathway Installed](../images/rf-pathway/rf_pathway.jpg){: class="stack-item" style="--tx:14px; --htx:60px; --rot:3deg; --z:4;" data-gallery="rf-pathway" }
+<div class="compare-item" markdown>
+![RF Pathway Installed](../images/rf-pathway/rf_pathway.jpg){ data-gallery="rf-pathway" }
+<p class="compare-label">Installed Hardware</p>
+</div>
 
 </div>
 

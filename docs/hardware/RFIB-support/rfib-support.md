@@ -84,15 +84,61 @@ The RFIB Support is printed as two separate pieces and glued together after prin
 
 ## Downloads
 
-| Part | SolidWorks (.SLDPRT) | Neutral (.STEP) | Print-Ready (.STL) |
-|---|:---:|:---:|:---:|
-| Part A | [:fontawesome-solid-file-import:](media/Part_A/RIFTS_RFIB_Support_PartA.SLDPRT){: title="Download RFIB Support Piece 1 .SLDPRT" } | [:fontawesome-solid-file-import:](media/Part_A/RIFTS_RFIB_Support_PartA.STEP){: title="Download RFIB Support Piece 1 .STEP" } | [:fontawesome-solid-cube:](media/Part_A/RIFTS_RFIB_Support_PartA.STL){: title="Download RFIB Support Piece 1 .STL" } |
-| Part B | [:fontawesome-solid-file-import:](media/Part_B/RIFTS_RFIB_Support_PartB.SLDPRT){: title="Download RFIB Support Piece 2 .SLDPRT" } | [:fontawesome-solid-file-import:](media/Part_B/RIFTS_RFIB_Support_PartB.STEP){: title="Download RFIB Support Piece 2 .STEP" } | [:fontawesome-solid-cube:](media/Part_B/RIFTS_RFIB_Support_PartB.STL){: title="Download RFIB Support Piece 2 .STL" } |
+<div class="download-cards cols-2" markdown>
 
-### Full Assembly & Print Project
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-cubes:</span>
 
-[:fontawesome-solid-cubes: Download Full Assembly (.SLDASM)](media/RIFTS_RFIB_Support_Assembly.SLDASM){: .md-button :download}
-[:fontawesome-solid-layer-group: Download Print Project (.3mf)](media/RIFTS_RFIB_Support_PrintAssembly.3mf){: .md-button :download}
+**Part A**
+
+[:fontawesome-solid-draw-polygon: SLDPRT](media/Part_A/RIFTS_RFIB_Support_PartA.SLDPRT){: .card-action title="Native SolidWorks part" }
+[:fontawesome-solid-diagram-project: STEP](media/Part_A/RIFTS_RFIB_Support_PartA.STEP){: .card-action title="Neutral format" }
+[:fontawesome-solid-cube: STL](media/Part_A/RIFTS_RFIB_Support_PartA.STL){: .card-action title="Print-ready mesh" }
+{: .card-actions-row }
+
+</div>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-cubes:</span>
+
+**Part B**
+
+[:fontawesome-solid-draw-polygon: SLDPRT](media/Part_B/RIFTS_RFIB_Support_PartB.SLDPRT){: .card-action title="Native SolidWorks part" }
+[:fontawesome-solid-diagram-project: STEP](media/Part_B/RIFTS_RFIB_Support_PartB.STEP){: .card-action title="Neutral format" }
+[:fontawesome-solid-cube: STL](media/Part_B/RIFTS_RFIB_Support_PartB.STL){: .card-action title="Print-ready mesh" }
+{: .card-actions-row }
+
+</div>
+
+</div>
+
+### Additional Downloads
+
+<div class="download-cards" markdown>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-layer-group:</span>
+
+**Full Assembly**
+
+Both pieces joined together as a single `.SLDASM` file.
+
+[Download](media/RIFTS_RFIB_Support_Assembly.SLDASM){: .md-button :download}
+
+</div>
+
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-print:</span>
+
+**Print Project**
+
+Bambu Studio project (.3mf) with both pieces and validated print settings.
+
+[Download](media/RIFTS_RFIB_Support_PrintAssembly.3mf){: .md-button :download}
+
+</div>
+
+</div>
 
 ### Notes
 

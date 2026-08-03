@@ -22,10 +22,8 @@ Both duct types share this same two-part mounting approach; the difference betwe
 
 Each duct type also has a **Short** variant of the airflow duct, sized to fit within the shallower ZCU216 enclosure — the original (Standard) airflow duct fits the RFSoC 4x2 enclosure. The Fan Mount component is shared between both variants; only the airflow duct length differs.
 
-!!! note "Fan CAD not included"
-    The fan itself is not included in these downloads. Each assembly is designed around a specific manufacturer fan model — download the fan's own CAD model directly from the manufacturer and place it alongside the assembly file before opening, or the assembly will show a missing reference.
-
-    <!-- TODO: add fan model + manufacturer CAD link for Type A and Type B once confirmed -->
+!!! note "Fan reference models included"
+    The actual manufacturer fan CAD isn't included in these downloads due to IP restrictions. Instead, each SolidWorks and Neutral Bundle below includes a simplified **reference model** for that duct type's fan — a block matching the real fan's major footprint and four-hole mounting pattern at true dimensions, without any proprietary internal detail. It's intended for enclosure packaging, clearance checks, and mounting verification only, not as a substitute for the manufacturer's actual model.
 
 !!! note "Short variant installation"
     No separate installation video was recorded for the Short variants — installation is identical to the Standard variants shown below, only the duct length differs.
@@ -61,18 +59,18 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 <div class="download-cards" markdown>
 
 <div class="download-card" style="--accent:#4A90D9;" markdown>
-<span class="card-icon">:fontawesome-solid-file-zipper:</span>
+<span class="card-icon">:fontawesome-solid-draw-polygon:</span>
 
 **SolidWorks Bundle**
 
-Fan Mount, Airflow Duct (Standard & Short), and both Full Assemblies as `.SLDPRT` / `.SLDASM`.
+Fan Mount, Airflow Duct (Standard & Short), and the Type A fan reference model, as native `.SLDPRT` files.
 
 [Download](/hardware/ventilation/media/Type_A/RIFTS_Duct_TypeA_SLDPRT_Bundle.zip){: .md-button :download}
 
 </div>
 
 <div class="download-card" style="--accent:#5CB85C;" markdown>
-<span class="card-icon">:fontawesome-solid-file-zipper:</span>
+<span class="card-icon">:fontawesome-solid-diagram-project:</span>
 
 **Neutral Bundle**
 
@@ -83,7 +81,7 @@ Same parts in `.STEP` format — works with most CAD software.
 </div>
 
 <div class="download-card" style="--accent:#E8833A;" markdown>
-<span class="card-icon">:fontawesome-solid-file-zipper:</span>
+<span class="card-icon">:fontawesome-solid-cube:</span>
 
 **STL Bundle**
 
@@ -100,7 +98,7 @@ Print-ready mesh geometry for all parts.
 <div class="download-cards" markdown>
 
 <div class="download-card" style="--accent:#8E5CD9;" markdown>
-<span class="card-icon">:fontawesome-solid-layer-group:</span>
+<span class="card-icon">:fontawesome-solid-print:</span>
 
 **Standard**
 
@@ -111,7 +109,7 @@ RFSoC 4x2 length — Bambu Studio print project.
 </div>
 
 <div class="download-card" style="--accent:#D9534F;" markdown>
-<span class="card-icon">:fontawesome-solid-layer-group:</span>
+<span class="card-icon">:fontawesome-solid-print:</span>
 
 **Short**
 
@@ -123,7 +121,7 @@ ZCU216 length — Bambu Studio print project.
 
 </div>
 
-*Designed for: [Fan model TBD](#) — CAD available from the manufacturer.*
+*A simplified reference model of the Type A fan's mounting footprint is included in the SolidWorks and Neutral Bundles above — see the note at the top of this page for details.*
 
 ### HD Renders
 
@@ -150,18 +148,18 @@ ZCU216 length — Bambu Studio print project.
 <div class="download-cards" markdown>
 
 <div class="download-card" style="--accent:#4A90D9;" markdown>
-<span class="card-icon">:fontawesome-solid-file-zipper:</span>
+<span class="card-icon">:fontawesome-solid-draw-polygon:</span>
 
 **SolidWorks Bundle**
 
-Fan Mount, Airflow Duct (Standard & Short), and both Full Assemblies as `.SLDPRT` / `.SLDASM`.
+Fan Mount, Airflow Duct (Standard & Short), and the Type B fan reference model, as native `.SLDPRT` files.
 
 [Download](/hardware/ventilation/media/Type_B/RIFTS_Duct_TypeB_SLDPRT_Bundle.zip){: .md-button :download}
 
 </div>
 
 <div class="download-card" style="--accent:#5CB85C;" markdown>
-<span class="card-icon">:fontawesome-solid-file-zipper:</span>
+<span class="card-icon">:fontawesome-solid-diagram-project:</span>
 
 **Neutral Bundle**
 
@@ -172,7 +170,7 @@ Same parts in `.STEP` format — works with most CAD software.
 </div>
 
 <div class="download-card" style="--accent:#E8833A;" markdown>
-<span class="card-icon">:fontawesome-solid-file-zipper:</span>
+<span class="card-icon">:fontawesome-solid-cube:</span>
 
 **STL Bundle**
 
@@ -189,7 +187,7 @@ Print-ready mesh geometry for all parts.
 <div class="download-cards" markdown>
 
 <div class="download-card" style="--accent:#8E5CD9;" markdown>
-<span class="card-icon">:fontawesome-solid-layer-group:</span>
+<span class="card-icon">:fontawesome-solid-print:</span>
 
 **Standard**
 
@@ -200,7 +198,7 @@ RFSoC 4x2 length — Bambu Studio print project.
 </div>
 
 <div class="download-card" style="--accent:#D9534F;" markdown>
-<span class="card-icon">:fontawesome-solid-layer-group:</span>
+<span class="card-icon">:fontawesome-solid-print:</span>
 
 **Short**
 
@@ -212,7 +210,7 @@ ZCU216 length — Bambu Studio print project.
 
 </div>
 
-*Designed for: [Fan model TBD](#) — CAD available from the manufacturer.*
+*A simplified reference model of the Type B fan's mounting footprint is included in the SolidWorks and Neutral Bundles above — see the note at the top of this page for details.*
 
 ### HD Renders
 
@@ -234,8 +232,9 @@ ZCU216 length — Bambu Studio print project.
 
 ### Notes
 
-- The **SolidWorks Bundle** (.zip) contains all `.SLDPRT` files for that duct type (Fan Mount, Standard Airflow Duct, Short Airflow Duct) along with both `.SLDASM` full assembly files (Standard and Short). Requires SolidWorks to open.
+- The **SolidWorks Bundle** (.zip) contains all `.SLDPRT` files for that duct type (Fan Mount, Standard Airflow Duct, Short Airflow Duct) along with the fan reference model. Requires SolidWorks to open.
 - The **Neutral Bundle** (.zip) contains the same set of parts in `.STEP` format, compatible with most CAD software — recommended if you don't have access to SolidWorks.
 - The **STL Bundle** (.zip) contains print-ready mesh geometry for all parts, for slicing in any FDM slicer.
 - The **Print Project** (.3mf) files are Bambu Studio print projects containing the validated print settings and slicer profile — one for the Standard variant, one for the Short variant, since they're different length ducts.
 - The **Short** variant uses the same Fan Mount as the Standard variant — only the Airflow Duct differs in length to fit the shallower ZCU216 enclosure.
+- The **fan reference models** (included in the SolidWorks and Neutral Bundles, one per duct type) are simplified stand-ins for the actual manufacturer fan — a block matching its true footprint and four-hole mounting pattern, without proprietary internal geometry. They're provided for enclosure packaging and mounting verification only, not as manufacturer-accurate CAD.

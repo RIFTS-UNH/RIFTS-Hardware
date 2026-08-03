@@ -9,7 +9,7 @@ Downloadable CAD model of the completed ZCU216 RF Shielded Enclosure, Revision B
 <div class="download-cards" markdown>
 
 <div class="download-card" markdown>
-<span class="card-icon">:fontawesome-solid-file-import:</span>
+<span class="card-icon">:fontawesome-solid-diagram-project:</span>
 
 **STEP**
 
@@ -20,7 +20,7 @@ Neutral-format export compatible with SolidWorks, Fusion 360, OnShape, and most 
 </div>
 
 <div class="download-card" markdown>
-<span class="card-icon">:fontawesome-solid-file-import:</span>
+<span class="card-icon">:fontawesome-solid-compass-drafting:</span>
 
 **Protocase Designer**
 
@@ -31,7 +31,7 @@ The exact fabrication package (.pda) submitted for manufacturing — opens in Pr
 </div>
 
 <div class="download-card" markdown>
-<span class="card-icon">:fontawesome-solid-file-image:</span>
+<span class="card-icon">:fontawesome-solid-shapes:</span>
 
 **RIFTS Logo**
 
