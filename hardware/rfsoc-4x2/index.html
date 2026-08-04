@@ -1,0 +1,1225 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../rifts_logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>RFSoC 4x2 Portable Field Enclosure - RIFTS HDA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rfsoc-4x2-portable-field-enclosure" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="RIFTS HDA" class="md-header__button md-logo" aria-label="RIFTS HDA" data-md-component="logo">
+      
+  <img src="../../rifts_logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RIFTS HDA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              RFSoC 4x2 Portable Field Enclosure
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="RIFTS HDA" class="md-nav__button md-logo" aria-label="RIFTS HDA" data-md-component="logo">
+      
+  <img src="../../rifts_logo.jpg" alt="logo">
+
+    </a>
+    RIFTS HDA
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF-Shielded Enclosures
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RF-Shielded Enclosures
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1">
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RFSoC 4x2 Portable Field Enclosure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RFSoC 4x2 Portable Field Enclosure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZCU216 Rack-Mounted Enclosure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ZCU216 Rack-Mounted Enclosure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zcu216/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zcu216/media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antenna Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Antenna Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1">
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OmniLOG PRO 1030 N Antenna Mount
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OmniLOG PRO 1030 N Antenna Mount
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../antenna/nav_2/antenna-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../antenna/nav_2/antenna-manufacturing-details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manufacturing Details
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../antenna/nav_2/antenna-media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supporting Hardware
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Supporting Hardware
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ventilation/air-ducts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cooling Air Ducts &amp; Fans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tpu-pads/corner-pads-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TPU Corner Pads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rfsoc-4x2-rf-pathway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF Pathway CAD Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RFIB-support/rfib-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF Interface Board (RFIB) Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electronics-cads/electronics-reference-cad-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronics Reference CAD Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="rfsoc-4x2-portable-field-enclosure">RFSoC 4x2 Portable Field Enclosure</h1>
+<hr>
+<h1 id="project-summary">Project Summary</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project</strong></td>
+<td>RFSoC 4x2 Portable Field Enclosure</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Portable EMI-shielded enclosure for field deployment of the AMD Xilinx RFSoC 4x2 platform</td>
+</tr>
+<tr>
+<td><strong>Platform</strong></td>
+<td>AMD Xilinx RFSoC 4x2 Development Board</td>
+</tr>
+<tr>
+<td><strong>Application</strong></td>
+<td>Radio Interferometer for Thunderstorm Studies (RIFTS)</td>
+</tr>
+<tr>
+<td><strong>Manufacturer</strong></td>
+<td>Protocase</td>
+</tr>
+<tr>
+<td><strong>Material</strong></td>
+<td>5052 Aluminum</td>
+</tr>
+<tr>
+<td><strong>Material Thickness</strong></td>
+<td>0.064 in (1.63 mm)</td>
+</tr>
+<tr>
+<td><strong>Cooling</strong></td>
+<td>Dual forced-air cooling with heatsink-mounted exhaust fan</td>
+</tr>
+<tr>
+<td><strong>Shielding Strategy</strong></td>
+<td>Conductive aluminum enclosure with seam-welded construction, dense fastener spacing, and controlled aperture geometry</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Final Design Complete</td>
+</tr>
+<tr>
+<td><strong>Related Hardware</strong></td>
+<td>RF Pathway, Air Ducts, TPU Corner Pads</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="overview">Overview</h1>
+<p>The RFSoC 4x2 Portable Field Enclosure was developed as the second major enclosure platform for the University of New Hampshire's <strong>Radio Interferometer for Thunderstorm Studies (RIFTS)</strong> project.</p>
+<p>Unlike the earlier ZCU216 enclosure, which was intended primarily for laboratory integration within a standard 2U rack-mounted form factor, the RFSoC 4x2 enclosure was designed specifically for mobile field deployments. The enclosure was engineered to provide mechanical protection, electromagnetic shielding, thermal management, and portability while supporting transportation by vehicle and operation in outdoor research environments.</p>
+<p>Although the enclosure itself is not waterproof, it was designed to integrate with the project's weather-resistant antenna systems and neighboring RF electronics during field campaigns.</p>
+<p>The RFSoC 4x2 enclosure also represents the culmination of several lessons learned during development of the earlier ZCU216 enclosure, particularly with respect to structural rigidity, EMI shielding, and enclosure construction techniques.</p>
+<hr>
+<h1 id="design-requirements">Design Requirements</h1>
+<p>The enclosure was designed to satisfy the following engineering requirements:</p>
+<ul>
+<li>Provide secure mechanical integration of the AMD Xilinx RFSoC 4x2 development platform.</li>
+<li>Protect sensitive RF electronics during transportation and field deployment.</li>
+<li>Minimize electromagnetic emissions and susceptibility through conductive enclosure design.</li>
+<li>Provide active cooling for continuous operation.</li>
+<li>Maintain access to all required RFSoC interfaces.</li>
+<li>Support rapid deployment and transportation.</li>
+<li>Accommodate the project's custom RF pathway assemblies.</li>
+<li>Maintain a serviceable mechanical design.</li>
+</ul>
+<hr>
+<h1 id="design-rationale">Design Rationale</h1>
+<h2 id="portable-field-deployment">Portable Field Deployment</h2>
+<p>Unlike the ZCU216 enclosure, portability became a primary design objective.</p>
+<p>Integrated carrying handles and rubber feet allow the enclosure to be transported by hand, placed securely within vehicles, and operated on uneven terrain or standard laboratory work surfaces.</p>
+<hr>
+<h2 id="structural-improvements">Structural Improvements</h2>
+<p>Experience gained from the ZCU216 enclosure directly influenced the mechanical construction of the RFSoC 4x2 enclosure.</p>
+<p>The enclosure utilizes <strong>0.064-inch 5052 aluminum</strong>, making it the thickest enclosure developed for the RIFTS project.</p>
+<p>The increased material thickness provides noticeably greater rigidity during transportation and handling while also contributing to improved low-frequency shielding performance.</p>
+<p>As with the later revision of the ZCU216 enclosure, seam-welded construction further improves both structural integrity and electromagnetic shielding effectiveness.</p>
+<hr>
+<h2 id="rfsoc-4x2-mounting-strategy">RFSoC 4x2 Mounting Strategy</h2>
+<p>The initial enclosure concept followed the mounting philosophy established by the ZCU216 enclosure, positioning the RFSoC development board flush against the rear enclosure wall.</p>
+<p>During integration it became apparent that this arrangement would obstruct access to the RFSoC 4x2's JTAG/UART interface, which is located along the side of the development board.</p>
+<p>To preserve accessibility, the board was relocated into a rear corner of the enclosure. This allowed connector cutouts to be incorporated into both the rear panel and one side panel, providing access to all required interfaces while maintaining a compact enclosure footprint.</p>
+<p>Although this approach significantly improved connector accessibility, it also made installation of the development board onto the threaded standoffs more challenging due to the reduced working space around the board.</p>
+<hr>
+<h2 id="thermal-management">Thermal Management</h2>
+<p>The RFSoC 4x2 enclosure incorporates an active cooling system consisting of two fans.</p>
+<p>The intake fan is mounted directly to one side panel of the enclosure.</p>
+<p>Unlike previous designs, the exhaust fan is mounted directly to the heatsink supplied with the RFSoC 4x2 development board. Heated air is drawn directly from the heatsink and exhausted through a dedicated vent located in the enclosure cover.</p>
+<p>Additional airflow management is provided through custom FDM-printed air ducts developed specifically for the enclosure. These accessories improve airflow direction and cooling efficiency while remaining easily manufacturable using desktop additive manufacturing.</p>
+<hr>
+<h2 id="rf-pathway-integration">RF Pathway Integration</h2>
+<p>Rather than utilizing the MIT Haystack RF Interface Board employed by the ZCU216 platform, the RFSoC 4x2 enclosure incorporates four analog RF pathway assemblies.</p>
+<p>Because complete vendor CAD models were unavailable, an engineering reference model of the RF pathway was reverse engineered from available measurements and visual references.</p>
+<p>Although not intended to represent manufacturing geometry, the model accurately captures the overall size, connector locations, and mechanical envelope required for enclosure integration.</p>
+<hr>
+<h1 id="key-engineering-improvements">Key Engineering Improvements</h1>
+<table>
+<thead>
+<tr>
+<th>Revision</th>
+<th>Major Improvements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Final Design</strong></td>
+<td>Increased enclosure thickness to 0.064-inch aluminum, seam-welded construction, portable field-deployment architecture, direct heatsink exhaust cooling, RF pathway integration, and improved accessibility to RFSoC interfaces through corner-mounted board placement.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="mechanical-design">Mechanical Design</h1>
+<p>The enclosure consists of a seam-welded aluminum chassis with a removable fastened cover.</p>
+<p>Major mechanical features include:</p>
+<ul>
+<li>Integrated carrying handles</li>
+<li>Rubber isolation feet</li>
+<li>RFSoC 4x2 mounting provisions</li>
+<li>Internal RF pathway mounting</li>
+<li>Side-mounted intake fan</li>
+<li>Heatsink-mounted exhaust fan</li>
+<li>Dedicated ventilation openings</li>
+<li>Standardized Protocase PEM hardware</li>
+</ul>
+<p>The removable cover provides full access to the enclosure interior while maintaining shielding continuity through closely spaced perimeter fasteners.</p>
+<hr>
+<h1 id="gallery">Gallery</h1>
+<h2 id="complete-enclosure">Complete Enclosure</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/hero/rear_isometric_view.jpg" data-desc-position="bottom"><img alt="Rear Isometric View" src="../../images/hero/rear_isometric_view.jpg"></a></p>
+<p>Overall view of the completed RFSoC 4x2 enclosure.</p>
+<hr>
+<h2 id="exterior-views">Exterior Views</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/rfsoc-4x2/front_view.jpg" data-desc-position="bottom"><img alt="Front View" src="../../images/rfsoc-4x2/front_view.jpg"></a></p>
+<p>Front panel showing external interfaces.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/rfsoc-4x2/side_view.jpg" data-desc-position="bottom"><img alt="Side View" src="../../images/rfsoc-4x2/side_view.jpg"></a></p>
+<p>Side panel illustrating cooling features and enclosure geometry.</p>
+<hr>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/rfsoc-4x2/top_view.jpg" data-desc-position="bottom"><img alt="Top View" src="../../images/rfsoc-4x2/top_view.jpg"></a></p>
+<p>Top cover showing exhaust ventilation.</p>
+<hr>
+<h2 id="cooling-system">Cooling System</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/rfsoc-4x2/fan_side_view.jpg" data-desc-position="bottom"><img alt="Fan Side View" src="../../images/rfsoc-4x2/fan_side_view.jpg"></a></p>
+<p>Side-mounted intake fan and overall airflow configuration.</p>
+<hr>
+<h1 id="directory-contents">Directory Contents</h1>
+<p>The repository preserves the enclosure design, reference CAD models, manufacturing files, and supporting accessories developed specifically for the RFSoC 4x2 platform.</p>
+<h2 id="board-cad">Board CAD</h2>
+<p>Contains reference CAD models for the AMD Xilinx RFSoC 4x2 development platform used during enclosure development.</p>
+<p>These models were used to establish mounting geometry, connector locations, and mechanical clearances throughout the design process.</p>
+<hr>
+<h2 id="enclosure-cad">Enclosure CAD</h2>
+<p>Contains the completed enclosure CAD model.</p>
+<p>Available formats:</p>
+<ul>
+<li>STEP</li>
+</ul>
+<hr>
+<h2 id="manufacturing-files">Manufacturing Files</h2>
+<p>Contains the original fabrication package submitted for manufacturing.</p>
+<p>Manufacturer:</p>
+<ul>
+<li>Protocase</li>
+</ul>
+<p>Available formats:</p>
+<ul>
+<li>Protocase PDA</li>
+</ul>
+<p>These files preserve the exact enclosure geometry used for fabrication and may be used as the starting point for future enclosure revisions.</p>
+<hr>
+<h2 id="associated-components">Associated Components</h2>
+<p>Several accessories were developed specifically for the RFSoC 4x2 enclosure and are documented elsewhere within this repository.</p>
+<p>These include:</p>
+<ul>
+<li>RF Pathway</li>
+<li>Air Ducts</li>
+<li>TPU Corner Pads</li>
+</ul>
+<p>Together, these components complete the portable field enclosure assembly.</p>
+<hr>
+<h1 id="manufacturing-notes">Manufacturing Notes</h1>
+<p>The enclosure was manufactured by <strong>Protocase</strong> using CNC sheet metal fabrication from <strong>0.064-inch 5052 aluminum</strong>.</p>
+<p>Unlike the earlier ZCU216 enclosure, the increased material thickness provided substantially greater rigidity for transportation and field handling while maintaining good manufacturability.</p>
+<p>The enclosure utilizes standardized Protocase PEM hardware for board mounting and removable cover attachment.</p>
+<hr>
+<h2 id="manufacturing-compliance-issue">Manufacturing Compliance Issue</h2>
+<p>Only one enclosure design was produced.</p>
+<p>Following delivery of the initial manufactured enclosure, it was discovered that several PEM fasteners intended to secure the removable cover had been installed incorrectly during manufacturing.</p>
+<p>Because of this installation error, the cover could not be removed using the intended screw-fastened assembly.</p>
+<p>The enclosure design itself required no modification.</p>
+<p>A replacement enclosure was manufactured using the original design with corrected PEM installation.</p>
+<hr>
+<h1 id="design-evolution">Design Evolution</h1>
+<p>Unlike the ZCU216 enclosure, the RFSoC 4x2 enclosure did not undergo multiple design revisions prior to manufacturing.</p>
+<p>Instead, the design incorporated many lessons learned from previous RIFTS hardware projects before the initial fabrication.</p>
+<p>The only additional enclosure manufactured was a replacement unit produced to correct the manufacturing compliance issue involving PEM installation.</p>
+<hr>
+<h1 id="lessons-learned">Lessons Learned</h1>
+<p>Development of the RFSoC 4x2 enclosure highlighted the importance of designing not only for performance, but also for long-term serviceability.</p>
+<p>Several practical lessons emerged during repeated assembly and testing.</p>
+<ul>
+<li>Designing for easy access is just as important as mechanical packaging.</li>
+<li>Dense fastener spacing successfully improves shielding continuity but can significantly increase assembly time.</li>
+<li>Corner mounting of the RFSoC 4x2 preserved access to critical interfaces but made installation of the development board considerably more difficult.</li>
+<li>Early consideration of assembly procedures can eliminate unnecessary maintenance effort later in the project's lifecycle.</li>
+<li>Experience gained from the ZCU216 enclosure translated directly into a more rigid, better-shielded portable enclosure.</li>
+</ul>
+<hr>
+<h1 id="engineering-notes">Engineering Notes</h1>
+<h2 id="cover-removal">Cover Removal</h2>
+<p>The removable cover is secured using twenty-eight perimeter fasteners spaced approximately 2.5 inches apart.</p>
+<p>This dense fastener spacing was intentionally selected to reduce the effective length of conductive discontinuities around the removable cover, improving electromagnetic shielding performance without requiring conductive EMI gaskets.</p>
+<p>Although effective from an EMC perspective, removing the cover requires significant assembly time.</p>
+<p>Future enclosure designs could improve serviceability by replacing circular fastener holes along the long sides of the cover with slotted features.</p>
+<p>This would allow the corresponding fasteners to remain partially installed while the cover slides free after loosening the screws, reducing disassembly time without compromising shielding performance.</p>
+<hr>
+<h2 id="rfsoc-installation">RFSoC Installation</h2>
+<p>Positioning the RFSoC 4x2 in the rear corner of the enclosure successfully preserved access to both rear and side interfaces.</p>
+<p>However, this location leaves limited clearance when installing the development board onto the threaded standoffs.</p>
+<p>Future revisions should investigate alternative mounting strategies that preserve connector accessibility while simplifying installation.</p>
+<hr>
+<h2 id="cooling-strategy">Cooling Strategy</h2>
+<p>The direct mounting of the exhaust fan to the RFSoC heatsink proved to be an effective cooling solution.</p>
+<p>Combined with the custom printed air ducts, the resulting airflow path efficiently removes heat from the primary heat source before exhausting it through the enclosure cover.</p>
+<hr>
+<h1 id="future-work">Future Work</h1>
+<p>Although the enclosure successfully met its design objectives, several opportunities remain for future refinement.</p>
+<p>Potential improvements include:</p>
+<ul>
+<li>Slotted removable cover for faster servicing.</li>
+<li>Improved RFSoC mounting strategy to simplify installation.</li>
+<li>Evaluation of conductive EMI gaskets for removable panel interfaces.</li>
+<li>Additional quantitative shielding effectiveness measurements.</li>
+<li>Continued refinement of airflow management accessories.</li>
+<li>Integration of future RF hardware platforms using the established enclosure architecture.</li>
+</ul>
+<hr>
+<h1 id="related-documentation">Related Documentation</h1>
+<ul>
+<li><a href="../../Accessories/RF_Pathway/README.md">RF Pathway</a></li>
+<li><a href="../../Accessories/Air_Ducts/README.md">Air Ducts</a></li>
+<li><a href="../../Accessories/TPU_Corner_Pads/README.md">TPU Corner Pads</a></li>
+<li><a href="../zcu216/README.md">ZCU216 RF Shielded Enclosure</a></li>
+</ul>
+<hr>
+<h1 id="revision-history">Revision History</h1>
+<table>
+<thead>
+<tr>
+<th>Revision</th>
+<th>Date</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rev A</td>
+<td>2026</td>
+<td>Final enclosure manufactured. Replacement enclosure produced due to manufacturer PEM installation error; enclosure design unchanged.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="credits">Credits</h1>
+<h2 id="mechanical-design-cad-and-documentation">Mechanical Design, CAD, and Documentation</h2>
+<p><strong>Joshua D'Addario</strong></p>
+<p>University of New Hampshire</p>
+<p>Engineering Physics</p>
+<hr>
+<h2 id="hardware-platform">Hardware Platform</h2>
+<p><strong>AMD Xilinx</strong></p>
+<p>RFSoC 4x2 Development Platform</p>
+<hr>
+<h2 id="manufacturing">Manufacturing</h2>
+<p><strong>Protocase</strong></p>
+<p>Custom precision sheet metal fabrication.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/lightning.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

@@ -1,0 +1,1181 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../rifts_logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>RFSoC 4x2 TPU Corner Pad System - RIFTS HDA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rfsoc-4x2-tpu-corner-pad-system" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="RIFTS HDA" class="md-header__button md-logo" aria-label="RIFTS HDA" data-md-component="logo">
+      
+  <img src="../../../rifts_logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RIFTS HDA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              RFSoC 4x2 TPU Corner Pad System
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="RIFTS HDA" class="md-nav__button md-logo" aria-label="RIFTS HDA" data-md-component="logo">
+      
+  <img src="../../../rifts_logo.jpg" alt="logo">
+
+    </a>
+    RIFTS HDA
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF-Shielded Enclosures
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RF-Shielded Enclosures
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1">
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RFSoC 4x2 Portable Field Enclosure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RFSoC 4x2 Portable Field Enclosure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rfsoc-4x2/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rfsoc-4x2/media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZCU216 Rack-Mounted Enclosure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ZCU216 Rack-Mounted Enclosure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zcu216/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../zcu216/media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antenna Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Antenna Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1">
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OmniLOG PRO 1030 N Antenna Mount
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OmniLOG PRO 1030 N Antenna Mount
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../antenna/nav_2/antenna-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../antenna/nav_2/antenna-manufacturing-details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manufacturing Details
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../antenna/nav_2/antenna-media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supporting Hardware
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Supporting Hardware
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ventilation/air-ducts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cooling Air Ducts &amp; Fans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../corner-pads-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TPU Corner Pads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rfsoc-4x2-rf-pathway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF Pathway CAD Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFIB-support/rfib-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF Interface Board (RFIB) Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../electronics-cads/electronics-reference-cad-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronics Reference CAD Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="rfsoc-4x2-tpu-corner-pad-system">RFSoC 4x2 TPU Corner Pad System</h1>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/accessories/corner_pads_installed.jpg" data-desc-position="bottom"><img alt="Installed Corner Pads" src="../../../images/accessories/corner_pads_installed.jpg"></a></p>
+<hr>
+<h1 id="project-summary">Project Summary</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project</strong></td>
+<td>RFSoC 4x2 TPU Corner Pad System</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Protective corner assemblies for portable enclosure handling and transportation</td>
+</tr>
+<tr>
+<td><strong>Associated Platform</strong></td>
+<td>RFSoC 4x2 Portable Field Enclosure</td>
+</tr>
+<tr>
+<td><strong>Manufacturing Method</strong></td>
+<td>FDM Additive Manufacturing</td>
+</tr>
+<tr>
+<td><strong>Primary Material</strong></td>
+<td>TPU</td>
+</tr>
+<tr>
+<td><strong>Rigid Insert Material</strong></td>
+<td>PLA Prototype / PETG Recommended</td>
+</tr>
+<tr>
+<td><strong>Threaded Hardware</strong></td>
+<td>M3 Brass Heat-Set Inserts</td>
+</tr>
+<tr>
+<td><strong>Printer</strong></td>
+<td>Bambu Lab A1</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Complete</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="overview">Overview</h1>
+<p>The RFSoC 4x2 TPU Corner Pad System was developed specifically for the portable RIFTS RFSoC 4x2 enclosure to improve durability during transportation, handling, and field deployment.</p>
+<p>Unlike the laboratory-oriented ZCU216 enclosure, the RFSoC 4x2 platform was designed for repeated transportation and operation outside of a controlled laboratory environment.</p>
+<p>The corner pad assemblies provide mechanical protection for the aluminum enclosure while improving stability when placed on uneven or irregular surfaces.</p>
+<hr>
+<h1 id="design-purpose">Design Purpose</h1>
+<p>The corner pad assemblies were developed to:</p>
+<ul>
+<li>Protect enclosure corners during transportation and handling.</li>
+<li>Reduce impact forces transferred to the aluminum enclosure.</li>
+<li>Improve stability on uneven surfaces.</li>
+<li>Provide a high-friction interface between the enclosure and supporting surfaces.</li>
+<li>Improve long-term durability of the portable hardware platform.</li>
+</ul>
+<hr>
+<h1 id="assembly-design">Assembly Design</h1>
+<p>Each enclosure corner uses a <strong>unique corner pad assembly</strong> designed to accommodate the specific geometry of that enclosure corner.</p>
+<p>The complete system consists of four separate corner assemblies.</p>
+<p>Each assembly contains:</p>
+<ul>
+<li>Four TPU body sections.</li>
+<li>Ten custom rigid insert components.</li>
+<li>Ten M3 brass heat-set threaded inserts.</li>
+<li>Mechanical fasteners for final assembly.</li>
+</ul>
+<p>The rigid insert components are bonded into dedicated pockets within the TPU sections.</p>
+<p>Because TPU is flexible and does not provide an ideal material for directly installing heat-set inserts, rigid printed inserts were incorporated to provide a more reliable threaded interface.</p>
+<p>The heat-set inserts are installed into the rigid insert components, allowing the TPU sections to be mechanically fastened together into a complete three-dimensional corner pad assembly.</p>
+<p>This modular construction allows damaged sections to be replaced individually rather than requiring replacement of an entire corner assembly.</p>
+<hr>
+<h1 id="material-selection">Material Selection</h1>
+<h2 id="tpu-corner-components">TPU Corner Components</h2>
+<p>The protective corner sections were manufactured using Thermoplastic Polyurethane (TPU).</p>
+<p>TPU was selected due to:</p>
+<ul>
+<li>High impact resistance.</li>
+<li>Flexibility under loading.</li>
+<li>Abrasion resistance.</li>
+<li>High surface friction.</li>
+<li>Ability to absorb mechanical shocks.</li>
+</ul>
+<p>Compared with rigid thermoplastics, TPU provides improved energy absorption and reduces the likelihood of transmitting impact forces directly into the aluminum enclosure.</p>
+<hr>
+<h2 id="rigid-insert-components">Rigid Insert Components</h2>
+<p>The rigid insert components were originally manufactured using PLA to support rapid prototyping and design iteration.</p>
+<p>For future manufacturing, <strong>PETG is recommended</strong> because it provides:</p>
+<ul>
+<li>Improved toughness.</li>
+<li>Increased impact resistance.</li>
+<li>Better elevated-temperature performance.</li>
+<li>Reduced brittleness during repeated assembly.</li>
+</ul>
+<hr>
+<h1 id="heat-set-insert-installation">Heat-Set Insert Installation</h1>
+<p>The M3 brass heat-set inserts are installed into the rigid printed insert components.</p>
+<p>Recommended installation procedure:</p>
+<ol>
+<li>Heat a soldering iron to approximately <strong>230°C</strong>.</li>
+<li>Use a heat-set insert press attachment designed for soldering irons to maintain alignment during installation.</li>
+<li>Insert the brass threaded insert into the prepared hole.</li>
+<li>Ensure the <strong>serrated face of the heat-set insert faces outward toward the opening of the hole</strong>.</li>
+<li>The serrated surface should face upward/outward.</li>
+<li>It should not point deeper into the printed insert.</li>
+<li>Apply heat and gently press the insert into position until fully seated.</li>
+</ol>
+<p>A suitable heat-set insert press attachment can be purchased commercially.</p>
+<p>Example:</p>
+<p>https://www.amazon.com/Vertical-Machine-Heat-Insertion-Threaded-Components/dp/B0DHKPHKJZ</p>
+<hr>
+<h1 id="design-features">Design Features</h1>
+<p>The completed corner pad assemblies provide:</p>
+<ul>
+<li>Full enclosure corner protection.</li>
+<li>Replaceable modular construction.</li>
+<li>Flexible impact absorption.</li>
+<li>Increased friction against supporting surfaces.</li>
+<li>Improved stability during transportation.</li>
+<li>Lightweight construction.</li>
+</ul>
+<p>The modular design allows individual TPU sections or rigid inserts to be replaced without recreating the entire assembly.</p>
+<hr>
+<h1 id="gallery">Gallery</h1>
+<h2 id="cad-model">CAD Model</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/accessories/corner_pad_CAD.jpg" data-desc-position="bottom"><img alt="Corner Pad CAD" src="../../../images/accessories/corner_pad_CAD.jpg"></a></p>
+<p>Representative CAD model of a corner pad assembly.</p>
+<hr>
+<h2 id="installed-assembly">Installed Assembly</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../images/accessories/corner_pads_installed.jpg" data-desc-position="bottom"><img alt="Installed Corner Pad" src="../../../images/accessories/corner_pads_installed.jpg"></a></p>
+<p>Completed corner pad assemblies installed on the RFSoC 4x2 enclosure.</p>
+<hr>
+<h1 id="manufacturing">Manufacturing</h1>
+<p>The corner pad assemblies were manufactured using fused deposition modeling (FDM) additive manufacturing.</p>
+<h2 id="manufacturing-details">Manufacturing Details</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Material</th>
+<th>Manufacturing Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TPU corner sections</td>
+<td>TPU</td>
+<td>FDM 3D Printing</td>
+</tr>
+<tr>
+<td>Rigid insert components</td>
+<td>PLA Prototype / PETG Recommended</td>
+<td>FDM 3D Printing</td>
+</tr>
+<tr>
+<td>Threaded inserts</td>
+<td>Brass M3 Heat-Set Inserts</td>
+<td>Commercial Hardware</td>
+</tr>
+</tbody>
+</table>
+<p>Printer:</p>
+<ul>
+<li>Bambu Lab A1</li>
+</ul>
+<p>Future manufacturing packages may include Bambu Studio (<code>.3mf</code>) files containing validated print profiles.</p>
+<hr>
+<h1 id="file-organization">File Organization</h1>
+<pre><code class="language-text">rfsoc-4x2-corner-pads/
+
+├── Common_Components/
+│   └── Corner_Pad_Insert/
+│       ├── CAD/
+│       └── STL/
+│
+├── Corner_Pad_1/
+│   ├── Assembly/
+│   ├── CAD/
+│   └── STL/
+│
+├── Corner_Pad_2/
+│
+├── Corner_Pad_3/
+│
+└── Corner_Pad_4/
+</code></pre>
+<hr>
+<h1 id="downloads">Downloads</h1>
+<p>The repository includes:</p>
+<h2 id="common-components">Common Components</h2>
+<ul>
+<li>Native SolidWorks CAD for rigid insert components.</li>
+<li>STL files for additive manufacturing.</li>
+</ul>
+<h2 id="corner-pad-assemblies">Corner Pad Assemblies</h2>
+<p>Each corner assembly includes:</p>
+<ul>
+<li>SolidWorks assembly files (<code>.SLDASM</code>).</li>
+<li>Native SolidWorks part files (<code>.SLDPRT</code>).</li>
+<li>STL files for additive manufacturing.</li>
+</ul>
+<p>Future revisions may include:</p>
+<ul>
+<li>STEP exports.</li>
+<li>Exploded assembly drawings.</li>
+<li>Bambu Studio (<code>.3mf</code>) print files.</li>
+</ul>
+<hr>
+<h1 id="associated-hardware-platform">Associated Hardware Platform</h1>
+<p>The corner pad system was developed exclusively for the RFSoC 4x2 portable enclosure.</p>
+<p>These assemblies are not used on the ZCU216 enclosure platform.</p>
+<hr>
+<h1 id="revision-history">Revision History</h1>
+<table>
+<thead>
+<tr>
+<th>Revision</th>
+<th>Date</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rev A</td>
+<td>July 2026</td>
+<td>Initial corner pad assembly documentation and archive release.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="credits">Credits</h1>
+<p>Mechanical design and documentation:</p>
+<p><strong>Joshua D'Addario</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/lightning.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
