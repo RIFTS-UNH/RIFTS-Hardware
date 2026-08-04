@@ -234,7 +234,7 @@ Although Revision B represents a mature enclosure design, several opportunities 
 
 ## Related Hardware
 
-- MIT Haystack RF Interface Board (see Electronics Reference CAD Models)
+- MIT Haystack RF Interface Board (see [Electronics Reference CAD Models](../../electronics-cads/electronics-reference-cad-models.md))
 - [Cooling Air Ducts](../ventilation/air-ducts.md)
 - [RF Interface Board (RFIB) Support](../RFIB-support/rfib-support.md)
 
