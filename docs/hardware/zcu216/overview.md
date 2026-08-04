@@ -182,7 +182,7 @@ The full Protocase standoff catalog is available at [protocase.com/products/comp
 #### Board Installation Video
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="/hardware/zcu216/media/ZCU216_Board_Installation_Tutorial.mp4" type="video/mp4">
+  <source src="../media/ZCU216_Board_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

@@ -53,9 +53,6 @@ Where appropriate, simplified versions of these models are used in place of full
 
 Simplified versions currently exist for the **AMD Xilinx RFSoC 4x2 Development Board** and the **RF Interface Board**. These simplified models retain only mechanically significant geometry — external dimensions, connector locations, and mounting interfaces — and are available as an alternative to the full-detail manufacturer models on request.
 
-!!! warning "Simplified models may not capture underside component protrusions"
-    Simplified versions aren't guaranteed to represent every component protrusion extending from the underside of a board — small connectors, headers, or other populated components can extend below the board surface without being captured in the simplified geometry. For example, the full-detail RF Interface Board model was used (rather than its simplified counterpart) when designing the [RFIB Support](../hardware/RFIB-support/rfib-support.md), because the simplified model didn't show all of the underside protrusions the support's geometry needed to clear. When clearance beneath a board is mechanically important, verify against the full-detail model rather than relying on the simplified version alone.
-
 ---
 
 ## Revision History
