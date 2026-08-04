@@ -20,11 +20,11 @@
 
 <div class="render-scroll" markdown>
 
-![RFIB Support Render 1](../../zcu216/media/RF_Interface_Board_Support_Render.png){: data-gallery="rfib-support-renders" }
+![RFIB Support Render 1](../zcu216/media/RF_Interface_Board_Support_Render.png){: data-gallery="rfib-support-renders" }
 
-![RFIB Support Render 2](../../zcu216/media/RFIB_Support_Underside.png){: data-gallery="rfib-support-renders" }
+![RFIB Support Render 2](../zcu216/media/RFIB_Support_Underside.png){: data-gallery="rfib-support-renders" }
 
-![RFIB Support Render 3](../../zcu216/media/RFIB_Support_Exploded.png){: data-gallery="rfib-support-renders" }
+![RFIB Support Render 3](../zcu216/media/RFIB_Support_Exploded.png){: data-gallery="rfib-support-renders" }
 
 ![RFIB Support Render 3](media/RFIB_Top_View.png){: data-gallery="rfib-support-renders" }
 
