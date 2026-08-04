@@ -48,7 +48,7 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 ### Installation Video — Type A
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="../../media/Type_A/Type_A_Installation_Tutorial.mp4" type="video/mp4">
+  <source src="../media/Type_A/Type_A_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -59,7 +59,7 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 ### Installation Video — Type B
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="../../media/Type_B/Type_B_Installation_Tutorial.mp4" type="video/mp4">
+  <source src="../media/Type_B/Type_B_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -90,7 +90,7 @@ Prototype ducts and fan mounts were printed in **PLA** for rapid iteration and g
 
 Fan Mount, Airflow Duct (Standard & Short), and the Type A fan reference model, as native `.SLDPRT` files.
 
-[Download](/hardware/ventilation/media/Type_A/RIFTS_Duct_TypeA_SLDPRT_Bundle.zip){: .md-button :download}
+[Download](../media/Type_A/RIFTS_Duct_TypeA_SLDPRT_Bundle.zip){: .md-button :download}
 
 </div>
 
@@ -101,7 +101,7 @@ Fan Mount, Airflow Duct (Standard & Short), and the Type A fan reference model, 
 
 Same parts in `.STEP` format — works with most CAD software.
 
-[Download](/hardware/ventilation/media/Type_A/RIFTS_Duct_TypeA_STEP_Bundle.zip){: .md-button :download}
+[Download](../media/Type_A/RIFTS_Duct_TypeA_STEP_Bundle.zip){: .md-button :download}
 
 </div>
 
@@ -112,7 +112,7 @@ Same parts in `.STEP` format — works with most CAD software.
 
 Print-ready mesh geometry for all parts.
 
-[Download](/hardware/ventilation/media/Type_A/RIFTS_Duct_TypeA_STL_Bundle.zip){: .md-button :download}
+[Download](../media/Type_A/RIFTS_Duct_TypeA_STL_Bundle.zip){: .md-button :download}
 
 </div>
 
@@ -129,7 +129,7 @@ Print-ready mesh geometry for all parts.
 
 RFSoC 4x2 length — Bambu Studio print project.
 
-[Download](/hardware/ventilation/media/Type_A/RIFTS_Duct_FanMount_AirflowDuct_TypeA_PrintAssembly.3mf){: .md-button :download}
+[Download](../media/Type_A/RIFTS_Duct_FanMount_AirflowDuct_TypeA_PrintAssembly.3mf){: .md-button :download}
 
 </div>
 
@@ -140,7 +140,7 @@ RFSoC 4x2 length — Bambu Studio print project.
 
 ZCU216 length — Bambu Studio print project.
 
-[Download](/hardware/ventilation/media/Type_A/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeA_PrintAssembly.3mf){: .md-button :download}
+[Download](../media/Type_A/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeA_PrintAssembly.3mf){: .md-button :download}
 
 </div>
 
@@ -156,13 +156,13 @@ Both the Standard and Short Type A duct assemblies require **four M3 × 50 mm ma
 
 <div class="render-scroll" markdown>
 
-![Type A Render — Front](/hardware/ventilation/media/Type_A/Type_A_Assembly_Render.png){: data-gallery="type-a-renders" }
+![Type A Render — Front](../media/Type_A/Type_A_Assembly_Render.png){: data-gallery="type-a-renders" }
 
-![Type A Render — Back](/hardware/ventilation/media/Type_A/Type_A_Assembly_Render_Back.png){: data-gallery="type-a-renders" }
+![Type A Render — Back](../media/Type_A/Type_A_Assembly_Render_Back.png){: data-gallery="type-a-renders" }
 
-![Type A Render — In Enclosure](/hardware/ventilation/media/Type_A/Type_A_In_Enclosure_Render (2).png){: data-gallery="type-a-renders" }
+![Type A Render — In Enclosure](../media/Type_A/Type_A_In_Enclosure_Render (2).png){: data-gallery="type-a-renders" }
 
-![Type A Render — Short Variant](/hardware/ventilation/media/Type_A/Type_A_Assembly_Short_Render.png){: data-gallery="type-a-renders" }
+![Type A Render — Short Variant](../media/Type_A/Type_A_Assembly_Short_Render.png){: data-gallery="type-a-renders" }
 
 </div>
 
@@ -183,7 +183,7 @@ Both the Standard and Short Type A duct assemblies require **four M3 × 50 mm ma
 
 Fan Mount, Airflow Duct (Standard & Short), and the Type B fan reference model, as native `.SLDPRT` files.
 
-[Download](/hardware/ventilation/media/Type_B/RIFTS_Duct_TypeB_SLDPRT_Bundle.zip){: .md-button :download}
+[Download](../media/Type_B/RIFTS_Duct_TypeB_SLDPRT_Bundle.zip){: .md-button :download}
 
 </div>
 
@@ -194,7 +194,7 @@ Fan Mount, Airflow Duct (Standard & Short), and the Type B fan reference model, 
 
 Same parts in `.STEP` format — works with most CAD software.
 
-[Download](/hardware/ventilation/media/Type_B/RIFTS_Duct_TypeB_STEP_Bundle.zip){: .md-button :download}
+[Download](../media/Type_B/RIFTS_Duct_TypeB_STEP_Bundle.zip){: .md-button :download}
 
 </div>
 
@@ -205,7 +205,7 @@ Same parts in `.STEP` format — works with most CAD software.
 
 Print-ready mesh geometry for all parts.
 
-[Download](/hardware/ventilation/media/Type_B/RIFTS_Duct_TypeB_STL_Bundle.zip){: .md-button :download}
+[Download](../media/Type_B/RIFTS_Duct_TypeB_STL_Bundle.zip){: .md-button :download}
 
 </div>
 
@@ -222,7 +222,7 @@ Print-ready mesh geometry for all parts.
 
 RFSoC 4x2 length — Bambu Studio print project.
 
-[Download](/hardware/ventilation/media/Type_B/RIFTS_Duct_FanMount_AirflowDuct_TypeB_PrintAssembly.3mf){: .md-button :download}
+[Download](../media/Type_B/RIFTS_Duct_FanMount_AirflowDuct_TypeB_PrintAssembly.3mf){: .md-button :download}
 
 </div>
 
@@ -233,7 +233,7 @@ RFSoC 4x2 length — Bambu Studio print project.
 
 ZCU216 length — Bambu Studio print project.
 
-[Download](/hardware/ventilation/media/Type_B/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeB_PrintAssembly.3mf){: .md-button :download}
+[Download](../media/Type_B/RIFTS_Short_Duct_FanMount_AirflowDuct_TypeB_PrintAssembly.3mf){: .md-button :download}
 
 </div>
 
@@ -255,13 +255,13 @@ Both the Standard and Short Type B duct assemblies require:
 
 <div class="render-scroll" markdown>
 
-![Type B Render — Front](/hardware/ventilation/media/Type_B/Type_B_Assembly_Render.png){: data-gallery="type-b-renders" }
+![Type B Render — Front](../media/Type_B/Type_B_Assembly_Render.png){: data-gallery="type-b-renders" }
 
-![Type B Render — Back](/hardware/ventilation/media/Type_B/Type_B_Assembly_Render_Back.png){: data-gallery="type-b-renders" }
+![Type B Render — Back](../media/Type_B/Type_B_Assembly_Render_Back.png){: data-gallery="type-b-renders" }
 
-![Type B Render — In Enclosure](/hardware/ventilation/media/Type_B/Type_B_In_Enclosure_Render.png){: data-gallery="type-b-renders" }
+![Type B Render — In Enclosure](../media/Type_B/Type_B_In_Enclosure_Render.png){: data-gallery="type-b-renders" }
 
-![Type B Render — Short Variant](/hardware/ventilation/media/Type_B/Type_B_Assembly_Short_Render (2).png){: data-gallery="type-b-renders" }
+![Type B Render — Short Variant](../media/Type_B/Type_B_Assembly_Short_Render (2).png){: data-gallery="type-b-renders" }
 
 </div>
 
