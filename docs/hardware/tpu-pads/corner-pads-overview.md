@@ -94,7 +94,7 @@ The completed corner pad assemblies provide full enclosure corner protection, re
 ### Assembly Tutorial
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="/hardware/tpu-pads/rfsoc-4x2-corner-pads/RIFTS_Corner_Pad_1_Assembly_Tutorial.mp4" type="video/mp4">
+  <source src="../rfsoc-4x2-corner-pads/RIFTS_Corner_Pad_1_Assembly_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -103,7 +103,7 @@ The completed corner pad assemblies provide full enclosure corner protection, re
 ### Installation Tutorial
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="/hardware/tpu-pads/rfsoc-4x2-corner-pads/Corner_Pad_Installation_Tutorial.mp4" type="video/mp4">
+  <source src="../rfsoc-4x2-corner-pads/Corner_Pad_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -114,14 +114,14 @@ The completed corner pad assemblies provide full enclosure corner protection, re
 
 ### Corner Numbering Diagram
 
-![Corner Numbering Diagram](/hardware/tpu-pads/rfsoc-4x2-corner-pads/Corner_Pad_Number_Guide.JPG)
+![Corner Numbering Diagram](rfsoc-4x2-corner-pads/Corner_Pad_Number_Guide.JPG)
 
 *SolidWorks drawing labeling enclosure corners 1–4, showing which corner each pad is designed for.*
 
 ### Installed Assembly
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="/hardware/tpu-pads/rfsoc-4x2-corner-pads/Corner_Pads_Rotate_View.mp4" type="video/mp4">
+  <source src="../rfsoc-4x2-corner-pads/Corner_Pads_Rotate_View.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 

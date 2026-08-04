@@ -69,7 +69,7 @@ The RFIB Support is printed as two separate pieces and glued together after prin
 ### Assembly Tutorial
 
 <video controls style="width:100%; max-width:640px; border-radius:8px;">
-  <source src="/hardware/RFIB-support/media/RFIB_Support_Assembly.mp4" type="video/mp4">
+  <source src="../media/RFIB_Support_Assembly.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
