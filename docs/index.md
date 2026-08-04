@@ -2,7 +2,7 @@
 
 ![ZCU216 Enclosure](images/hero/zcu216_fully_populated.jpg){: .hero-image }
 
-*Populated ZCU216 Rack-Mounted Enclosure*
+*Populated ZCU216 Rack-Mounted Enclosure (Rev A)*
 
 Mechanical design, validation testing, and engineering documentation for the **Radio Interferometer for Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
