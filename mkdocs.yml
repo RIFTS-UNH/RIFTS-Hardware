@@ -16,19 +16,6 @@ extra_css:
 extra_javascript:
   - javascripts/lightning.js
 
-exclude_docs: |
-  **/*.SLDPRT
-  **/*.SLDASM
-  **/*.sldprt
-  **/*.sldasm
-  **/*.STEP
-  **/*.step
-  **/*.STL
-  **/*.stl
-  **/*.3MF
-  **/*.3mf
-  **/*.zip
-
 markdown_extensions:
   - admonition
   - pymdownx.details
