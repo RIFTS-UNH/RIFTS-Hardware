@@ -1,0 +1,640 @@
+/* Stacked photo pile — collapses into one compact row, fans out on hover.
+   Uses a class + inline CSS variables set directly on each <img> via attr_list,
+   so it works regardless of how deep markdown/glightbox nest the image. */
+.photo-stack {
+  position: relative;
+  height: 220px;
+  margin: 1rem 0 2.5rem;
+}
+
+.photo-stack .stack-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid var(--md-default-bg-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  cursor: zoom-in;
+  z-index: var(--z, 1);
+  transform: translateX(var(--tx, 0px)) rotate(var(--rot, 0deg));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.photo-stack:hover .stack-item {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transform: translateX(var(--htx, var(--tx, 0px))) rotate(var(--rot, 0deg)) scale(1.03);
+}
+
+/* Original grid layout — kept in case you want it for a different section later */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: zoom-in;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Render showcase — for transparent-background PNG renders.
+   No rotation/border/box-shadow (which would frame the empty alpha space);
+   uses drop-shadow, which follows the object's silhouette instead of its bounding box. */
+.render-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1.5rem 0;
+}
+
+.render-showcase img {
+  max-width: 260px;
+  max-height: 260px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  cursor: zoom-in;
+  padding: 1rem;
+  background: radial-gradient(ellipse at center, rgba(127, 127, 127, 0.08) 0%, transparent 70%);
+  filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.35));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.render-showcase img:hover {
+  transform: translateY(-6px) scale(1.05);
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.4));
+}
+
+/* Horizontal-scroll render strip — compact, side-scrolling showcase.
+   For sections where visuals should feel like a supporting accent, not the main content. */
+.render-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.75rem 0.5rem 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.render-scroll img {
+  flex: 0 0 auto;
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  scroll-snap-align: start;
+  cursor: zoom-in;
+  border-radius: 8px;
+  background: radial-gradient(ellipse at center, rgba(127, 127, 127, 0.08) 0%, transparent 70%);
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.3));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.render-scroll img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 12px 14px rgba(0, 0, 0, 0.35));
+}
+
+.render-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.render-scroll::-webkit-scrollbar-thumb {
+  background: var(--md-default-fg-color--lighter, #ccc);
+  border-radius: 3px;
+}
+
+/* Button group — evenly sized, wrapping button row for download sections */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.button-group .md-button {
+  flex: 1 1 220px;
+  text-align: center;
+  margin: 0;
+}
+
+.button-group-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+  margin: 1rem 0 0.4rem;
+}
+
+/* Download cards — bolder alternative to plain button rows */
+.download-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.download-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.75rem 1.25rem 1.5rem;
+  border-radius: 14px;
+  border: 1.5px solid var(--rifts-blue);
+  background: #fff;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.download-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--rifts-yellow);
+  opacity: 0.5;
+  transition: opacity 0.25s ease;
+}
+
+.download-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 83, 155, 0.18);
+  border-color: var(--rifts-yellow);
+}
+
+.download-card:hover::before {
+  opacity: 1;
+}
+
+/* Icon: sized via a wrapper span we control, not a guessed Material internal class */
+.download-card .card-icon {
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--rifts-blue);
+}
+
+.download-card .card-icon svg,
+.download-card .card-icon img {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.download-card strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  color: var(--rifts-blue);
+}
+
+.download-card p {
+  font-size: 0.82rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1.1rem;
+  min-height: 2.6em;
+}
+
+.download-card a.md-button {
+  width: 100%;
+  border-radius: 999px;
+  border-color: var(--rifts-blue);
+  color: var(--rifts-blue);
+  background: transparent;
+}
+
+.download-card a.md-button:hover {
+  background: var(--rifts-yellow-tint);
+  border-color: var(--rifts-yellow);
+  color: var(--rifts-blue);
+}
+
+/* Pad cards — compact variant for per-item cards containing multiple format icons
+   (used where items are organized by part/pad rather than by file format) */
+.pad-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.pad-card {
+  position: relative;
+  padding: 1.5rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: linear-gradient(165deg, var(--md-code-bg-color) 0%, transparent 120%);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.pad-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent, var(--md-primary-fg-color));
+  opacity: 0.35;
+  transition: opacity 0.25s ease;
+}
+
+.pad-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  border-color: var(--accent, var(--md-primary-fg-color));
+}
+
+.pad-card:hover::before {
+  opacity: 1;
+}
+
+.pad-card strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.pad-card-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.pad-card-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  transition: all 0.2s ease;
+}
+
+.pad-card-icons a:hover {
+  background: var(--accent, var(--md-primary-fg-color));
+  border-color: var(--accent, var(--md-primary-fg-color));
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.pad-card-icons .icon-wrap {
+  display: inline-flex;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.pad-card-icons .icon-wrap svg,
+.pad-card-icons .icon-wrap img {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* Multi-action cards — same card shell, but a row of icon-only downloads instead of one button */
+.download-card .card-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.download-card .card-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid var(--accent, var(--md-primary-fg-color));
+  color: var(--accent, var(--md-primary-fg-color));
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.download-card .card-actions a:hover {
+  background: var(--accent, var(--md-primary-fg-color));
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* RIFTS brand colors */
+:root {
+  --rifts-blue: #00539B;
+  --rifts-yellow: #FFEE00;
+  --rifts-yellow-tint: #FFFAD1;
+}
+
+/* Download cards — RIFTS blue/yellow theme */
+.download-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.1rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+/* Fixed 2-column variant — for sets where auto-fit produces an uneven wrap (e.g. 4 items → 3+1) */
+.download-cards.cols-2 {
+  grid-template-columns: repeat(2, minmax(160px, 1fr));
+}
+
+@media (max-width: 480px) {
+  .download-cards.cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.download-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1.1rem 1.25rem;
+  border-radius: 14px;
+  border: 1.5px solid var(--rifts-blue);
+  background: #fff;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.download-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--rifts-yellow);
+  opacity: 0.55;
+  transition: opacity 0.25s ease;
+}
+
+.download-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 83, 155, 0.18);
+  border-color: var(--rifts-yellow);
+}
+
+.download-card:hover::before {
+  opacity: 1;
+}
+
+.download-card .card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 auto 0.5rem;
+  color: var(--rifts-blue);
+}
+
+.download-card .card-icon svg,
+.download-card .card-icon img {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.download-card strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+  color: var(--rifts-blue);
+}
+
+.download-card p {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1rem;
+  min-height: 2.4em;
+}
+
+.download-card a.md-button {
+  width: 100%;
+  border-radius: 999px;
+  border-color: var(--rifts-blue);
+  color: var(--rifts-blue);
+  background: transparent;
+}
+
+.download-card a.md-button:hover {
+  background: var(--rifts-yellow);
+  border-color: var(--rifts-yellow);
+  color: var(--rifts-blue);
+}
+
+/* Labeled action pills for multi-file cards (Corner Pads, RFIB) — icon + short label,
+   grouped via attr_list paragraph class rather than a nested markdown div */
+.download-card p.card-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  min-height: 0;
+}
+
+.download-card a.card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--rifts-blue);
+  color: var(--rifts-blue);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.download-card a.card-action:hover {
+  background: var(--rifts-yellow);
+  border-color: var(--rifts-yellow);
+  transform: translateY(-2px);
+}
+
+/* Realistic lightning strike click effect — fractal midpoint-displacement bolt from top
+   to bottom of viewport, purple glow, with forking branches off the main channel.
+   Kept intentionally dim (low peak opacities, eased flicker) so it reads as a strike
+   glimpsed through a window, not a flashbang. */
+
+/* Forking branches — thinner and dimmer than the main channel, styled via class since
+   they're generated in bulk per-strike in lightning.js. Miter joins (with a generous
+   miterlimit) keep the fractal jag's corners sharp instead of rounding them off. */
+.rifts-strike-branch-glow {
+  fill: none;
+  stroke: #b266ff;
+  stroke-width: 3.5;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 6;
+  filter: blur(2.5px);
+  opacity: 0.22;
+}
+
+.rifts-strike-branch-core {
+  fill: none;
+  stroke: #f0e4ff;
+  stroke-width: 0.8;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 6;
+  opacity: 0.32;
+}
+
+/* Lightning strike click effect — full-screen jagged bolt with purple glow, soft flicker.
+   ease-out (not steps) so opacity glides between keyframes instead of hard-snapping —
+   that snap was the main source of the "flashbang" feeling. Peaks kept low. */
+.rifts-bolt-flash {
+  animation: rifts-bolt-strobe 0.5s ease-out forwards;
+}
+
+@keyframes rifts-bolt-strobe {
+  0%   { opacity: 0; }
+  8%   { opacity: 0.5; }
+  18%  { opacity: 0.12; }
+  28%  { opacity: 0.42; }
+  42%  { opacity: 0.08; }
+  55%  { opacity: 0.26; }
+  75%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.rifts-screen-flash {
+  position: fixed;
+  inset: 0;
+  background: #B266FF;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9998;
+  animation: rifts-screen-flash-anim 0.5s ease-out forwards;
+}
+
+@keyframes rifts-screen-flash-anim {
+  0%   { opacity: 0; }
+  10%  { opacity: 0.03; }
+  30%  { opacity: 0.01; }
+  42%  { opacity: 0.02; }
+  100% { opacity: 0; }
+}
+/* Homepage hero image — framed to match the polish of the card system elsewhere,
+   instead of sitting as a bare, unstyled <img> */
+.hero-image {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 14px 34px rgba(0, 83, 155, 0.2);
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* Comparison grid — side-by-side labeled image pairs (e.g. CAD reference vs.
+   installed hardware). Replaces the earlier .photo-stack hover-fan treatment
+   with something that matches the site's current card language: rounded
+   corners, blue border, yellow accent on hover, consistent with download-card. */
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.compare-item {
+  border-radius: 14px;
+  border: 1.5px solid var(--rifts-blue);
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.compare-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 83, 155, 0.18);
+  border-color: var(--rifts-yellow);
+}
+
+.compare-item img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.compare-item .compare-label {
+  margin: 0;
+  padding: 0.65rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--rifts-blue);
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Site-wide table styling — brings plain Markdown tables (revision history,
+   PEM hardware selections, project summaries, etc.) in line with the
+   download-card / pad-card visual language used elsewhere on the site.
+   Targets plain tables only (:not([class])) so it won't fight any table
+   that's deliberately given its own class later. */
+.md-typeset table:not([class]) {
+  border: 1.5px solid var(--rifts-blue);
+  border-radius: 14px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 83, 155, 0.08);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--rifts-blue);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  border: none;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.65rem 1rem;
+  font-size: 0.85rem;
+  border: none;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: var(--rifts-yellow-tint) !important;
+  transition: background 0.15s ease;
+}
