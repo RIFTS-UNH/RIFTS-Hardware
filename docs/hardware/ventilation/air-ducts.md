@@ -47,7 +47,9 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 
 ### Installation Video — Type A
 
-<video controls style="width:100%; max-width:640px; border-radius:8px;">
+<div class="video-wrap" markdown="1">
+
+<video controls>
   <source src="../media/Type_A/Type_A_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -55,17 +57,23 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 SolidWorks assembly walkthrough showing the Type A fan + duct assembly mounting to the enclosure wall.
 {: .video-caption }
 
+</div>
+
 <!-- TODO: replace with actual video filename once exported/uploaded to docs/hardware/ventilation/media/Type_A/ -->
 
 ### Installation Video — Type B
 
-<video controls style="width:100%; max-width:640px; border-radius:8px;">
+<div class="video-wrap" markdown="1">
+
+<video controls>
   <source src="../media/Type_B/Type_B_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 SolidWorks assembly walkthrough showing the Type B fan + duct assembly mounting to the enclosure wall.
 {: .video-caption }
+
+</div>
 
 <!-- TODO: replace with actual video filename once exported/uploaded to docs/hardware/ventilation/media/Type_B/ -->
 

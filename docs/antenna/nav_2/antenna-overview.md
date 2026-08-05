@@ -163,13 +163,17 @@ For detailed printer parameters, orientation rationale, structural settings, and
 
 ### Installation Video
 
-<video controls style="width:100%; max-width:640px; border-radius:8px;">
+<div class="video-wrap" markdown="1">
+
+<video controls>
   <source src="../../Antenna_Mount_Installation_Tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 SolidWorks assembly walkthrough covering the full sequence below — O-ring installation through final housing attachment. Refer to the written steps for reference while assembling.
 {: .video-caption }
+
+</div>
 
 <!-- TODO: confirm final video filename/path once uploaded -->
 

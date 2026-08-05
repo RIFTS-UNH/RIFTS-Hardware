@@ -68,13 +68,17 @@ The RFIB Support is printed as two separate pieces and glued together after prin
 
 ### Assembly Tutorial
 
-<video controls style="width:100%; max-width:640px; border-radius:8px;">
+<div class="video-wrap" markdown="1">
+
+<video controls>
   <source src="../media/RFIB_Support_Assembly.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 SolidWorks walkthrough showing how the two printed halves of the RFIB Support align and join together.
 {: .video-caption }
+
+</div>
 
 <!-- TODO: confirm final video filename/path once uploaded -->
 
