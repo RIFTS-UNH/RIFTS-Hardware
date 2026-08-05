@@ -53,7 +53,7 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
 </video>
 
 SolidWorks assembly walkthrough showing the Type A fan + duct assembly mounting to the enclosure wall.
-{: .figure-caption }
+{: .video-caption }
 
 <!-- TODO: replace with actual video filename once exported/uploaded to docs/hardware/ventilation/media/Type_A/ -->
 
@@ -65,7 +65,7 @@ SolidWorks assembly walkthrough showing the Type A fan + duct assembly mounting 
 </video>
 
 SolidWorks assembly walkthrough showing the Type B fan + duct assembly mounting to the enclosure wall.
-{: .figure-caption }
+{: .video-caption }
 
 <!-- TODO: replace with actual video filename once exported/uploaded to docs/hardware/ventilation/media/Type_B/ -->
 

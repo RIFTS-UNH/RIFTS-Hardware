@@ -568,6 +568,20 @@
   margin: -0.75rem 0 1.5rem;
 }
 
+/* Video captions — same look as .figure-caption, but videos don't carry the
+   .hero-image bottom margin the negative offset above relies on, so this
+   uses normal positive spacing instead to avoid tucking under the video. */
+.video-caption {
+  display: block;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+  margin: 0.6rem 0 1.5rem;
+}
+
 /* Comparison grid — side-by-side labeled image pairs (e.g. CAD reference vs.
    installed hardware). Replaces the earlier .photo-stack hover-fan treatment
    with something that matches the site's current card language: rounded

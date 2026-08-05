@@ -74,7 +74,7 @@ The RFIB Support is printed as two separate pieces and glued together after prin
 </video>
 
 SolidWorks walkthrough showing how the two printed halves of the RFIB Support align and join together.
-{: .figure-caption }
+{: .video-caption }
 
 <!-- TODO: confirm final video filename/path once uploaded -->
 

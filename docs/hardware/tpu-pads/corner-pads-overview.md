@@ -99,7 +99,7 @@ The completed corner pad assemblies provide full enclosure corner protection, re
 </video>
 
 SolidWorks walkthrough showing how the four TPU sections and rigid inserts assemble into one complete corner pad (shown using Corner Pad 1).
-{: .figure-caption }
+{: .video-caption }
 
 ### Installation Tutorial
 
@@ -109,7 +109,7 @@ SolidWorks walkthrough showing how the four TPU sections and rigid inserts assem
 </video>
 
 SolidWorks walkthrough showing how a completed corner pad assembly mounts to the RFSoC 4x2 enclosure (shown using Corner Pad 4). Not applicable to the ZCU216 enclosure, which does not use this corner pad system.
-{: .figure-caption }
+{: .video-caption }
 
 !!! note
     Since all four pads assemble and install identically, both procedures shown apply equally regardless of which pad you're working with.
@@ -129,7 +129,7 @@ SolidWorks drawing labeling enclosure corners 1–4, showing which corner each p
 </video>
 
 SolidWorks rotating view showing all four corner pads installed on the RFSoC 4x2 enclosure — cross-reference with the numbering diagram above to identify which pad goes where.
-{: .figure-caption }
+{: .video-caption }
 
 <!-- TODO: confirm final video filename once uploaded -->
 

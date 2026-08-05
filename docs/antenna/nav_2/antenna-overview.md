@@ -169,7 +169,7 @@ For detailed printer parameters, orientation rationale, structural settings, and
 </video>
 
 SolidWorks assembly walkthrough covering the full sequence below — O-ring installation through final housing attachment. Refer to the written steps for reference while assembling.
-{: .figure-caption }
+{: .video-caption }
 
 <!-- TODO: confirm final video filename/path once uploaded -->
 

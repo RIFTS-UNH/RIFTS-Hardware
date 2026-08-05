@@ -189,7 +189,7 @@ Standoff placement within the ZCU216 enclosure.
 </video>
 
 SolidWorks walkthrough showing installation of the AMD Xilinx ZCU216 development board and the MIT Haystack RF Interface Board onto their respective standoffs within the enclosure.
-{: .figure-caption }
+{: .video-caption }
 
 <!-- TODO: confirm final video filename/path once uploaded -->
 
