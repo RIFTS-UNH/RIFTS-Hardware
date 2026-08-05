@@ -582,6 +582,24 @@
   margin: 0.6rem 0 1.5rem;
 }
 
+/* Video wrapper — constrains video + caption to one shared box so both are
+   guaranteed to line up, instead of centering each independently via
+   separate max-width/text-align rules that can drift apart. */
+.video-wrap {
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+}
+
+.video-wrap video {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-wrap .video-caption {
+  margin: 0.6rem 0 0;
+}
+
 /* Comparison grid — side-by-side labeled image pairs (e.g. CAD reference vs.
    installed hardware). Replaces the earlier .photo-stack hover-fan treatment
    with something that matches the site's current card language: rounded

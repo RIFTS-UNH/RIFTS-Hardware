@@ -162,13 +162,17 @@ Diagram illustrating standoff placement and type for each PCB within the enclosu
 
 #### Board Installation Video
 
-<video controls style="display:block; width:100%; max-width:640px; margin:0 auto; border-radius:8px;">
+<div class="video-wrap" markdown="1">
+
+<video controls>
   <source src="../media/4x2_board_installation_tutorial.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 SolidWorks walkthrough showing installation of the RFSoC 4x2 development board and the GNSS timing breakout board onto their respective standoffs within the enclosure.
 {: .video-caption }
+
+</div>
 
 <!-- TODO: confirm final video filename/path once uploaded -->
 
