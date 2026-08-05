@@ -72,7 +72,7 @@ redeploy. There is no manual deploy step.
 account.** A personal account is tied to one person — if that account is
 ever deleted, renamed, or simply inaccessible, everything under it (repo,
 Pages site, Actions history) goes with it. An organization is its own
-independent entity that Stephen, Dr. Liu, and any future RIFTS member can
+independent entity that any RIFTS member can
 belong to, so the project survives graduations, role changes, and anyone's
 individual account problems. For a project meant to outlive any one
 student's time at UNH, this is the right home for it, not an optional
@@ -82,7 +82,7 @@ upgrade.
    something like `unh-rifts` is a reasonable name.
 2. In the repo → **Settings → General → Danger Zone → Transfer ownership** →
    transfer it into the new org.
-3. In the org → **People → Invite member** → add Dr. Liu and Stephen (and
+3. In the org → **People → Invite member** → add RIFTS members (and
    yourself, so you keep access after you're no longer the account owner).
    Give them at least **Write** access to the repo; **Admin** if they should
    also manage repo/org settings.
