@@ -25,7 +25,7 @@ Everything here is free.
 | Tool | What it's for | Download |
 |---|---|---|
 | **Git** | Tracks changes to the files and talks to GitHub | [git-scm.com/downloads](https://git-scm.com/downloads) |
-| **Git LFS** | Handles the large video/image files in this repo (see note below — skip this and things will look broken) | [git-lfs.com](https://git-lfs.com/) |
+| **Git LFS** | Handles the large CAD file bundles in this repo (see note below — skip this and downloads will look broken) | [git-lfs.com](https://git-lfs.com/) |
 | **Python 3** | Runs MkDocs, which builds the site | [python.org/downloads](https://www.python.org/downloads/) |
 | **A code editor** | For editing Markdown/YAML files — plain Notepad works but is painful | [Visual Studio Code](https://code.visualstudio.com/download) (recommended, free) |
 
@@ -34,12 +34,13 @@ terminal that behaves like Mac/Linux — use that instead of Command Prompt for
 any commands in this guide.
 
 !!! warning "Don't skip Git LFS"
-    This repo stores its videos and high-res renders through **Git LFS**
-    instead of directly in Git, because Git itself handles large binary
-    files poorly. If you clone this repo *without* Git LFS installed first,
-    every video and some images will silently be replaced by tiny broken
-    placeholder files — nothing will error, it'll just look wrong. Install
-    it and run `git lfs install` (see Section 4) before you clone.
+    This repo stores its large CAD file bundles (the SolidWorks/STEP/STL
+    downloads) through **Git LFS** instead of directly in Git, because Git
+    itself handles large binary files poorly. If you clone this repo
+    *without* Git LFS installed first, those CAD downloads will silently be
+    replaced by tiny broken placeholder files — nothing will error, the
+    download links will just be broken. Install it and run
+    `git lfs install` (see Section 4) before you clone.
 
 ### An easier alternative to the command line: GitHub Desktop
 
@@ -65,29 +66,41 @@ The site is hosted on **GitHub Pages**, built and deployed via **GitHub
 Actions** — every push to the main branch triggers an automatic rebuild and
 redeploy. There is no manual deploy step.
 
-### Getting new maintainers set up
+### Recommended: move the repo into a GitHub Organization
 
-**Fastest path — add as collaborators:**
+**Do this rather than just adding people as collaborators on your personal
+account.** A personal account is tied to one person — if that account is
+ever deleted, renamed, or simply inaccessible, everything under it (repo,
+Pages site, Actions history) goes with it. An organization is its own
+independent entity that Stephen, Dr. Liu, and any future RIFTS member can
+belong to, so the project survives graduations, role changes, and anyone's
+individual account problems. For a project meant to outlive any one
+student's time at UNH, this is the right home for it, not an optional
+upgrade.
 
-1. Go to the repo → **Settings → Collaborators and teams → Add people**.
-2. Add with **Write** access (or **Admin** if they should also manage
-   repo settings, like the one below).
-3. That's it — they can clone, branch, and push, and Actions will deploy
-   whatever lands on the main branch.
-
-**More durable path (worth considering) — move the repo into a GitHub
-Organization** (e.g. `unh-rifts`) rather than leaving it under a personal
-account:
-
-1. Create the org (free) at github.com/organizations/new.
+1. Create the org (free) at [github.com/organizations/new](https://github.com/organizations/new) —
+   something like `unh-rifts` is a reasonable name.
 2. In the repo → **Settings → General → Danger Zone → Transfer ownership** →
-   transfer to the new org.
-3. Add maintainers as org members.
+   transfer it into the new org.
+3. In the org → **People → Invite member** → add Dr. Liu and Stephen (and
+   yourself, so you keep access after you're no longer the account owner).
+   Give them at least **Write** access to the repo; **Admin** if they should
+   also manage repo/org settings.
+4. They'll each get an email invitation — **they need to accept it** before
+   they have any access at all. Nothing below in this guide works for them
+   until that invite is accepted.
 
-This matters mainly because personal GitHub accounts leave with the person —
-an org account keeps the project stable as RIFTS members graduate or
-change roles. Either path works technically; the org just avoids a future
-"whose account is this actually under" problem.
+Nothing about the site, the Pages URL, or the Actions workflow needs to
+change when you do this — only who owns the repo.
+
+### Faster stopgap, if you need access set up today
+
+If the org move needs to wait, you can add someone directly to your
+personal repo instead: **Settings → Collaborators and teams → Add people**,
+same Write/Admin choice as above, same email-invite-must-be-accepted step.
+This works immediately but should be treated as temporary — plan to do the
+org transfer above once there's time, rather than leaving it as the
+permanent setup.
 
 **One thing to verify either way:** open `.github/workflows/` and confirm the
 deploy workflow only uses the default `GITHUB_TOKEN`. If it references a
@@ -103,11 +116,24 @@ you installed in Section 2.
 
 ### Option A: GitHub Desktop (recommended if the command line feels unfamiliar)
 
-1. Open GitHub Desktop → **File → Clone Repository**.
-2. Sign in with your GitHub account if prompted.
-3. Select this repo from the list, choose a folder on your computer, click
-   **Clone**. Git LFS is handled automatically — nothing else to do here.
-4. Open a terminal *inside that cloned folder* (in GitHub Desktop:
+**Before this will work, you need to already have access to the repo** —
+that means you must have received and *accepted* an invite (either as an
+org member or a direct collaborator, per Section 3). Check your email for a
+GitHub invitation if you're not sure — until it's accepted, the repo won't
+show up anywhere in GitHub Desktop no matter what you try.
+
+1. If you don't already have a GitHub account, create one free at
+   [github.com/join](https://github.com/join) — you'll need this before an
+   invite can even be sent to you.
+2. Open GitHub Desktop → **File → Clone Repository**.
+3. Sign in with that same GitHub account when prompted.
+4. Click the correct tab — **GitHub.com** for a personal-account repo, or
+   **your org's name** (e.g. `unh-rifts`) if it's been moved into an
+   organization — and the repo should now appear in the list, since you
+   have access.
+5. Select it, choose a folder on your computer, click **Clone**. Git LFS is
+   handled automatically — nothing else to do here.
+6. Open a terminal *inside that cloned folder* (in GitHub Desktop:
    **Repository → Open in Terminal**) and run just the Python/MkDocs part
    below, starting from `python3 -m venv .venv`.
 
@@ -287,7 +313,7 @@ Some text.
 
 ## 8. Troubleshooting
 
-**Videos or large images look broken/missing after cloning.**
+**CAD download bundles (.zip/.step/.3mf) look broken/tiny after cloning.**
 Git LFS wasn't installed before you cloned. Install it (Section 2), then
 run `git lfs pull` from inside the project folder to fetch the real files.
 
