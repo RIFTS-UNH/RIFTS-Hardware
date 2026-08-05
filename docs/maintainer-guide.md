@@ -1,6 +1,6 @@
 # Maintainer Guide
 
-<div class="maintainer-badge">:material-hammer-wrench: Maintainer Documentation — Not RIFTS Hardware Content</div>
+<div class="maintainer-badge">Maintainer Documentation — Not RIFTS Hardware Content</div>
 
 <div class="maintainer-page" markdown="1">
 
