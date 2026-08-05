@@ -173,11 +173,13 @@ The full Protocase standoff catalog is available at [protocase.com/products/comp
 
 ![Standoff Types](media/Standoff types.jpg){: .hero-image }
 
-*Standoff types used for the ZCU216 and RF Interface Board mounting.*
+Standoff types used for the ZCU216 and RF Interface Board mounting.
+{: .figure-caption }
 
 ![Standoff Placement](../../images/zcu216/zcu216_standoffs.jpg){: .hero-image }
 
-*Standoff placement within the ZCU216 enclosure.*
+Standoff placement within the ZCU216 enclosure.
+{: .figure-caption }
 
 #### Board Installation Video
 
@@ -186,7 +188,8 @@ The full Protocase standoff catalog is available at [protocase.com/products/comp
   Your browser does not support the video tag.
 </video>
 
-*SolidWorks walkthrough showing installation of the AMD Xilinx ZCU216 development board and the MIT Haystack RF Interface Board onto their respective standoffs within the enclosure.*
+SolidWorks walkthrough showing installation of the AMD Xilinx ZCU216 development board and the MIT Haystack RF Interface Board onto their respective standoffs within the enclosure.
+{: .figure-caption }
 
 <!-- TODO: confirm final video filename/path once uploaded -->
 

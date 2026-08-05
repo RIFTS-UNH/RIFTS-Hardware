@@ -52,7 +52,8 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
   Your browser does not support the video tag.
 </video>
 
-*SolidWorks assembly walkthrough showing the Type A fan + duct assembly mounting to the enclosure wall.*
+SolidWorks assembly walkthrough showing the Type A fan + duct assembly mounting to the enclosure wall.
+{: .figure-caption }
 
 <!-- TODO: replace with actual video filename once exported/uploaded to docs/hardware/ventilation/media/Type_A/ -->
 
@@ -63,7 +64,8 @@ Each duct type also has a **Short** variant of the airflow duct, sized to fit wi
   Your browser does not support the video tag.
 </video>
 
-*SolidWorks assembly walkthrough showing the Type B fan + duct assembly mounting to the enclosure wall.*
+SolidWorks assembly walkthrough showing the Type B fan + duct assembly mounting to the enclosure wall.
+{: .figure-caption }
 
 <!-- TODO: replace with actual video filename once exported/uploaded to docs/hardware/ventilation/media/Type_B/ -->
 
@@ -166,8 +168,6 @@ Both the Standard and Short Type A duct assemblies require **four M3 × 50 mm ma
 
 </div>
 
-*HD renders — click to view full size.*
-
 ---
 
 ## Type B Duct
@@ -264,8 +264,6 @@ Both the Standard and Short Type B duct assemblies require:
 ![Type B Render — Short Variant](../media/Type_B/Type_B_Assembly_Short_Render (2).png){: data-gallery="type-b-renders" }
 
 </div>
-
-*HD renders — click to view full size.*
 
 ---
 

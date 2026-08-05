@@ -157,7 +157,8 @@ The full Protocase standoff catalog is available at [protocase.com/products/comp
 
 ![Standoff Placement Diagram](media/STANDOFF INFORMATION.jpg){: .hero-image }
 
-*Diagram illustrating standoff placement and type for each PCB within the enclosure.*
+Diagram illustrating standoff placement and type for each PCB within the enclosure.
+{: .figure-caption }
 
 #### Board Installation Video
 
@@ -166,7 +167,8 @@ The full Protocase standoff catalog is available at [protocase.com/products/comp
   Your browser does not support the video tag.
 </video>
 
-*SolidWorks walkthrough showing installation of the RFSoC 4x2 development board and the GNSS timing breakout board onto their respective standoffs within the enclosure.*
+SolidWorks walkthrough showing installation of the RFSoC 4x2 development board and the GNSS timing breakout board onto their respective standoffs within the enclosure.
+{: .figure-caption }
 
 <!-- TODO: confirm final video filename/path once uploaded -->
 

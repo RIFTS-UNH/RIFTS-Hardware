@@ -8,7 +8,7 @@
 | **Purpose** | Protective corner assemblies for portable enclosure handling and transportation |
 | **Associated Platform** | RFSoC 4x2 Portable Field Enclosure |
 | **Manufacturing Method** | FDM Additive Manufacturing |
-| **Primary Material** | TPU |
+| **Primary Material** | TPU 95A HF|
 | **Rigid Insert Material** | PLA Prototype / PETG Recommended |
 | **Threaded Hardware** | M3 Brass Heat-Set Inserts |
 | **Printer** | Bambu Lab A1 |
@@ -98,7 +98,8 @@ The completed corner pad assemblies provide full enclosure corner protection, re
   Your browser does not support the video tag.
 </video>
 
-*SolidWorks walkthrough showing how the four TPU sections and rigid inserts assemble into one complete corner pad (shown using Corner Pad 1).*
+SolidWorks walkthrough showing how the four TPU sections and rigid inserts assemble into one complete corner pad (shown using Corner Pad 1).
+{: .figure-caption }
 
 ### Installation Tutorial
 
@@ -107,7 +108,8 @@ The completed corner pad assemblies provide full enclosure corner protection, re
   Your browser does not support the video tag.
 </video>
 
-*SolidWorks walkthrough showing how a completed corner pad assembly mounts to the RFSoC 4x2 enclosure (shown using Corner Pad 4). Not applicable to the ZCU216 enclosure, which does not use this corner pad system.*
+SolidWorks walkthrough showing how a completed corner pad assembly mounts to the RFSoC 4x2 enclosure (shown using Corner Pad 4). Not applicable to the ZCU216 enclosure, which does not use this corner pad system.
+{: .figure-caption }
 
 !!! note
     Since all four pads assemble and install identically, both procedures shown apply equally regardless of which pad you're working with.
@@ -116,7 +118,8 @@ The completed corner pad assemblies provide full enclosure corner protection, re
 
 ![Corner Numbering Diagram](rfsoc-4x2-corner-pads/Corner_Pad_Number_Guide.JPG)
 
-*SolidWorks drawing labeling enclosure corners 1–4, showing which corner each pad is designed for.*
+SolidWorks drawing labeling enclosure corners 1–4, showing which corner each pad is designed for.
+{: .figure-caption }
 
 ### Installed Assembly
 
@@ -125,7 +128,8 @@ The completed corner pad assemblies provide full enclosure corner protection, re
   Your browser does not support the video tag.
 </video>
 
-*SolidWorks rotating view showing all four corner pads installed on the RFSoC 4x2 enclosure — cross-reference with the numbering diagram above to identify which pad goes where.*
+SolidWorks rotating view showing all four corner pads installed on the RFSoC 4x2 enclosure — cross-reference with the numbering diagram above to identify which pad goes where.
+{: .figure-caption }
 
 <!-- TODO: confirm final video filename once uploaded -->
 
@@ -248,7 +252,7 @@ The corner pad assemblies were manufactured using fused deposition modeling (FDM
 
 | Component | Material | Manufacturing Method |
 |---|---|---|
-| TPU corner sections | TPU | FDM 3D Printing |
+| TPU corner sections | TPU 95A HF | FDM 3D Printing |
 | Rigid insert components | PLA Prototype / PETG Recommended | FDM 3D Printing |
 | Threaded inserts | Brass M3 Heat-Set Inserts | Commercial Hardware |
 

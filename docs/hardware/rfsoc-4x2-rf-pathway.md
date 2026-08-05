@@ -76,7 +76,8 @@ Neutral-format export compatible with most other CAD software.
 
 </div>
 
-*Reverse-engineered CAD reference model alongside one of the four physical RF pathway assemblies installed within the completed RFSoC 4x2 enclosure.*
+Reverse-engineered CAD reference model alongside one of the four physical RF pathway assemblies installed within the completed RFSoC 4x2 enclosure.
+{: .figure-caption }
 
 ---
 
