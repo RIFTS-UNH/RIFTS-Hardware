@@ -685,3 +685,57 @@
   background: var(--rifts-yellow-tint) !important;
   transition: background 0.15s ease;
 }
+
+/* ============================================
+   Maintainer Guide — deliberately distinct from
+   the RIFTS blue/yellow hardware-doc styling, so
+   it reads as internal/meta content rather than
+   engineering documentation. Slate accent instead
+   of brand colors, dashed border instead of solid,
+   rounded pill badge up top as a clear marker.
+   ============================================ */
+
+:root {
+  --maint-accent: #445566;
+  --maint-tint: #F3F5F7;
+}
+
+.maintainer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--maint-accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+.maintainer-page {
+  background: var(--maint-tint);
+  border: 1.5px dashed var(--maint-accent);
+  border-radius: 14px;
+  padding: 0.5rem 2rem 1.75rem;
+}
+
+.maintainer-page h2 {
+  color: var(--maint-accent);
+  border-bottom: 1px solid rgba(68, 85, 102, 0.25);
+  padding-bottom: 0.4rem;
+}
+
+.maintainer-page h3 {
+  color: var(--maint-accent);
+}
+
+.maintainer-page code {
+  background: rgba(68, 85, 102, 0.1);
+}
+
+.maintainer-page pre code {
+  background: transparent;
+}
