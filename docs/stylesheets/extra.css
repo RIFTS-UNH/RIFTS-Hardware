@@ -554,6 +554,20 @@
   margin: 0.5rem 0 1.5rem;
 }
 
+/* Figure captions — small, muted, uppercase label under images so they read
+   as metadata rather than body copy. Matches the .compare-label treatment
+   used elsewhere, just without the border/background since it stands alone. */
+.figure-caption {
+  display: block;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+  margin: -0.75rem 0 1.5rem;
+}
+
 /* Comparison grid — side-by-side labeled image pairs (e.g. CAD reference vs.
    installed hardware). Replaces the earlier .photo-stack hover-fan treatment
    with something that matches the site's current card language: rounded
