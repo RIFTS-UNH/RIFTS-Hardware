@@ -278,6 +278,6 @@ The corner pad assemblies were manufactured using fused deposition modeling (FDM
 
 ---
 
-## Credits
+## Credits 
 
 Mechanical design and documentation: **Joshua D'Addario**
