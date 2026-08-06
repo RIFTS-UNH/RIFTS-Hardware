@@ -72,8 +72,8 @@ redeploy. There is no manual deploy step.
 account.** A personal account is tied to one person — if that account is
 ever deleted, renamed, or simply inaccessible, everything under it (repo,
 Pages site, Actions history) goes with it. An organization is its own
-independent entity that any RIFTS member can
-belong to, so the project survives graduations, role changes, and anyone's
+independent entity that any current or future RIFTS team member can belong
+to, so the project survives graduations, role changes, and anyone's
 individual account problems. For a project meant to outlive any one
 student's time at UNH, this is the right home for it, not an optional
 upgrade.
@@ -82,13 +82,13 @@ upgrade.
    something like `unh-rifts` is a reasonable name.
 2. In the repo → **Settings → General → Danger Zone → Transfer ownership** →
    transfer it into the new org.
-3. In the org → **People → Invite member** → add RIFTS members (and
-   yourself, so you keep access after you're no longer the account owner).
-   Give them at least **Write** access to the repo; **Admin** if they should
-   also manage repo/org settings.
-4. They'll each get an email invitation — **they need to accept it** before
-   they have any access at all. Nothing below in this guide works for them
-   until that invite is accepted.
+3. In the org → **People → Invite member** → add whoever will be
+   maintaining the site (and yourself, so you keep access after you're no
+   longer the account owner). Give them at least **Write** access to the
+   repo; **Admin** if they should also manage repo/org settings.
+4. Each person invited gets an email invitation — **they need to accept
+   it** before they have any access at all. Nothing below in this guide
+   works for them until that invite is accepted.
 
 Nothing about the site, the Pages URL, or the Actions workflow needs to
 change when you do this — only who owns the repo.
@@ -179,22 +179,86 @@ separate manual deploy command to run.
 
 ## 5. Day-to-Day Editing Workflow
 
-Once everything above is set up, this is the loop for every future edit:
+Once everything in Sections 2–4 is set up, every future edit — big or
+small — follows the same repeating loop: **get the latest version → make
+your change → check it looks right → save your change → send it up to
+GitHub.**
 
-1. **Pull the latest changes first**, in case someone else edited since you
-   last opened the project — GitHub Desktop: click **Fetch origin** then
-   **Pull origin**. Command line: `git pull`.
-2. **Edit the `.md` file(s)** in your code editor.
-3. **Check `mkdocs serve`** in the browser to confirm it looks right.
-4. **Commit your changes** — GitHub Desktop: write a short summary of what
-   changed in the box at bottom-left, click **Commit to main**. Command
-   line: `git add .` then `git commit -m "short description of the change"`.
-5. **Push** — GitHub Desktop: click **Push origin**. Command line:
-   `git push`.
-6. Wait a minute or two, then check the live site — the GitHub Actions
-   workflow rebuilds and redeploys automatically on every push to main. You
-   can watch its progress under the repo's **Actions** tab on GitHub.com if
-   you want to confirm it succeeded.
+Follow whichever section below matches what you set up in Section 4. Do the
+steps in order, every time — skipping the "get latest" step at the start is
+the most common way people run into confusing conflicts later.
+
+### If you're using GitHub Desktop
+
+1. Open the **GitHub Desktop** app. Confirm the correct repository is
+   selected — its name appears near the top-left of the window; if it's
+   the wrong one, click that name to switch.
+2. Click **Fetch origin** in the top bar. GitHub Desktop checks whether
+   anyone else has pushed changes since you last opened it.
+3. If a **Pull origin** button appears after that, click it too, and wait
+   for it to finish downloading. (If it stays as "Fetch origin" with no
+   "Pull" button showing up, you're already fully up to date — move on.)
+4. Open the project folder on your computer (wherever you cloned it) and
+   open the `.md` file you want to edit in your code editor.
+5. Make your edits, then **save the file** (Ctrl+S / Cmd+S).
+6. Switch to the browser tab running your `mkdocs serve` preview (see
+   Section 4) and refresh it. Confirm your change actually looks right
+   before going further.
+7. Switch back to GitHub Desktop. Your edited file(s) now appear in a list
+   on the left, under **Changes** — this is everything that's different
+   from what's currently live on GitHub.
+8. In the text box at the bottom-left, type a short description of what
+   you changed — e.g. "Update ZCU216 overview wording." This becomes the
+   commit's label, so anyone looking at the project's history later can
+   tell what happened and why.
+9. Click **Commit to main**.
+10. Click **Push origin** in the top bar. This uploads your commit to
+    GitHub — watch for the small progress indicator to confirm it finished.
+11. Done editing for now. Skip to **Confirming it worked** below.
+
+### If you're using the command line
+
+1. Open your terminal and move into the project folder, if you're not
+   already there:
+   ```bash
+   cd path/to/project-folder
+   ```
+2. Pull the latest changes:
+   ```bash
+   git pull
+   ```
+   This downloads anything others have pushed since you last checked. If it
+   reports a conflict, stop and don't guess — that means someone edited the
+   same lines you're about to touch, and needs to be resolved carefully.
+3. Open the `.md` file you want to edit in your code editor, make your
+   changes, and save it.
+4. Check your `mkdocs serve` preview (Section 4) in the browser — refresh
+   the page and confirm the change actually looks right.
+5. Stage your changes (marks them as ready to be recorded):
+   ```bash
+   git add .
+   ```
+6. Commit them, with a short description of what changed:
+   ```bash
+   git commit -m "short description of the change"
+   ```
+7. Push them up to GitHub:
+   ```bash
+   git push
+   ```
+8. Done editing for now. Continue to **Confirming it worked** below.
+
+### Confirming it worked (either method)
+
+1. On GitHub.com, open the repo and click the **Actions** tab near the top
+   of the page.
+2. Find the most recent run at the top of the list — a green checkmark
+   means the site rebuilt and published successfully. A red ✕ means it
+   failed; click into that run to see the error log explaining why (almost
+   always a Markdown or YAML typo).
+3. Give it a minute or two after pushing, then open the live site and hard
+   refresh (Ctrl+Shift+R / Cmd+Shift+R) to make sure you're not looking at
+   a cached older version.
 
 ---
 
