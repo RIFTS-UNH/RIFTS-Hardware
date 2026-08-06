@@ -424,4 +424,4 @@ Plain-language definitions for the jargon used throughout this guide.
 | **GitHub Actions** | The automation that rebuilds and republishes the site every time you push |
 | **GitHub Pages** | The free hosting GitHub provides for the built site |
 
-</div>
+</div> 
