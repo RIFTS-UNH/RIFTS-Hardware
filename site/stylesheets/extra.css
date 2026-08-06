@@ -554,6 +554,53 @@
   margin: 0.5rem 0 1.5rem;
 }
 
+/* Figure captions — small, muted, uppercase label under images so they read
+   as metadata rather than body copy. Matches the .compare-label treatment
+   used elsewhere, just without the border/background since it stands alone. */
+.figure-caption {
+  display: block;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+  margin: -0.75rem 0 1.5rem;
+}
+
+/* Video captions — same look as .figure-caption, but videos don't carry the
+   .hero-image bottom margin the negative offset above relies on, so this
+   uses normal positive spacing instead to avoid tucking under the video. */
+.video-caption {
+  display: block;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+  margin: 0.6rem 0 1.5rem;
+}
+
+/* Video wrapper — constrains video + caption to one shared box so both are
+   guaranteed to line up, instead of centering each independently via
+   separate max-width/text-align rules that can drift apart. */
+.video-wrap {
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+}
+
+.video-wrap video {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-wrap .video-caption {
+  margin: 0.6rem 0 0;
+}
+
 /* Comparison grid — side-by-side labeled image pairs (e.g. CAD reference vs.
    installed hardware). Replaces the earlier .photo-stack hover-fan treatment
    with something that matches the site's current card language: rounded
@@ -637,4 +684,58 @@
 .md-typeset table:not([class]) tbody tr:hover {
   background: var(--rifts-yellow-tint) !important;
   transition: background 0.15s ease;
+}
+
+/* ============================================
+   Maintainer Guide — deliberately distinct from
+   the RIFTS blue/yellow hardware-doc styling, so
+   it reads as internal/meta content rather than
+   engineering documentation. Slate accent instead
+   of brand colors, dashed border instead of solid,
+   rounded pill badge up top as a clear marker.
+   ============================================ */
+
+:root {
+  --maint-accent: #445566;
+  --maint-tint: #F3F5F7;
+}
+
+.maintainer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--maint-accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+.maintainer-page {
+  background: var(--maint-tint);
+  border: 1.5px dashed var(--maint-accent);
+  border-radius: 14px;
+  padding: 0.5rem 2rem 1.75rem;
+}
+
+.maintainer-page h2 {
+  color: var(--maint-accent);
+  border-bottom: 1px solid rgba(68, 85, 102, 0.25);
+  padding-bottom: 0.4rem;
+}
+
+.maintainer-page h3 {
+  color: var(--maint-accent);
+}
+
+.maintainer-page code {
+  background: rgba(68, 85, 102, 0.1);
+}
+
+.maintainer-page pre code {
+  background: transparent;
 }

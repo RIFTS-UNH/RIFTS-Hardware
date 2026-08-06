@@ -1,0 +1,2022 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../electronics-cads/electronics-reference-cad-models/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../rifts_logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Maintainer Guide - RIFTS HDA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#maintainer-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RIFTS HDA" class="md-header__button md-logo" aria-label="RIFTS HDA" data-md-component="logo">
+      
+  <img src="../rifts_logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RIFTS HDA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Maintainer Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RIFTS HDA" class="md-nav__button md-logo" aria-label="RIFTS HDA" data-md-component="logo">
+      
+  <img src="../rifts_logo.jpg" alt="logo">
+
+    </a>
+    RIFTS HDA
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF-Shielded Enclosures
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RF-Shielded Enclosures
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1">
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RFSoC 4x2 Portable Field Enclosure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RFSoC 4x2 Portable Field Enclosure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/rfsoc-4x2/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/rfsoc-4x2/media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZCU216 Rack-Mounted Enclosure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ZCU216 Rack-Mounted Enclosure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/zcu216/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/zcu216/media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antenna Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Antenna Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1">
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OmniLOG PRO 1030 N Antenna Mount
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OmniLOG PRO 1030 N Antenna Mount
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antenna/nav_2/antenna-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antenna/nav_2/antenna-manufacturing-details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manufacturing Details
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antenna/nav_2/antenna-media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supporting Hardware
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Supporting Hardware
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/ventilation/air-ducts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cooling Air Ducts &amp; Fans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/tpu-pads/corner-pads-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TPU Corner Pads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/rfsoc-4x2-rf-pathway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF Pathway CAD Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/RFIB-support/rfib-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF Interface Board (RFIB) Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../electronics-cads/electronics-reference-cad-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronics Reference CAD Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1-what-this-site-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What This Site Is
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-software-youll-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Software You'll Need
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Software You'll Need">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#an-easier-alternative-to-the-command-line-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An easier alternative to the command line: GitHub Desktop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-repository-hosting-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Repository &amp; Hosting Access
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Repository &amp; Hosting Access">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-move-the-repo-into-a-github-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended: move the repo into a GitHub Organization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faster-stopgap-if-you-need-access-set-up-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faster stopgap, if you need access set up today
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-local-development-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Local Development Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Local Development Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-a-github-desktop-recommended-if-the-command-line-feels-unfamiliar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option A: GitHub Desktop (recommended if the command line feels unfamiliar)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-b-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option B: Command line
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previewing-the-site-either-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Previewing the site (either option)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-day-to-day-editing-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Day-to-Day Editing Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Day-to-Day Editing Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-youre-using-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If you're using GitHub Desktop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-youre-using-the-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If you're using the command line
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confirming-it-worked-either-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Confirming it worked (either method)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-site-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Site Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-styling-conventions-copy-paste-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Styling Conventions (Copy-Paste Patterns)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Styling Conventions (Copy-Paste Patterns)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#image-with-caption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image with caption
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-with-caption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Video with caption
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-cards-cadmanufacturing-file-bundles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download cards (CAD/manufacturing file bundles)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrolling-render-strip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scrolling render strip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noteswarnings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes/warnings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-one-attr_list-rule-that-trips-people-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The one attr_list rule that trips people up
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Glossary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1-what-this-site-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What This Site Is
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-software-youll-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Software You'll Need
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Software You'll Need">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#an-easier-alternative-to-the-command-line-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An easier alternative to the command line: GitHub Desktop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-repository-hosting-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Repository &amp; Hosting Access
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Repository &amp; Hosting Access">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-move-the-repo-into-a-github-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended: move the repo into a GitHub Organization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faster-stopgap-if-you-need-access-set-up-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faster stopgap, if you need access set up today
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-local-development-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Local Development Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Local Development Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-a-github-desktop-recommended-if-the-command-line-feels-unfamiliar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option A: GitHub Desktop (recommended if the command line feels unfamiliar)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-b-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option B: Command line
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previewing-the-site-either-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Previewing the site (either option)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-day-to-day-editing-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Day-to-Day Editing Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Day-to-Day Editing Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-youre-using-github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If you're using GitHub Desktop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-youre-using-the-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If you're using the command line
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confirming-it-worked-either-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Confirming it worked (either method)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-site-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Site Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-styling-conventions-copy-paste-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Styling Conventions (Copy-Paste Patterns)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Styling Conventions (Copy-Paste Patterns)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#image-with-caption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image with caption
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-with-caption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Video with caption
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-cards-cadmanufacturing-file-bundles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download cards (CAD/manufacturing file bundles)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrolling-render-strip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scrolling render strip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noteswarnings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes/warnings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-one-attr_list-rule-that-trips-people-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The one attr_list rule that trips people up
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Glossary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="maintainer-guide">Maintainer Guide</h1>
+<div class="maintainer-badge">Maintainer Documentation — Not RIFTS Hardware Content</div>
+
+<div class="maintainer-page">
+<p>This page exists so that anyone besides the original author can pick up
+this site, run it locally, and add new content without having to
+reverse-engineer how it works.</p>
+<hr>
+<h2 id="1-what-this-site-is">1. What This Site Is</h2>
+<p>A MkDocs (Material theme) static site documenting RIFTS mechanical hardware —
+enclosures, antenna mounts, supporting hardware, and CAD references. It's
+plain Markdown files plus a small custom stylesheet, built into static HTML
+and published automatically.</p>
+<h2 id="2-software-youll-need">2. Software You'll Need</h2>
+<p>Install these once per computer, in this order, before doing anything else.
+Everything here is free.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>What it's for</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Git</strong></td>
+<td>Tracks changes to the files and talks to GitHub</td>
+<td><a href="https://git-scm.com/downloads">git-scm.com/downloads</a></td>
+</tr>
+<tr>
+<td><strong>Git LFS</strong></td>
+<td>Handles the large CAD file bundles in this repo (see note below — skip this and downloads will look broken)</td>
+<td><a href="https://git-lfs.com/">git-lfs.com</a></td>
+</tr>
+<tr>
+<td><strong>Python 3</strong></td>
+<td>Runs MkDocs, which builds the site</td>
+<td><a href="https://www.python.org/downloads/">python.org/downloads</a></td>
+</tr>
+<tr>
+<td><strong>A code editor</strong></td>
+<td>For editing Markdown/YAML files — plain Notepad works but is painful</td>
+<td><a href="https://code.visualstudio.com/download">Visual Studio Code</a> (recommended, free)</td>
+</tr>
+</tbody>
+</table>
+<p>On Windows, installing <strong>Git for Windows</strong> also gives you "Git Bash," a
+terminal that behaves like Mac/Linux — use that instead of Command Prompt for
+any commands in this guide.</p>
+<div class="admonition warning">
+<p class="admonition-title">Don't skip Git LFS</p>
+<p>This repo stores its large CAD file bundles (the SolidWorks/STEP/STL
+downloads) through <strong>Git LFS</strong> instead of directly in Git, because Git
+itself handles large binary files poorly. If you clone this repo
+<em>without</em> Git LFS installed first, those CAD downloads will silently be
+replaced by tiny broken placeholder files — nothing will error, the
+download links will just be broken. Install it and run
+<code>git lfs install</code> (see Section 4) before you clone.</p>
+</div>
+<h3 id="an-easier-alternative-to-the-command-line-github-desktop">An easier alternative to the command line: GitHub Desktop</h3>
+<p>Everything in this guide can be done from a terminal, but if that's
+unfamiliar territory, <strong><a href="https://desktop.github.com/">GitHub Desktop</a></strong> is a
+free app that does the clone/commit/push steps through buttons and a visual
+diff viewer instead of typed commands. It <strong>automatically handles Git LFS</strong>
+for you — one less thing to install and remember. It doesn't replace the
+code editor (you'd still open the files in VS Code to actually write
+content) but it removes almost all of the "typing git commands correctly"
+friction.</p>
+<p>If you install GitHub Desktop, you can skip the <code>git clone</code> command in
+Section 4 below — use <strong>File → Clone Repository</strong> in the app instead, sign
+in with your GitHub account when prompted, and pick this repo from the
+list.</p>
+<hr>
+<h2 id="3-repository-hosting-access">3. Repository &amp; Hosting Access</h2>
+<p>The site is hosted on <strong>GitHub Pages</strong>, built and deployed via <strong>GitHub
+Actions</strong> — every push to the main branch triggers an automatic rebuild and
+redeploy. There is no manual deploy step.</p>
+<h3 id="recommended-move-the-repo-into-a-github-organization">Recommended: move the repo into a GitHub Organization</h3>
+<p><strong>Do this rather than just adding people as collaborators on your personal
+account.</strong> A personal account is tied to one person — if that account is
+ever deleted, renamed, or simply inaccessible, everything under it (repo,
+Pages site, Actions history) goes with it. An organization is its own
+independent entity that any current or future RIFTS team member can belong
+to, so the project survives graduations, role changes, and anyone's
+individual account problems. For a project meant to outlive any one
+student's time at UNH, this is the right home for it, not an optional
+upgrade.</p>
+<ol>
+<li>Create the org (free) at <a href="https://github.com/organizations/new">github.com/organizations/new</a> —
+   something like <code>unh-rifts</code> is a reasonable name.</li>
+<li>In the repo → <strong>Settings → General → Danger Zone → Transfer ownership</strong> →
+   transfer it into the new org.</li>
+<li>In the org → <strong>People → Invite member</strong> → add whoever will be
+   maintaining the site (and yourself, so you keep access after you're no
+   longer the account owner). Give them at least <strong>Write</strong> access to the
+   repo; <strong>Admin</strong> if they should also manage repo/org settings.</li>
+<li>Each person invited gets an email invitation — <strong>they need to accept
+   it</strong> before they have any access at all. Nothing below in this guide
+   works for them until that invite is accepted.</li>
+</ol>
+<p>Nothing about the site, the Pages URL, or the Actions workflow needs to
+change when you do this — only who owns the repo.</p>
+<h3 id="faster-stopgap-if-you-need-access-set-up-today">Faster stopgap, if you need access set up today</h3>
+<p>If the org move needs to wait, you can add someone directly to your
+personal repo instead: <strong>Settings → Collaborators and teams → Add people</strong>,
+same Write/Admin choice as above, same email-invite-must-be-accepted step.
+This works immediately but should be treated as temporary — plan to do the
+org transfer above once there's time, rather than leaving it as the
+permanent setup.</p>
+<p><strong>One thing to verify either way:</strong> open <code>.github/workflows/</code> and confirm the
+deploy workflow only uses the default <code>GITHUB_TOKEN</code>. If it references a
+personal access token or secret tied to one specific account, that'll need
+to be replaced or other maintainers' pushes won't deploy.</p>
+<hr>
+<h2 id="4-local-development-setup">4. Local Development Setup</h2>
+<p>Two ways to get the files onto your computer — pick whichever matches what
+you installed in Section 2.</p>
+<h3 id="option-a-github-desktop-recommended-if-the-command-line-feels-unfamiliar">Option A: GitHub Desktop (recommended if the command line feels unfamiliar)</h3>
+<p><strong>Before this will work, you need to already have access to the repo</strong> —
+that means you must have received and <em>accepted</em> an invite (either as an
+org member or a direct collaborator, per Section 3). Check your email for a
+GitHub invitation if you're not sure — until it's accepted, the repo won't
+show up anywhere in GitHub Desktop no matter what you try.</p>
+<ol>
+<li>If you don't already have a GitHub account, create one free at
+   <a href="https://github.com/join">github.com/join</a> — you'll need this before an
+   invite can even be sent to you.</li>
+<li>Open GitHub Desktop → <strong>File → Clone Repository</strong>.</li>
+<li>Sign in with that same GitHub account when prompted.</li>
+<li>Click the correct tab — <strong>GitHub.com</strong> for a personal-account repo, or
+   <strong>your org's name</strong> (e.g. <code>unh-rifts</code>) if it's been moved into an
+   organization — and the repo should now appear in the list, since you
+   have access.</li>
+<li>Select it, choose a folder on your computer, click <strong>Clone</strong>. Git LFS is
+   handled automatically — nothing else to do here.</li>
+<li>Open a terminal <em>inside that cloned folder</em> (in GitHub Desktop:
+   <strong>Repository → Open in Terminal</strong>) and run just the Python/MkDocs part
+   below, starting from <code>python3 -m venv .venv</code>.</li>
+</ol>
+<h3 id="option-b-command-line">Option B: Command line</h3>
+<p>Run once per machine, before your first clone:</p>
+<pre><code class="language-bash">git lfs install       # one-time setup per machine
+</code></pre>
+<p>Then, once per project:</p>
+<pre><code class="language-bash">git clone &lt;repo-url&gt;
+cd &lt;repo-folder&gt;
+python3 -m venv .venv
+source .venv/bin/activate      # Windows (Git Bash): source .venv/Scripts/activate
+pip install -r requirements.txt
+</code></pre>
+<h3 id="previewing-the-site-either-option">Previewing the site (either option)</h3>
+<p>From inside the project folder, with the virtual environment active:</p>
+<pre><code class="language-bash">mkdocs serve                   # live preview at http://127.0.0.1:8000
+</code></pre>
+<p>Open that address in a browser — it auto-reloads every time you save a file,
+so you can see your edits immediately without pushing anything yet. Leave
+this running in its own terminal window while you work; open a second
+terminal (or GitHub Desktop) for git commands.</p>
+<p>Running <code>mkdocs build</code> (optional) is a good sanity check before pushing — it
+surfaces broken links or bad Markdown the same way the real Actions build
+would, without waiting on CI to tell you.</p>
+<p>Pushing to the main branch is what actually publishes the site — there is no
+separate manual deploy command to run.</p>
+<hr>
+<h2 id="5-day-to-day-editing-workflow">5. Day-to-Day Editing Workflow</h2>
+<p>Once everything in Sections 2–4 is set up, every future edit — big or
+small — follows the same repeating loop: <strong>get the latest version → make
+your change → check it looks right → save your change → send it up to
+GitHub.</strong></p>
+<p>Follow whichever section below matches what you set up in Section 4. Do the
+steps in order, every time — skipping the "get latest" step at the start is
+the most common way people run into confusing conflicts later.</p>
+<h3 id="if-youre-using-github-desktop">If you're using GitHub Desktop</h3>
+<ol>
+<li>Open the <strong>GitHub Desktop</strong> app. Confirm the correct repository is
+   selected — its name appears near the top-left of the window; if it's
+   the wrong one, click that name to switch.</li>
+<li>Click <strong>Fetch origin</strong> in the top bar. GitHub Desktop checks whether
+   anyone else has pushed changes since you last opened it.</li>
+<li>If a <strong>Pull origin</strong> button appears after that, click it too, and wait
+   for it to finish downloading. (If it stays as "Fetch origin" with no
+   "Pull" button showing up, you're already fully up to date — move on.)</li>
+<li>Open the project folder on your computer (wherever you cloned it) and
+   open the <code>.md</code> file you want to edit in your code editor.</li>
+<li>Make your edits, then <strong>save the file</strong> (Ctrl+S / Cmd+S).</li>
+<li>Switch to the browser tab running your <code>mkdocs serve</code> preview (see
+   Section 4) and refresh it. Confirm your change actually looks right
+   before going further.</li>
+<li>Switch back to GitHub Desktop. Your edited file(s) now appear in a list
+   on the left, under <strong>Changes</strong> — this is everything that's different
+   from what's currently live on GitHub.</li>
+<li>In the text box at the bottom-left, type a short description of what
+   you changed — e.g. "Update ZCU216 overview wording." This becomes the
+   commit's label, so anyone looking at the project's history later can
+   tell what happened and why.</li>
+<li>Click <strong>Commit to main</strong>.</li>
+<li>Click <strong>Push origin</strong> in the top bar. This uploads your commit to
+    GitHub — watch for the small progress indicator to confirm it finished.</li>
+<li>Done editing for now. Skip to <strong>Confirming it worked</strong> below.</li>
+</ol>
+<h3 id="if-youre-using-the-command-line">If you're using the command line</h3>
+<ol>
+<li>Open your terminal and move into the project folder, if you're not
+   already there:
+   <code>bash
+   cd path/to/project-folder</code></li>
+<li>Pull the latest changes:
+   <code>bash
+   git pull</code>
+   This downloads anything others have pushed since you last checked. If it
+   reports a conflict, stop and don't guess — that means someone edited the
+   same lines you're about to touch, and needs to be resolved carefully.</li>
+<li>Open the <code>.md</code> file you want to edit in your code editor, make your
+   changes, and save it.</li>
+<li>Check your <code>mkdocs serve</code> preview (Section 4) in the browser — refresh
+   the page and confirm the change actually looks right.</li>
+<li>Stage your changes (marks them as ready to be recorded):
+   <code>bash
+   git add .</code></li>
+<li>Commit them, with a short description of what changed:
+   <code>bash
+   git commit -m "short description of the change"</code></li>
+<li>Push them up to GitHub:
+   <code>bash
+   git push</code></li>
+<li>Done editing for now. Continue to <strong>Confirming it worked</strong> below.</li>
+</ol>
+<h3 id="confirming-it-worked-either-method">Confirming it worked (either method)</h3>
+<ol>
+<li>On GitHub.com, open the repo and click the <strong>Actions</strong> tab near the top
+   of the page.</li>
+<li>Find the most recent run at the top of the list — a green checkmark
+   means the site rebuilt and published successfully. A red ✕ means it
+   failed; click into that run to see the error log explaining why (almost
+   always a Markdown or YAML typo).</li>
+<li>Give it a minute or two after pushing, then open the live site and hard
+   refresh (Ctrl+Shift+R / Cmd+Shift+R) to make sure you're not looking at
+   a cached older version.</li>
+</ol>
+<hr>
+<h2 id="6-site-structure">6. Site Structure</h2>
+<ul>
+<li><code>mkdocs.yml</code> — site config and the left-hand navigation tree. <strong>Adding a
+  new page requires two steps</strong>: create the <code>.md</code> file under <code>docs/</code>, <em>and</em>
+  add an entry for it under <code>nav:</code> in <code>mkdocs.yml</code> — pages not listed in
+  <code>nav</code> won't appear in the sidebar even if they exist.</li>
+<li><code>docs/stylesheets/extra.css</code> — all custom styling, including the
+  conventions below.</li>
+<li>Each hardware platform generally follows the same page skeleton: Project
+  Summary table → HD Renders → Overview → Design Rationale → Manufacturing
+  → Engineering Notes → Lessons Learned → Future Work → Related Hardware →
+  Revision History → Credits. Copying an existing page (e.g.
+  <code>hardware/zcu216/overview.md</code>) as a starting template is the easiest way
+  to keep new pages consistent.</li>
+</ul>
+<hr>
+<h2 id="7-styling-conventions-copy-paste-patterns">7. Styling Conventions (Copy-Paste Patterns)</h2>
+<p>These are the established patterns on this site. Reuse them exactly for new
+pages so everything stays visually consistent — don't reinvent per-page.</p>
+<h3 id="image-with-caption">Image with caption</h3>
+<pre><code class="language-markdown">![Alt text](path/to/image.jpg){: .hero-image }
+
+Caption text here.
+{: .figure-caption }
+</code></pre>
+<h3 id="video-with-caption">Video with caption</h3>
+<p>Videos need the shared wrapper — don't just drop a bare <code>&lt;video&gt;</code> tag, it
+won't center or round its corners correctly on its own.</p>
+<pre><code class="language-markdown">&lt;div class="video-wrap" markdown="1"&gt;
+
+&lt;video controls&gt;
+  &lt;source src="path/to/video.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+
+Caption text here.
+{: .video-caption }
+
+&lt;/div&gt;
+</code></pre>
+<h3 id="download-cards-cadmanufacturing-file-bundles">Download cards (CAD/manufacturing file bundles)</h3>
+<pre><code class="language-markdown">&lt;div class="download-cards" markdown&gt;
+
+&lt;div class="download-card" style="--accent:#4A90D9;" markdown&gt;
+&lt;span class="card-icon"&gt;:fontawesome-solid-draw-polygon:&lt;/span&gt;
+
+**Bundle Name**
+
+Short description of what's in it.
+
+[Download](path/to/file.zip){: .md-button :download}
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+<h3 id="scrolling-render-strip">Scrolling render strip</h3>
+<pre><code class="language-markdown">&lt;div class="render-scroll" markdown&gt;
+
+![Render 1](path.png){: data-gallery="unique-name" }
+![Render 2](path.png){: data-gallery="unique-name" }
+
+&lt;/div&gt;
+</code></pre>
+<h3 id="noteswarnings">Notes/warnings</h3>
+<pre><code class="language-markdown">!!! note "Optional Title"
+    Body text, indented four spaces.
+
+!!! warning "Optional Title"
+    Body text, indented four spaces.
+</code></pre>
+<h3 id="the-one-attr_list-rule-that-trips-people-up">The one attr_list rule that trips people up</h3>
+<p>The <code>{: .class-name }</code> attribute line must sit <strong>directly under</strong> the text
+it applies to, on its <strong>own line</strong>, with <strong>no blank line</strong> between them.
+Putting it on the same line as the text, or adding a blank line before it,
+means it won't apply and will just show up as literal text on the page.</p>
+<pre><code class="language-markdown">Correct:
+Some text.
+{: .some-class }
+
+Wrong (renders literally, class doesn't apply):
+Some text.{: .some-class }
+
+Also wrong (blank line breaks it):
+Some text.
+
+{: .some-class }
+</code></pre>
+<hr>
+<h2 id="8-troubleshooting">8. Troubleshooting</h2>
+<p><strong>CAD download bundles (.zip/.step/.3mf) look broken/tiny after cloning.</strong>
+Git LFS wasn't installed before you cloned. Install it (Section 2), then
+run <code>git lfs pull</code> from inside the project folder to fetch the real files.</p>
+<p><strong><code>mkdocs: command not found</code></strong>
+The virtual environment isn't active. Run
+<code>source .venv/bin/activate</code> (Mac/Linux/Git Bash) or
+<code>.venv\Scripts\activate</code> (Windows Command Prompt) from inside the project
+folder, then try again. You'll know it worked if your terminal prompt
+starts showing <code>(.venv)</code>.</p>
+<p><strong>A caption or styled element shows up as plain text with <code>{: .some-class }</code>
+literally visible on the page.</strong>
+See "The one attr_list rule that trips people up" above — almost always a
+missing/extra blank line around the attribute tag.</p>
+<p><strong><code>git push</code> is rejected / says the branch is behind.</strong>
+Someone else pushed changes since you last pulled. Run <code>git pull</code> first
+(GitHub Desktop: <strong>Fetch origin</strong> → <strong>Pull origin</strong>), resolve any conflicts
+it flags, then push again.</p>
+<p><strong>The live site hasn't updated after I pushed.</strong>
+Check the <strong>Actions</strong> tab on the repo's GitHub page — the deploy takes a
+minute or two, and if it failed the tab will show a red ✕ with logs
+explaining why (usually a broken Markdown/YAML syntax error). A hard
+refresh (Ctrl+Shift+R / Cmd+Shift+R) also rules out browser caching.</p>
+<hr>
+<h2 id="9-glossary">9. Glossary</h2>
+<p>Plain-language definitions for the jargon used throughout this guide.</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Repo (repository)</strong></td>
+<td>The project's folder, tracked by Git, hosted on GitHub</td>
+</tr>
+<tr>
+<td><strong>Clone</strong></td>
+<td>Downloading a full copy of the repo onto your computer</td>
+</tr>
+<tr>
+<td><strong>Commit</strong></td>
+<td>A saved snapshot of changes, with a short description attached</td>
+</tr>
+<tr>
+<td><strong>Push</strong></td>
+<td>Uploading your local commits to GitHub</td>
+</tr>
+<tr>
+<td><strong>Pull</strong></td>
+<td>Downloading commits others have pushed since you last checked</td>
+</tr>
+<tr>
+<td><strong>Branch</strong></td>
+<td>An independent line of edits (this project mainly just uses <code>main</code>)</td>
+</tr>
+<tr>
+<td><strong>Markdown (.md)</strong></td>
+<td>The plain-text format used to write every page — see <a href="https://www.markdownguide.org/cheat-sheet/">this cheat sheet</a> for the basics if you're new to it</td>
+</tr>
+<tr>
+<td><strong>YAML (.yml)</strong></td>
+<td>The format <code>mkdocs.yml</code> is written in — spacing/indentation matters, so edit carefully</td>
+</tr>
+<tr>
+<td><strong>MkDocs</strong></td>
+<td>The tool that turns the Markdown files into the actual website</td>
+</tr>
+<tr>
+<td><strong>GitHub Actions</strong></td>
+<td>The automation that rebuilds and republishes the site every time you push</td>
+</tr>
+<tr>
+<td><strong>GitHub Pages</strong></td>
+<td>The free hosting GitHub provides for the built site</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/lightning.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

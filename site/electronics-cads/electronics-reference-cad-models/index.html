@@ -9,6 +9,8 @@
         <link rel="prev" href="../../hardware/RFIB-support/rfib-support/">
       
       
+        <link rel="next" href="../../maintainer-guide/">
+      
       
         
       
@@ -956,6 +958,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintainer-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maintainer Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1156,10 +1185,6 @@
 </ul>
 <p>Where appropriate, simplified versions of these models are used in place of full manufacturer geometry — removing unnecessary cosmetic and internal detail while preserving mechanically relevant features such as board envelope dimensions, mounting hole locations, and connector placement. This improves CAD performance during enclosure design work.</p>
 <p>Simplified versions currently exist for the <strong>AMD Xilinx RFSoC 4x2 Development Board</strong> and the <strong>RF Interface Board</strong>. These simplified models retain only mechanically significant geometry — external dimensions, connector locations, and mounting interfaces — and are available as an alternative to the full-detail manufacturer models on request.</p>
-<div class="admonition warning">
-<p class="admonition-title">Simplified models may not capture underside component protrusions</p>
-<p>Simplified versions aren't guaranteed to represent every component protrusion extending from the underside of a board — small connectors, headers, or other populated components can extend below the board surface without being captured in the simplified geometry. For example, the full-detail RF Interface Board model was used (rather than its simplified counterpart) when designing the <a href="../../hardware/RFIB-support/rfib-support/">RFIB Support</a>, because the simplified model didn't show all of the underside protrusions the support's geometry needed to clear. When clearance beneath a board is mechanically important, verify against the full-detail model rather than relying on the simplified version alone.</p>
-</div>
 <hr>
 <h2 id="revision-history">Revision History</h2>
 <table>
