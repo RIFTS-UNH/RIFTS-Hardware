@@ -47,7 +47,7 @@ nav:
   - Supporting Hardware:
     - Cooling Air Ducts & Fans: hardware/ventilation/air-ducts.md
     - TPU Corner Pads: hardware/tpu-pads/corner-pads-overview.md
-    - RF Pathway CAD Model: hardware/rfsoc-4x2-rf-pathway.md
+    - RF Pathway CAD Model: hardware/rf-pathway/rfsoc-4x2-rf-pathway.md
     - RF Interface Board (RFIB) Support: hardware/RFIB-support/rfib-support.md
 
   - Electronics Reference CAD Models: electronics-cads/electronics-reference-cad-models.md
