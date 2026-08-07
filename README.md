@@ -2,7 +2,7 @@
 
 Mechanical design archive and documentation for the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
-📖 **Live documentation site:** [joshdaddario.github.io/RIFTS-Hardware](https://joshdaddario.github.io/RIFTS-Hardware/)
+📖 **Live documentation site:** [joshdaddario.github.io/RIFTS-Hardware](https://rifts-unh.github.io/RIFTS-Hardware/)
 
 This repository holds the source for that site. It covers mechanical enclosure design, additively manufactured components, CAD reference models, manufacturing files, environmental validation testing, and engineering lessons learned across the RIFTS hardware platforms — the RFSoC 4x2 portable field enclosure, the ZCU216 rack-mount enclosure, the OmniLOG antenna mount system, and supporting accessories.
 
