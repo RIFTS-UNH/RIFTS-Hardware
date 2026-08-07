@@ -160,7 +160,7 @@ These improvements resulted in a noticeably more robust enclosure while simultan
 
 ### PEM Hardware Selection
 
-Protocase PEM hardware follows standardized dimensions. When selecting threaded standoffs, designers should note that the published dimensions correspond to the hardware **before installation** — part of each PEM becomes embedded within the sheet metal during installation, so the installed height will be shorter than the catalog dimension. Future enclosure designs should account for this reduction when selecting standoff lengths.
+Protocase PEM hardware follows standardized dimensions. When selecting threaded standoffs, designers should note that the published dimensions correspond to the hardware **before installation** — part of each PEM becomes embedded within the sheet metal during installation, so the installed height will be shorter than the catalog dimension. This was accounted for in the standoff selection for the ZCU216 enclosure, so no correction is needed if additional units of this enclosure design are manufactured in the future. Future *new* enclosure designs should account for this reduction when selecting standoff lengths.
 
 Standardized PEM standoffs were selected to mount the two PCBs housed within the enclosure — the AMD Xilinx ZCU216 development board and the MIT Haystack RF Interface Board — accounting for board thickness, required standoff height, and each board's mounting hole pattern:
 
