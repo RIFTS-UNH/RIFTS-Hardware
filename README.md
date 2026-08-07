@@ -1,215 +1,63 @@
 # RIFTS Hardware Documentation
 
-![ZCU216 Enclosure](images/hero/front_with_board_v1.jpg)
+Mechanical design archive and documentation for the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
-## Radio Interferometer For Thunderstorm Studies (RIFTS)
+📖 **Live documentation site:** [joshdaddario.github.io/RIFTS-Hardware](https://joshdaddario.github.io/RIFTS-Hardware/)
 
-This documentation site serves as the engineering archive for the mechanical hardware developed for the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
+This repository holds the source for that site. It covers mechanical enclosure design, additively manufactured components, CAD reference models, manufacturing files, environmental validation testing, and engineering lessons learned across the RIFTS hardware platforms — the RFSoC 4x2 portable field enclosure, the ZCU216 rack-mount enclosure, the OmniLOG antenna mount system, and supporting accessories.
 
-The archive preserves the design process, fabrication history, testing procedures, and engineering decisions behind the RIFTS hardware platforms.
-
-Included documentation covers:
-
-* Mechanical enclosure design
-* Additively manufactured components
-* CAD reference models
-* Manufacturing files
-* Environmental validation testing
-* Engineering lessons learned
-
-The goal of this archive is to provide a clear, maintainable reference for future hardware development, reproduction, and continued project support.
+For the full write-ups, navigation, and images, visit the site linked above rather than browsing this repo directly.
 
 ---
 
-# Hardware Platforms
-
-## RFSoC 4x2 Portable Field Enclosure
-
-![RFSoC 4x2 Enclosure](images/hero/rear_isometric_view.jpg)
-
-The RFSoC 4x2 enclosure was developed as a portable hardware platform for mobile lightning measurement campaigns.
-
-The design builds upon lessons learned from the earlier ZCU216 enclosure while introducing improvements focused on portability, thermal management, and field deployment.
-
-Key features include:
-
-* 5052 aluminum sheet metal construction
-* Electromagnetic shielding considerations
-* Active thermal management
-* Integrated carrying handles and protective features
-* Custom RF pathway integration
-* Portable field deployment capability
-
-[View RFSoC 4x2 Documentation →](hardware/rfsoc-4x2/README.md)
-
----
-
-## ZCU216 Rack-Mount Enclosure
-
-The ZCU216 enclosure was the original RIFTS hardware enclosure platform.
-
-Designed as a 2U rack-mounted laboratory system, it provided mechanical integration for:
-
-* AMD Xilinx ZCU216 RFSoC development platform
-* MIT Haystack RF Interface Board
-* Associated RF hardware
-
-The ZCU216 enclosure established the mechanical design approach later adapted for portable hardware iterations.
-
-[View ZCU216 Documentation →](hardware/zcu216/README.md)
-
----
-
-# Antenna Systems
-
-## OmniLOG PRO 1030 N Antenna Mount System
-
-The OmniLOG antenna mount system was developed as a rugged, field-deployable mounting solution for lightning observation campaigns.
-
-The design focuses on:
-
-* Dielectric construction to reduce RF scattering effects
-* Environmental sealing
-* Mechanical stability
-* Repeatable field deployment
-
-Documentation includes:
-
-* Mechanical design rationale
-* Manufacturing information
-* Print settings
-* Bill of materials
-* Water immersion validation testing
-
-[View Antenna Mount Documentation →](antenna-mounts/README.md)
-
----
-
-# Supporting Hardware
-
-## Hardware Accessories
-
-Supporting mechanical components developed throughout the RIFTS hardware development process.
-
-Included systems:
-
-* Cooling air ducts for enclosure thermal management
-* RFSoC 4x2 TPU corner protection pads
-* RFSoC 4x2 RF pathway reference model
-* Additional integration hardware
-
-[View Hardware Accessories →](hardware/accessories/README.md)
-
----
-
-# Electronics Reference Models
-
-This archive contains mechanical CAD models of electronic hardware used throughout RIFTS development.
-
-These models support:
-
-* Enclosure design
-* Mechanical integration studies
-* Connector placement verification
-* Internal packaging development
-* Hardware visualization
-
-The collection includes both manufacturer-provided and internally created CAD models.
-
-Where appropriate, simplified CAD models are included to improve SolidWorks performance while maintaining:
-
-* Board dimensions
-* Mounting locations
-* Connector locations
-* Mechanically relevant interfaces
-
-[View Electronics Reference Models →](electronics-reference-models/README.md)
-
----
-
-# Engineering Archive Philosophy
-
-This repository documents not only completed hardware, but also the engineering decisions and lessons learned that shaped each design.
-
-Each major subsystem includes:
-
-* Design requirements
-* Engineering rationale
-* Manufacturing approach
-* Validation testing
-* Revision history
-* Future improvement considerations
-
-The objective is to preserve the complete engineering process rather than only the final manufactured hardware.
-
----
-
-# Repository Organization
+## Repository Contents
 
 ```
 RIFTS-Hardware/
-
-├── hardware/
-│   ├── rfsoc-4x2/
-│   ├── zcu216/
-│   └── accessories/
-│       ├── cooling-air-ducts/
-│       ├── rfsoc-4x2-corner-pads/
-│       └── rfsoc-4x2-rf-pathway/
-│
-├── antenna-mounts/
-│
-├── electronics-reference-models/
-│
-├── docs/
-│
-├── images/
-│
-└── downloads/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml   # builds and deploys the site to GitHub Pages on push to main
+├── docs/                # mkdocs source (pages, images, assets for the documentation site)
+├── mkdocs.yml            # site configuration
+└── README.md
 ```
 
----
-
-# CAD and Manufacturing Files
-
-Large CAD assemblies and manufacturing archives may be maintained separately or through Git Large File Storage (Git LFS) due to file size limitations.
-
-Documentation pages provide navigation, engineering context, and access information for archived hardware files.
+Large CAD assemblies and manufacturing archives are tracked with Git LFS. Clone with `git lfs install` set up beforehand, or run `git lfs pull` after cloning, to fetch them.
 
 ---
 
-# Acknowledgements
+## Building the Site Locally
+
+```bash
+pip install mkdocs-material mkdocs-glightbox
+mkdocs serve
+```
+
+Then open `http://127.0.0.1:8000` to preview locally. Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds the site with `mkdocs build` and deploys it to GitHub Pages automatically.
+
+---
+
+## Acknowledgements
 
 This hardware was developed as part of the **Radio Interferometer For Thunderstorm Studies (RIFTS)** project at the University of New Hampshire.
 
-Additional hardware contributions and reference designs include:
+Additional hardware contributions and reference designs:
 
-* **Frank Lind, MIT Haystack Observatory**
-
-  * RF Interface Board reference design
-
-* **AMD Xilinx**
-
-  * ZCU216 RFSoC Development Platform
-  * RFSoC 4x2 Development Platform
-
-* **SparkFun Electronics**
-
-  * ZED-F9T GNSS Timing Breakout
-  * ESP32 WROOM Thing Plus
+- **Frank Lind, MIT Haystack Observatory** — RF Interface Board reference design
+- **AMD Xilinx** — ZCU216 RFSoC Development Platform, RFSoC 4x2 Development Platform
+- **SparkFun Electronics** — ZED-F9T GNSS Timing Breakout, ESP32 WROOM Thing Plus
 
 ---
 
-# Maintainer
+## Maintainer
 
-Mechanical design and documentation:
-
-**Joshua D'Addario**
+Mechanical design and documentation: **Joshua D'Addario**
 
 ---
 
-# Revision History
+## Revision History
 
-| Revision | Date      | Description                                   |
-| -------- | --------- | --------------------------------------------- |
-| Rev A    | July 2026 | Initial RIFTS hardware documentation archive. |
+| Revision | Date      | Description                                              |
+| -------- | --------- | --------------------------------------------------------- |
+| Rev A    | July 2026 | Initial RIFTS hardware documentation archive.              |
+| Rev B    | Aug 2026  | Repository cleaned up to contain only mkdocs source and its GitHub Actions deploy workflow; README rewritten to point to the live site rather than duplicate it. |
