@@ -79,6 +79,36 @@ SolidWorks assembly walkthrough showing the Type B fan + duct assembly mounting 
 
 ---
 
+## Fans
+
+Type A and Type B ducts are sized around two different Sanyo Denki San Ace fans, differing in frame size, airflow, and static pressure to suit their target enclosure.
+
+| | Type A Fan | Type B Fan |
+|---|---|---|
+| **Part Number** | Sanyo Denki 9GA0412P3K011 | Sanyo Denki 9GV0612P1G031 |
+| **Frame Size** | 40mm × 40mm × 28mm | 60mm × 60mm × 38mm |
+| **Voltage** | 12VDC (10.8–13.2VDC) | 12VDC (8–13.8VDC) |
+| **Current** | 0.92A | 2.80A |
+| **Power** | 11.04 W | 33.6 W |
+| **Airflow** | 28.6 CFM (0.801 m³/min) | 84.0 CFM (2.35 m³/min) |
+| **Static Pressure** | 3.21 in H₂O (800 Pa) | 3.02 in H₂O (752.3 Pa) |
+| **Speed** | 22,000 RPM | 16,000 RPM |
+| **Noise** | 61.0 dB(A) | 66.0 dB(A) |
+| **Bearing Type** | Ball | Ball |
+| **Termination** | 4 wire leads (PWM control, tach) | 4 wire leads (PWM control, tach) |
+| **Operating Temp.** | -20°C ~ 70°C | -20°C ~ 70°C |
+| **Datasheet** | [Sanyo Denki San Ace 40GA](https://publish.sanyodenki.com/library/books/San_Ace_E/book/#target/page=40GA28) | [Sanyo Denki San Ace 60GV](https://publish.sanyodenki.com/library/books/San_Ace_E/book/#target/page=60GV38) |
+
+!!! note "Type B draws significantly more current"
+    At 2.80A, the Type B fan draws roughly three times the current of the Type A fan (0.92A). Confirm the enclosure's power distribution and wiring are sized accordingly before swapping fan types between platforms.
+
+### Commercial Sources
+
+- **Type A Fan (9GA0412P3K011):** [digikey.com](https://www.digikey.com/en/products/detail/sanyo-denki-america-inc/9GA0412P3K011/6192261)
+- **Type B Fan (9GV0612P1G031):** [digikey.com](https://www.digikey.com/en/products/detail/sanyo-denki-america-inc/9GV0612P1G031/6192369)
+
+---
+
 ## Material Selection
 
 Prototype ducts and fan mounts were printed in **PLA** for rapid iteration and geometry verification during early development. PLA's relatively low glass transition temperature and mechanical brittleness make it a poor long-term choice for components mounted near actively cooled electronics, however.
@@ -258,6 +288,9 @@ Both the Standard and Short Type B duct assemblies require:
 
 !!! note "50 mm is a minimum, not a target — use longer screws on the Standard variant where possible"
     50 mm M3 screws only just barely protrude far enough past the assembly to fit the nuts on, which isn't ideal. The 50 mm cap is strictly a fit constraint of the **Short (ZCU216) variant** — the ZCU216 enclosure doesn't have room for anything longer. The **Standard (RFSoC 4x2) variant** has no such restriction and has room for longer screws, so screws longer than 50 mm should be used there whenever available. 50 mm is listed as the baseline/minimum length for both variants simply because it's guaranteed to work on either one.
+
+!!! warning "Type B fan draws significantly more current — size wiring accordingly"
+    The Type B fan (9GV0612P1G031) draws up to 2.80A at 12V (33.6W), roughly three times the current of the Type A fan (0.92A). Make sure any wiring, connectors, and fuse/PTC protection feeding the Type B duct assembly are rated for this before swapping fans between platforms or rewiring the enclosure — the Type A wiring gauge may not be adequate here.
 
 ### HD Renders
 
