@@ -178,7 +178,7 @@ Standoff types used for the ZCU216 and RF Interface Board mounting.
 
 ![Standoff Placement](../../images/zcu216/zcu216_standoffs.jpg){: .hero-image }
 
-Standoff placement within the ZCU216 enclosure.
+Standoffs within the ZCU216 enclosure.
 {: .figure-caption }
 
 #### Board Installation Video
