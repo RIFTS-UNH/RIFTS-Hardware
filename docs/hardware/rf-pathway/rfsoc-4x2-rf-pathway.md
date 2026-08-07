@@ -65,12 +65,12 @@ Neutral-format export compatible with most other CAD software.
 <div class="compare-grid" markdown>
 
 <div class="compare-item" markdown>
-![RF Pathway CAD](../images/rf-pathway/rf_pathway_cad.jpg){ data-gallery="rf-pathway" }
+![RF Pathway CAD](../../images/rf-pathway/rf_pathway_cad.jpg){ data-gallery="rf-pathway" }
 <p class="compare-label">Reference Model (CAD)</p>
 </div>
 
 <div class="compare-item" markdown>
-![RF Pathway Installed](../images/rf-pathway/rf_pathway.jpg){ data-gallery="rf-pathway" }
+![RF Pathway Installed](../../images/rf-pathway/rf_pathway.jpg){ data-gallery="rf-pathway" }
 <p class="compare-label">Installed Hardware</p>
 </div>
 
