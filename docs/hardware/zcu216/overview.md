@@ -38,7 +38,7 @@
 <!-- Scroll strip — add more renders by appending additional image lines above, same pattern. -->
 
 !!! note
-    Where visible, these renders depict the enclosure fitted with the **Type B (Short) air duct system** — chosen for these renders simply because it looks cooler than the Type A variant. Both duct types are functionally interchangeable; see [Cooling Air Ducts](../ventilation/air-ducts.md) for details on both.
+    Where visible, these renders depict the enclosure fitted with the **Type B (Short) air duct system** — chosen for these renders simply because it looks cooler than the Type A (Short) variant. Both duct types are functionally interchangeable; see [Cooling Air Ducts](../ventilation/air-ducts.md) for details on both.
 
 ---
 
