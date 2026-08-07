@@ -190,7 +190,7 @@ Standoffs within the ZCU216 enclosure.
   Your browser does not support the video tag.
 </video>
 
-SolidWorks walkthrough showing installation of the AMD Xilinx ZCU216 development board, RFIB Support (see [RF Interface Board (RFIB) Support](../RFIB-support/rfib-support.md)), and the MIT Haystack RF Interface Board onto their respective standoffs within the enclosure.
+SolidWorks walkthrough showing installation of the AMD Xilinx ZCU216 development board, [RF Interface Board (RFIB) Support](../RFIB-support/rfib-support.md), and the MIT Haystack RF Interface Board onto their respective standoffs within the enclosure.
 {: .video-caption }
 
 </div>
