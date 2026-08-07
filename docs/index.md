@@ -177,6 +177,7 @@ Manufacturer and hardware vendor credits (AMD Xilinx, SparkFun Electronics, Aaro
 
 ## Revision History
 
-| Revision | Date      | Description                                   |
-| -------- | --------- | ---------------------------------------------- |
-| Rev A    | July 2026 | Initial RIFTS hardware documentation archive.  |
+| Revision | Date      | Description                                              |
+| -------- | --------- | --------------------------------------------------------- |
+| Rev A    | July 2026 | Initial RIFTS hardware documentation archive.              |
+| Rev B    | Aug 2026  | Repository cleaned up to contain only mkdocs source and its GitHub Actions deploy workflow; README rewritten to point to the live site rather than duplicate it. |
