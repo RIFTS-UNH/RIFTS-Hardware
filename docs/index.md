@@ -109,6 +109,17 @@ Reverse-engineered mechanical reference model of the RFSoC 4x2's analog RF signa
 
 </div>
 
+<div class="download-card" markdown>
+<span class="card-icon">:fontawesome-solid-layer-group:</span>
+
+**RF Interface Board (RFIB) Support**
+
+Two-piece structural bracket bridging the RFIB's mounting points to reduce board flex, with internal channels for cable routing.
+
+[View Page](hardware/RFIB-support/rfib-support.md){: .md-button }
+
+</div>
+
 ### Electronics Reference CAD Models
 
 <div class="download-cards" markdown>
