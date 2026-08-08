@@ -72,7 +72,7 @@ Ground mounting system for the OmniLOG PRO 1030 N antenna, including mast and cy
 
 ### Supporting Hardware
 
-<div class="download-cards" markdown>
+<div class="download-cards two-col" markdown>
 
 <div class="download-card" markdown>
 <span class="card-icon">:fontawesome-solid-fan:</span>

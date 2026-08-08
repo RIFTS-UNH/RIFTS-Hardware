@@ -149,6 +149,21 @@
   margin: 1.5rem 0;
 }
 
+/* Two-column modifier — forces exactly 2 cards per row regardless of card
+   count, instead of auto-fit packing as many 190px+ cards as fit. Add this
+   class alongside .download-cards (e.g. class="download-cards two-col")
+   for any section that should always read as 2-per-row, like the enclosure
+   cards, rather than reflowing to 3+1/4-wide on wider screens. */
+.download-cards.two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 480px) {
+  .download-cards.two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
 .download-card {
   position: relative;
   display: flex;
