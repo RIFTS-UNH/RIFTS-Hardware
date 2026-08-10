@@ -220,8 +220,8 @@ Formal dust ingress testing was not performed; therefore, no dust protection rat
 **Test Fixture Support**
 
 <p class="card-actions-row" markdown>
-[:fontawesome-solid-cube: STL](../../media/RIFTS_WaterImmersion_FixtureSupport.stl){: .card-action :download}
-[:fontawesome-solid-print: 3MF](../../media/RIFTS_WaterImmersion_FixtureSupport_PrintPackage.3mf){: .card-action :download}
+[:fontawesome-solid-cube: STL](../../media/antenna-mount/RIFTS_WaterImmersion_FixtureSupport.stl){: .card-action :download}
+[:fontawesome-solid-print: 3MF](../../media/antenna-mount/RIFTS_WaterImmersion_FixtureSupport_PrintPackage.3mf){: .card-action :download}
 </p>
 
 </div>
