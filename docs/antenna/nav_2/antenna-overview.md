@@ -208,11 +208,29 @@ A custom water immersion test fixture was designed and fabricated to evaluate en
 
 - 5-inch diameter PVC pipe, 1-meter length
 - PVC end cap
-- Custom 3D printed PLA support structure
+- Custom 3D printed support structure
 
 The antenna mount successfully demonstrated water resistance consistent with an IPX7-style immersion test. The PVC test fixture itself exhibits minor leakage after several hours; however, this did not prevent evaluation of the antenna mount sealing performance.
 
 Formal dust ingress testing was not performed; therefore, no dust protection rating is claimed.
+
+<div class="download-cards" markdown>
+
+<div class="download-card" style="max-width: 260px; margin: 0 auto; padding: 1.25rem 1rem 1.1rem;" markdown>
+<span class="card-icon" style="width: 2.1rem; height: 2.1rem;">:fontawesome-solid-cube:</span>
+
+**Test Fixture Support**
+
+3D printeded support structure for the water immersion test fixture.
+
+<p class="card-actions-row" markdown>
+[:fontawesome-solid-cube: STL](media/RIFTS_WaterImmersion_FixtureSupport.stl){: .card-action :download}
+[:fontawesome-solid-print: 3MF](media/RIFTS_WaterImmersion_FixtureSupport_PrintPackage.3mf){: .card-action :download}
+</p>
+
+</div>
+
+</div>
 
 ---
 
