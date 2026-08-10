@@ -253,6 +253,7 @@
 .download-card.compact {
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   text-align: left;
   max-width: 360px;
   margin: 1rem auto;
@@ -276,7 +277,7 @@
 
 .download-card.compact p.card-actions-row {
   justify-content: flex-start;
-  margin: 0 0 0 auto;
+  margin: 0;
   min-height: 0;
   flex-shrink: 0;
 }
