@@ -214,15 +214,16 @@ The antenna mount successfully demonstrated water resistance consistent with an 
 
 Formal dust ingress testing was not performed; therefore, no dust protection rating is claimed.
 
-<div class="download-card" style="max-width: 420px; margin: 1rem auto; padding: 0.85rem 1.25rem; flex-direction: row; align-items: center; gap: 1rem; text-align: left;" markdown>
-<span class="card-icon" style="width: 1.9rem; height: 1.9rem; margin: 0; flex-shrink: 0;">:fontawesome-solid-cube:</span>
-<span style="flex: 1;">
-<strong style="display: block; margin-bottom: 0.35rem;">Test Fixture Support</strong>
-<span class="card-actions-row" style="display: flex; justify-content: flex-start; gap: 0.4rem; margin: 0; min-height: 0;">
+<div class="download-card compact" markdown>
+<span class="card-icon">:fontawesome-solid-cube:</span>
+
+**Test Fixture Support**
+
+<p class="card-actions-row" markdown>
 [:fontawesome-solid-cube: STL](../../media/RIFTS_WaterImmersion_FixtureSupport.stl){: .card-action :download}
 [:fontawesome-solid-print: 3MF](../../media/RIFTS_WaterImmersion_FixtureSupport_PrintPackage.3mf){: .card-action :download}
-</span>
-</span>
+</p>
+
 </div>
 
 ---

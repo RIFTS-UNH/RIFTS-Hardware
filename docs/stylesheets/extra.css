@@ -244,6 +244,40 @@
   color: var(--rifts-blue);
 }
 
+/* Compact modifier — small horizontal card for a single niche download that
+   doesn't warrant a full vertical card or its own grid row (e.g. a support
+   fixture file tucked into a testing section). Icon + title + action pills
+   sit on one line instead of stacking, cutting vertical footprint way down.
+   Use directly (not inside .download-cards), e.g.:
+   <div class="download-card compact" markdown> ... </div> */
+.download-card.compact {
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  max-width: 420px;
+  margin: 1.5rem auto;
+  padding: 0.85rem 1.25rem;
+  gap: 1rem;
+}
+
+.download-card.compact .card-icon {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.download-card.compact strong {
+  margin-bottom: 0.35rem;
+}
+
+.download-card.compact p.card-actions-row {
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.download-card.compact:hover {
+  transform: translateY(-3px);
+}
+
 /* Pad cards — compact variant for per-item cards containing multiple format icons
    (used where items are organized by part/pad rather than by file format) */
 .pad-cards {
