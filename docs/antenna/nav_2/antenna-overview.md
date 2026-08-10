@@ -215,7 +215,7 @@ The antenna mount successfully demonstrated water resistance consistent with an 
 Formal dust ingress testing was not performed; therefore, no dust protection rating is claimed.
 
 <div class="download-card compact" markdown>
-<span class="card-icon">:fontawesome-solid-broadcast-tower:</span>
+<span class="card-icon">:fontawesome-solid-cube:</span>
 
 **Test Fixture Support**
 
