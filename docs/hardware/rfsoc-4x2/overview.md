@@ -124,6 +124,26 @@ The enclosure design itself required no modification. A replacement enclosure wa
 
 ---
 
+<!-- Reusable block — Protocase CAD Template Generator. Paste this section as-is into any other enclosure page on the site. -->
+
+## Design Tool: Protocase CAD Template Generator
+
+Protocase offers a free [CAD Template Generator](https://www.protocase.com/products/services/design/template-generator/) that streamlines the early stages of enclosure design. Given a set of basic specifications, the tool generates a blank, manufacturable CAD template (DXF or STEP) for the selected enclosure, bracket, or panel style, which can then be opened directly in standard CAD software and customized with cutouts, fasteners, brackets, partitions, hardware, and graphics before being submitted back to Protocase for quoting.
+
+This tool proved invaluable throughout the design of this enclosure, as well as other enclosures developed for the RIFTS project, by providing a manufacturable starting geometry and reducing the design time otherwise spent building enclosure envelopes from scratch.
+
+**How it works:**
+
+1. Fill out the short form on the Template Generator page to request access.
+2. Select from over 50 available enclosure, bracket, and panel styles and provide the relevant specifications.
+3. Receive a blank CAD template (DXF/STEP) by email.
+4. Open the template in your preferred CAD software and customize it with cutouts, fasteners, brackets, partitions, hardware, and graphics.
+5. Submit the finalized design back to Protocase for a manufacturing quote.
+
+<!-- End reusable block -->
+
+---
+
 ## Design Evolution
 
 Unlike the ZCU216 enclosure, the RFSoC 4x2 enclosure did not undergo multiple design revisions after manufacturing began. Instead, the design was revised several times during the pre-fabrication design phase, incorporating lessons learned from previous RIFTS hardware projects before the initial fabrication. The only additional unit produced was the replacement enclosure described above under Manufacturing.

@@ -127,6 +127,26 @@ Standardized PEM hardware supplied by Protocase was incorporated throughout the 
 
 ---
 
+<!-- Reusable block — Protocase CAD Template Generator. Paste this section as-is into any other enclosure page on the site. -->
+
+## Design Tool: Protocase CAD Template Generator
+
+Protocase offers a free [CAD Template Generator](https://www.protocase.com/products/services/design/template-generator/) that streamlines the early stages of enclosure design. Given a set of basic specifications, the tool generates a blank, manufacturable CAD template (DXF or STEP) for the selected enclosure, bracket, or panel style, which can then be opened directly in standard CAD software and customized with cutouts, fasteners, brackets, partitions, hardware, and graphics before being submitted back to Protocase for quoting.
+
+This tool proved invaluable throughout the design of this enclosure, as well as other enclosures developed for the RIFTS project, by providing a manufacturable starting geometry and reducing the design time otherwise spent building enclosure envelopes from scratch.
+
+**How it works:**
+
+1. Fill out the short form on the Template Generator page to request access.
+2. Select from over 50 available enclosure, bracket, and panel styles and provide the relevant specifications.
+3. Receive a blank CAD template (DXF/STEP) by email.
+4. Open the template in your preferred CAD software and customize it with cutouts, fasteners, brackets, partitions, hardware, and graphics.
+5. Submit the finalized design back to Protocase for a manufacturing quote.
+
+<!-- End reusable block -->
+
+---
+
 ## Design Evolution
 
 ### Revision A — August 2025
