@@ -55,9 +55,12 @@ Mechanical design and documentation: **Joshua D'Addario**
 
 ---
 
+Wed Aug 12 18:59:08 EDT 2026
+
 ## Revision History
 
 | Revision | Date      | Description                                              |
 | -------- | --------- | --------------------------------------------------------- |
 | Rev A    | July 2026 | Initial RIFTS hardware documentation archive.              |
 | Rev B    | Aug 2026  | Repository cleaned up to contain only mkdocs source and its GitHub Actions deploy workflow; README rewritten to point to the live site rather than duplicate it. |
+
