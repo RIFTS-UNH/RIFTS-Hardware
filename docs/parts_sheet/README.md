@@ -1,10 +1,4 @@
-Parts sheet should be migrated to an actual spreadsheet.  
-
-At this time, it is a grab-bag of URL links and data sheets. 
-
-Three of these items have already been linked for sale on UNH UShop portal. See the images here for those.
-
-
+FLASH-MEP parts sheet https://docs.google.com/spreadsheets/d/1aVYJW8B82nQ8EhuhUXIeyBJPT4pah5DBl2TXt3p7wDM/edit?gid=0#gid=0
 
 https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/scp-lt3045-1-evalz.html#eb-overview
 

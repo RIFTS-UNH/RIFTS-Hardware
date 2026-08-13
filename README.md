@@ -55,6 +55,10 @@ Mechanical design and documentation: **Joshua D'Addario**
 
 ---
 
+## FLASH-MEP
+
+FLASH-MEP parts sheet  https://docs.google.com/spreadsheets/d/1aVYJW8B82nQ8EhuhUXIeyBJPT4pah5DBl2TXt3p7wDM/edit?gid=0#gid=0
+
 Wed Aug 12 18:59:08 EDT 2026
 
 ## Revision History
